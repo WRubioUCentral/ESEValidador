@@ -1,6 +1,6 @@
 usuario,dato_erroneo,codigo,explicacion
-5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
-4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
+4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124831142,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124831142,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124831142,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -12,17 +12,17 @@ usuario,dato_erroneo,codigo,explicacion
 1124828146,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1050782243,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
 1050782243,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124828110,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
 1124828110,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 28936800,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1125991,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 63525268,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1067813015,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 30982166,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 40432267,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1073326222,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 24552148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
@@ -37,7 +37,7 @@ usuario,dato_erroneo,codigo,explicacion
 1128625421,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1128625421,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1128625421,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6804221,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6804221,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6804221,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -65,7 +65,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124823823,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124823823,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124823823,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1263102,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1263102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1263102,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -166,11 +166,11 @@ usuario,dato_erroneo,codigo,explicacion
 6635134,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
 6635134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6635134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6443406,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6443406,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6443406,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6442607,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6442607,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6442607,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -180,7 +180,7 @@ usuario,dato_erroneo,codigo,explicacion
 39542316,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
 39542316,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 39542316,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6168134,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6168134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6168134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -305,7 +305,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124834419,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 455718,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 455718,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6146062,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6146062,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6146062,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento

@@ -1,7 +1,7 @@
 usuario,dato_erroneo,codigo,explicacion
 Número de identificación del usuario,Tipo de registro,Error001,La columna 0 debe tener valor 2
 Número de identificación del usuario,Consecutivo de registro,Error002,El número consecutivo debe ser 1
-Número de identificación del usuario,Tipo de identificación del usuario,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+Número de identificación del usuario,Tipo de identificación del usuario,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 Número de identificación del usuario,Número de identificación del usuario,Error220,Número de identificación con caracteres no permitidos
 Número de identificación del usuario,Fecha de Nacimiento,Error421,contenido en el campo FechaNacimiento  no válido
 Número de identificación del usuario,Sexo,Error004,El sexo debe ser F o M
@@ -165,7 +165,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 474871,60,Error002,El número consecutivo debe ser 61
 5030649,61,Error002,El número consecutivo debe ser 62
 6710940,62,Error002,El número consecutivo debe ser 63
-6710940,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6710940,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 17044105,63,Error002,El número consecutivo debe ser 64
 17268049,64,Error002,El número consecutivo debe ser 65
 17268049,21,Error512,"Si Resultado de tacto rectal es riesgo no evaluado, en la fecha debe registrar alguno de los comodines que indican no realización o sin dato"
@@ -306,7 +306,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 479684,140,Error002,El número consecutivo debe ser 141
 3272538,141,Error002,El número consecutivo debe ser 142
 5845752,142,Error002,El número consecutivo debe ser 143
-5845752,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5845752,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 17157426,143,Error002,El número consecutivo debe ser 144
 17266721,144,Error002,El número consecutivo debe ser 145
 17266721,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -650,9 +650,9 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 3274158,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 3274158,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 5834650,321,Error002,El número consecutivo debe ser 322
-5834650,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5834650,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7971115,322,Error002,El número consecutivo debe ser 323
-7971115,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7971115,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 19424448,323,Error002,El número consecutivo debe ser 324
 21180465,324,Error002,El número consecutivo debe ser 325
 21180465,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -704,7 +704,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 3272635,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 3272635,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 5476700,355,Error002,El número consecutivo debe ser 356
-5476700,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5476700,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 17348989,356,Error002,El número consecutivo debe ser 357
 17348989,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 17348989,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -848,7 +848,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1071888259,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1071888259,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7080868,421,Error002,El número consecutivo debe ser 422
-7080868,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7080868,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 20750832,422,Error002,El número consecutivo debe ser 423
 20750832,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 20750832,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -866,22 +866,22 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1121928688,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1123114360,431,Error002,El número consecutivo debe ser 432
 5852870,432,Error002,El número consecutivo debe ser 433
-5852870,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5852870,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5852870,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5852870,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 5986617,433,Error002,El número consecutivo debe ser 434
 5986617,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5986617,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6181778,434,Error002,El número consecutivo debe ser 435
-6181778,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6181778,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6359251,435,Error002,El número consecutivo debe ser 436
-6359251,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6359251,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7072428,436,Error002,El número consecutivo debe ser 437
-7072428,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7072428,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7072428,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7072428,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7109120,437,Error002,El número consecutivo debe ser 438
-7109120,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7109120,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 40386229,438,Error002,El número consecutivo debe ser 439
 40386229,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 40386229,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -931,7 +931,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 20749269,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 20749269,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7012732,470,Error002,El número consecutivo debe ser 471
-7012732,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7012732,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7012732,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7012732,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1119895695,471,Error002,El número consecutivo debe ser 472
@@ -944,11 +944,11 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 23741516,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 23741516,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1123038,474,Error002,El número consecutivo debe ser 475
-1123038,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1123038,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5450370,475,Error002,El número consecutivo debe ser 476
-5450370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5450370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7114177,476,Error002,El número consecutivo debe ser 477
-7114177,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7114177,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 17267568,477,Error002,El número consecutivo debe ser 478
 17267568,21,Error512,"Si Resultado de tacto rectal es riesgo no evaluado, en la fecha debe registrar alguno de los comodines que indican no realización o sin dato"
 17267568,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -991,7 +991,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 17266447,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 17266447,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 5450462,504,Error002,El número consecutivo debe ser 505
-5450462,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5450462,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5450462,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5450462,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1007364770,505,Error002,El número consecutivo debe ser 506
@@ -1007,29 +1007,29 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 474634,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 474634,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 2663946,509,Error002,El número consecutivo debe ser 510
-2663946,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+2663946,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 3273447,510,Error002,El número consecutivo debe ser 511
 4294795,511,Error002,El número consecutivo debe ser 512
 4763968,512,Error002,El número consecutivo debe ser 513
-4763968,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4763968,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4763968,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 4763968,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 4873868,513,Error002,El número consecutivo debe ser 514
-4873868,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4873868,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5342712,514,Error002,El número consecutivo debe ser 515
-5342712,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5342712,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5342712,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5342712,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 5949086,515,Error002,El número consecutivo debe ser 516
-5949086,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5949086,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5949086,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5949086,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6523395,516,Error002,El número consecutivo debe ser 517
-6523395,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6523395,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6523491,517,Error002,El número consecutivo debe ser 518
-6523491,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6523491,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7576975,518,Error002,El número consecutivo debe ser 519
-7576975,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7576975,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 21181203,519,Error002,El número consecutivo debe ser 520
 21181203,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 21181203,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -1060,25 +1060,25 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1123161883,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1123161883,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6849159,542,Error002,El número consecutivo debe ser 543
-6849159,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6849159,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6849159,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6849159,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1082804481,543,Error002,El número consecutivo debe ser 544
 1082804481,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1082804481,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7124192,544,Error002,El número consecutivo debe ser 545
-7124192,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7124192,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7124192,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7124192,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1122928392,545,Error002,El número consecutivo debe ser 546
 1122928392,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1122928392,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7125048,546,Error002,El número consecutivo debe ser 547
-7125048,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7125048,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7125048,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7125048,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 7884339,547,Error002,El número consecutivo debe ser 548
-7884339,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7884339,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7884339,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7884339,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 21181409,548,Error002,El número consecutivo debe ser 549
@@ -1088,30 +1088,30 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1029995949,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1029995949,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 2885353,550,Error002,El número consecutivo debe ser 551
-2885353,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+2885353,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 2885353,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 2885353,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1121835457,551,Error002,El número consecutivo debe ser 552
 1121835457,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121835457,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 3672001,552,Error002,El número consecutivo debe ser 553
-3672001,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+3672001,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 3672001,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 3672001,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 4888093,553,Error002,El número consecutivo debe ser 554
-4888093,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4888093,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4888093,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 4888093,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6091622,554,Error002,El número consecutivo debe ser 555
-6091622,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6091622,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6242262,555,Error002,El número consecutivo debe ser 556
-6242262,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6242262,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6242337,556,Error002,El número consecutivo debe ser 557
-6242337,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6242337,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6242337,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6242337,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6949042,557,Error002,El número consecutivo debe ser 558
-6949042,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6949042,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 20750399,558,Error002,El número consecutivo debe ser 559
 20750399,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 20750399,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -1131,15 +1131,15 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1119897137,567,Error002,El número consecutivo debe ser 568
 1119897156,568,Error002,El número consecutivo debe ser 569
 5084358,569,Error002,El número consecutivo debe ser 570
-5084358,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5084358,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5625369,570,Error002,El número consecutivo debe ser 571
-5625369,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5625369,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5625369,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5625369,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6594310,571,Error002,El número consecutivo debe ser 572
-6594310,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6594310,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6735916,572,Error002,El número consecutivo debe ser 573
-6735916,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6735916,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6735916,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6735916,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 20916404,573,Error002,El número consecutivo debe ser 574
@@ -1214,7 +1214,7 @@ Número de identificación del usuario,Acido fólico preconcepcional,Error515,Er
 1123436551,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 478592,610,Error002,El número consecutivo debe ser 611
 5350220,611,Error002,El número consecutivo debe ser 612
-5350220,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5350220,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1119895673,612,Error002,El número consecutivo debe ser 613
 1119896138,613,Error002,El número consecutivo debe ser 614
 1119896495,614,Error002,El número consecutivo debe ser 615

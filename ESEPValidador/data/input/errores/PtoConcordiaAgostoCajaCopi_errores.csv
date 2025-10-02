@@ -238,7 +238,7 @@ usuario,dato_erroneo,codigo,explicacion
 17332099,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1193079383,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 40186755,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
-6556986,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6556986,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6556986,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 2474606,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120924768,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"

@@ -3,7 +3,7 @@ usuario,dato_erroneo,codigo,explicacion
 1113784189,85.0,Error683,El peso de los adolescentes de 13 a 17 años debe ser mayor o igual a 30 kg y menor o igual a 80 kg
 86230984252,2002-06-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1007228243,2000-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6238545,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6238545,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6238545,1996-06-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1087198222,2010-01-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124833122,1999-05-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -19,17 +19,17 @@ usuario,dato_erroneo,codigo,explicacion
 1124999625,2010-03-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1007163067,2003-04-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120572926,2010-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1314131,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1314131,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1314131,1999-08-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 86227489300,1999-09-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1193091581,2002-08-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1050543709,2004-12-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1117325029,2006-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5446236,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5446236,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5446236,1997-01-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124991411,1997-07-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1129264037,2005-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5346180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5346180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5346180,1997-03-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1122123682,2006-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121894930,1992-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -40,9 +40,9 @@ usuario,dato_erroneo,codigo,explicacion
 1118124168,1996-04-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124827137,1994-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121926968,1992-10-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6630920,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6630920,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6630920,2003-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5935627,2006-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006796467,2002-10-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120353528,2004-08-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -56,7 +56,7 @@ usuario,dato_erroneo,codigo,explicacion
 1127389317,1995-01-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1003290771,2000-05-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1125006211,2003-01-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5254444,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5254444,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5254444,1997-12-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1052399501,1993-06-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1114120320,1991-06-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -65,15 +65,15 @@ usuario,dato_erroneo,codigo,explicacion
 1124824156,1992-11-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1092084253,2000-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1193040913,2002-05-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4638957,1992-10-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5901370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5901370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5901370,1987-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121945556,1997-03-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124819128,2005-03-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1002488313,1994-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1116615897,1997-03-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-795218,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+795218,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 795218,1999-10-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1151454481,2008-08-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1114155155,2002-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -87,7 +87,7 @@ usuario,dato_erroneo,codigo,explicacion
 1121834758,1986-10-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1193131496,1991-11-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124988702,2002-11-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4232203,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4232203,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4232203,2006-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124996471,2007-10-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121709099,2006-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -97,7 +97,7 @@ usuario,dato_erroneo,codigo,explicacion
 1070730354,1986-08-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124822258,2008-11-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124822258,94.0,Error683,El peso de los adolescentes de 13 a 17 años debe ser mayor o igual a 30 kg y menor o igual a 80 kg
-5242907,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5242907,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5242907,2005-03-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1118166531,1999-05-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1116209063,1997-12-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -119,14 +119,14 @@ usuario,dato_erroneo,codigo,explicacion
 45400710,1984-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124818282,2003-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124218830,1997-06-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-7531388,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7531388,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7531388,2006-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124828156,1995-09-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1118570291,1998-01-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124821183,1988-09-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124818914,2004-11-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121948073,1997-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4968704,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4968704,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4968704,2000-03-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1054543687,1987-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1022949530,1989-02-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -135,7 +135,7 @@ usuario,dato_erroneo,codigo,explicacion
 1007196600,2000-12-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120839257,2005-04-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1002700928,2000-09-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5639151,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5639151,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5639151,2003-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124831142,1997-09-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124831142,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
@@ -243,7 +243,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124842011,2025-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124839515,2022-12-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124842145,2025-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6074737,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6074737,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6074737,2015-09-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124837504,2021-04-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1122939336,2018-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -262,12 +262,12 @@ usuario,dato_erroneo,codigo,explicacion
 1124841703,2025-01-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124840858,2024-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124841424,2024-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5094204,2015-02-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124840402,2023-07-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124837640,2021-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124837462,2021-04-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6708506,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6708506,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6708506,2015-01-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6708506,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
 6708506,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
@@ -390,7 +390,7 @@ usuario,dato_erroneo,codigo,explicacion
 1122937786,2017-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121974647,2020-07-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1084870756,2021-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4928370,2015-09-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1029971809,2025-05-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1136299315,2020-12-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -399,9 +399,9 @@ usuario,dato_erroneo,codigo,explicacion
 1124839291,2022-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1122536256,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124831910,2016-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6868351,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6868351,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6868351,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6868280,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6868280,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6868280,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120384082,2016-03-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124841408,2024-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -445,20 +445,20 @@ usuario,dato_erroneo,codigo,explicacion
 5956592,1949-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 25135656,1960-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121857708,1989-04-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5476593,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5476593,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5476593,1978-11-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5476593,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-6356553,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6356553,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6356553,1976-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6356553,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1125991,1979-07-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1125991,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 23423831,1973-10-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 23423831,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 63525268,1982-02-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 63525268,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-5389676,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5389676,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5389676,1985-06-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5389676,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 37345546,1980-10-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -481,7 +481,7 @@ usuario,dato_erroneo,codigo,explicacion
 40266354,1963-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 8192871,1978-02-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 40355379,1964-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4987426,1982-10-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 7699328,1972-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 40432267,1979-05-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -510,7 +510,7 @@ usuario,dato_erroneo,codigo,explicacion
 74261498,1982-06-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1090252148,1975-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1090252148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-5473204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5473204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5473204,1988-10-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5473204,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 40275516,1954-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -519,7 +519,7 @@ usuario,dato_erroneo,codigo,explicacion
 11685856,1983-04-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 8191464,1969-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 3028144,1974-03-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6129649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6129649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6129649,1983-09-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6129649,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 30521710,1984-02-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -554,7 +554,7 @@ usuario,dato_erroneo,codigo,explicacion
 1120579595,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1120579595,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120579595,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6854743,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6854743,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6854743,1998-04-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6854743,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6854743,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -563,7 +563,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124841209,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124841209,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124841209,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6804221,1974-04-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6804221,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6804221,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -572,7 +572,7 @@ usuario,dato_erroneo,codigo,explicacion
 1117494590,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1117494590,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1117494590,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5346794,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5346794,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5346794,1980-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5346794,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 5346794,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -581,7 +581,7 @@ usuario,dato_erroneo,codigo,explicacion
 1120369601,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1120369601,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120369601,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6790808,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6790808,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6790808,1994-04-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6790808,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6790808,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -598,7 +598,7 @@ usuario,dato_erroneo,codigo,explicacion
 1121833114,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1121833114,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121833114,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5674787,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5674787,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5674787,1993-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5674787,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 5674787,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -611,7 +611,7 @@ usuario,dato_erroneo,codigo,explicacion
 30080115,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 30080115,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 30080115,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7013746,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7013746,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7013746,1999-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 7013746,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 7013746,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -652,7 +652,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124823823,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124823823,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124823823,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1263102,1981-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1263102,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1263102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -677,7 +677,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124828049,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124828049,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124828049,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6316294,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6316294,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6316294,2000-04-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6316294,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6316294,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -710,7 +710,7 @@ usuario,dato_erroneo,codigo,explicacion
 38195751,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 38195751,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 38195751,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6082064,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6082064,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6082064,1999-06-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6082064,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6082064,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -723,7 +723,7 @@ usuario,dato_erroneo,codigo,explicacion
 1127386399,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1126705335,2011-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124997994,2009-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6319158,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6319158,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6319158,2007-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6319158,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1087795029,2006-10-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -737,7 +737,7 @@ usuario,dato_erroneo,codigo,explicacion
 1121969321,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1010062312,1999-07-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006772351,2001-02-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5092395,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5092395,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5092395,2011-03-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5092395,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1121146016,1997-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -748,7 +748,7 @@ usuario,dato_erroneo,codigo,explicacion
 1023940182,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1071888874,2007-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1071888874,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-5476403,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5476403,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5476403,2010-01-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5476403,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1082160466,1999-08-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -783,7 +783,7 @@ usuario,dato_erroneo,codigo,explicacion
 1125006900,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1124831088,1997-08-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124831088,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
-6024905,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6024905,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6024905,1996-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6024905,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1029965031,2013-01-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -922,7 +922,7 @@ usuario,dato_erroneo,codigo,explicacion
 1110597108,2017-03-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1110597108,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1110597108,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6331111,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6331111,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6331111,2017-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6331111,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6331111,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -954,7 +954,7 @@ usuario,dato_erroneo,codigo,explicacion
 52019821,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 52019821,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 52019821,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5358606,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5358606,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5358606,2000-06-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5358606,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 5358606,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -979,7 +979,7 @@ usuario,dato_erroneo,codigo,explicacion
 41243859,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 41243859,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 41243859,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5823767,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5823767,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5823767,2006-05-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5823767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 5823767,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1054,12 +1054,12 @@ usuario,dato_erroneo,codigo,explicacion
 29765465,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
 29765465,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 29765465,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6443406,1978-09-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6443406,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6443406,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6443406,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6442607,1997-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6442607,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6442607,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1091,7 +1091,7 @@ usuario,dato_erroneo,codigo,explicacion
 39542316,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
 39542316,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 39542316,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6168134,1981-10-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6168134,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6168134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1119,7 +1119,7 @@ usuario,dato_erroneo,codigo,explicacion
 1121955558,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1121955558,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121955558,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1083168,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1083168,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1083168,2000-11-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1083168,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1083168,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1210,7 +1210,7 @@ usuario,dato_erroneo,codigo,explicacion
 1029963949,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1029963949,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1029963949,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7745882,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7745882,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7745882,2013-08-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 7745882,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7745882,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -1335,12 +1335,12 @@ usuario,dato_erroneo,codigo,explicacion
 1029962969,2011-07-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1029962969,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1029962969,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5731656,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5731656,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5731656,1980-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5731656,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 5731656,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5731656,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6387532,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6387532,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6387532,2014-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6387532,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6387532,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -1390,7 +1390,7 @@ usuario,dato_erroneo,codigo,explicacion
 1124834079,2018-01-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124834079,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124834079,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7233231,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7233231,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7233231,2004-06-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 7233231,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 7233231,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1495,11 +1495,11 @@ usuario,dato_erroneo,codigo,explicacion
 1006944762,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1006944762,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1006944762,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5036124,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5036124,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5036124,2016-09-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5036124,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5036124,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1155649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1155649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1155649,1994-08-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1155649,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1155649,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1582,7 +1582,7 @@ usuario,dato_erroneo,codigo,explicacion
 1127390322,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1127390322,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1127390322,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6146062,2008-02-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6146062,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6146062,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1598,7 +1598,7 @@ usuario,dato_erroneo,codigo,explicacion
 3277326,1982-01-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 3277326,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 3277326,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-4939367,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4939367,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4939367,1967-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 4939367,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 4939367,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -1627,7 +1627,7 @@ usuario,dato_erroneo,codigo,explicacion
 1120566560,2008-08-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120566560,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120566560,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6298599,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6298599,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6298599,1970-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6298599,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6298599,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1697,7 +1697,7 @@ usuario,dato_erroneo,codigo,explicacion
 1127394632,2018-08-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1127394632,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1127394632,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5404095,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5404095,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5404095,1959-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5404095,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
 5404095,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1740,7 +1740,7 @@ usuario,dato_erroneo,codigo,explicacion
 1120868025,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1120868025,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120868025,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6818327,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6818327,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6818327,1994-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6818327,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6818327,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -1766,7 +1766,7 @@ usuario,dato_erroneo,codigo,explicacion
 1115190061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 1115190061,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1115190061,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6564180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6564180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6564180,2001-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6564180,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
 6564180,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento

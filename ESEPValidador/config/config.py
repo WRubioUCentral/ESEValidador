@@ -20,7 +20,7 @@ DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 COMODIN_DATE = "1800-01-01"
 
 # Configuración de archivos
-SUPPORTED_INPUT_FORMATS = ['.csv', '.xlsx', '.xls']
+SUPPORTED_INPUT_FORMATS = ['.csv', '.xlsx', '.xls', 'xlsb']
 DEFAULT_OUTPUT_FORMAT = '.csv'
 
 # Configuración de logging
@@ -53,7 +53,7 @@ ESE_COLUMNS = {
 }
 
 # Valores permitidos
-TIPOS_IDENTIFICACION = ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']
+TIPOS_IDENTIFICACION = ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN', 'PT', 'PPT']
 SEXOS = ['F', 'M']
 
 # Rangos de edad para validaciones

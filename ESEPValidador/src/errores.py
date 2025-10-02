@@ -55,7 +55,7 @@ ERRORES = {
     "Error681": "El peso de los niños de 2 a 4 años debe ser mayor o igual a 3 kg y menor o igual a 25 kg",
     "Error682": "El peso de los niños de 5 a 12 años debe ser mayor o igual a 9 kg y menor o igual a 80 kg",
     "Error683": "El peso de los adolescentes de 13 a 17 años debe ser mayor o igual a 30 kg y menor o igual a 80 kg",
-    "Error684": "El peso de los adyltos matores de 18 años debe ser mayor o igual a 36 kg y menor o igual a 250 kg",
+    "Error684": "El peso de los adultos mayores de 18 años debe ser mayor o igual a 36 kg y menor o igual a 250 kg",
     "Error122": "Fecha talla es mayor a la fecha de corte",
     "Error172": "Fecha talla es menor a la fecha de nacimiento",
     "Warning675": "Verifique el comodín 1800-01-01, registre una fecha válida.",

@@ -10,13 +10,13 @@ usuario,dato_erroneo,codigo,explicacion
 473961,1942-04-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1036388,1939-05-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1087030,1938-01-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1226635,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1226635,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1226635,1988-06-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1272834,1959-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1272834,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1272834,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1272834,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1350325,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1350325,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1350325,1967-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1350325,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1350325,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -36,7 +36,7 @@ usuario,dato_erroneo,codigo,explicacion
 2399356,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 2399356,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 2399356,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-2450932,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+2450932,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 2450932,1985-03-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 2582140,1940-12-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 2582140,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
@@ -131,59 +131,59 @@ usuario,dato_erroneo,codigo,explicacion
 4492875,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 4492875,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 4527218,1953-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4704246,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4704246,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4704246,1976-12-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 4732132,1936-10-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-4930193,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4930193,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 4956772,1954-02-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5035884,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5035884,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5035884,2001-11-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5039578,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5039578,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5039578,2018-05-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5109172,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5109172,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5109172,2019-12-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5109172,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5109172,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5109172,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5199917,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5199917,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5199917,1990-09-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5316620,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5316620,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5316620,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5316620,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5316620,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5367973,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5367973,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5367973,1991-11-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5367973,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5367973,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5367973,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5371359,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5371359,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5371359,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5371359,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5371359,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5381135,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5381135,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5381135,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5381135,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5381135,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5390071,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5390071,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5390071,1997-04-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5391271,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5391271,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5391271,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5391271,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5391271,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5393409,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5393409,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5393409,1988-11-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5394033,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5394033,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5394033,1969-12-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5394033,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5394033,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5394033,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5394385,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5394385,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5394385,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5394385,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5394385,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5394878,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5394878,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5394878,2003-07-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5416308,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5416308,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5416308,1986-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5551002,1939-08-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5663007,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
@@ -197,7 +197,7 @@ usuario,dato_erroneo,codigo,explicacion
 5770758,1965-09-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5831182,1943-09-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5849636,1945-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5851430,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5851430,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5851430,1997-12-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5851430,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5851430,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -207,12 +207,12 @@ usuario,dato_erroneo,codigo,explicacion
 5862374,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5862374,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5862374,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5884804,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5884804,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5884804,1995-04-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 5904844,1955-05-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5905846,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5905846,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5905846,1981-11-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5910696,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5910696,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5933397,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5933397,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5933397,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -227,91 +227,91 @@ usuario,dato_erroneo,codigo,explicacion
 6023686,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6023686,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6023686,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6148706,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6148706,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6148706,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6148706,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6148706,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6185988,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6185988,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6185988,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6218369,1992-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6218390,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
-6218746,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6218390,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
+6218746,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6218746,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6218746,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6218746,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6218768,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6218768,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6218768,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6218768,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6218768,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6219030,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6219030,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6219030,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6219030,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6219030,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6219271,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6219271,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6219271,1993-01-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6219271,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6219271,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6219271,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6219425,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6219425,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6219425,1994-09-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6219454,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6219454,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6219454,2014-06-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6219454,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6219454,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6219454,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6220116,1957-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6220463,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6220463,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6220463,1988-01-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6220463,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6220463,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6220463,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6220646,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6220646,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6220646,2016-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6220646,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6220646,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6220646,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6221395,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6221395,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6221395,1991-06-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6221677,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6221677,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6221677,2008-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6222031,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6222031,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6222031,1965-06-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6249696,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6249696,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6249696,1989-03-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6249696,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6249696,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6249696,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6252103,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6252103,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6252103,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6252103,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6252103,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6252129,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6252129,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6252129,2015-01-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6319311,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6319311,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6319311,1982-06-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6347145,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6347145,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6347145,1989-09-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6347819,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6347819,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6347819,2015-12-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6347819,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6347819,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6347819,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6347876,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6347876,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6347876,2008-11-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6347876,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6347876,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6347876,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 6454605,1946-10-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6464487,1952-03-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6601451,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6601451,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6601451,2019-11-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6608436,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6608436,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6608436,2012-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6608579,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6608579,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6608579,2004-11-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6609329,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6609329,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6633529,1942-08-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6633529,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6633529,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -325,33 +325,33 @@ usuario,dato_erroneo,codigo,explicacion
 6680953,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6680953,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6680953,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6856463,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6856463,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6856463,1988-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6856463,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6856463,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6856463,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6946142,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6946142,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6946142,2009-04-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6946142,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6946142,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6946142,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6946492,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6946492,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6946492,2011-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6946492,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6946492,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6946492,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6948162,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6948162,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6948162,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6948162,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6948162,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6949820,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6949820,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6949820,2006-02-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6949820,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6949820,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6949820,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6966415,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6966415,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6966415,1992-12-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6992167,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6992167,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6992167,2013-02-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6992167,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6992167,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -360,14 +360,14 @@ usuario,dato_erroneo,codigo,explicacion
 7010661,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7010661,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7010661,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7047611,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7047611,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7047611,1972-10-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 7047611,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7047611,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7047611,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7214443,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7214443,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7214443,2001-03-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-7232020,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7232020,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7232020,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7232020,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7232020,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -6279,11 +6279,10 @@ usuario,dato_erroneo,codigo,explicacion
 86224712929,86224712929,Error676,La longitud del número de identificación no corresponde con el tipo de identificación
 86224712929,1993-12-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 86231310251,2006-04-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-25021610068044,CN,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
 25021610068044,2025-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 50400S30052156 ,50400S30052156 ,Error220,Número de identificación con caracteres no permitidos
 50400S30052156 ,2003-04-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-VEN20381346    ,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+VEN20381346    ,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 VEN20381346    ,VEN20381346    ,Error220,Número de identificación con caracteres no permitidos
 VEN20381346    ,1989-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 VEN20381346    ,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
@@ -6541,7 +6540,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1121896556,1993-01-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 40447498,1976-12-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124219121,1998-12-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6218369,1992-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006701922,2002-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006903855,2002-07-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -6784,7 +6783,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 40355833,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 40355833,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 40355833,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6222031,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6222031,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6222031,1965-06-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 6222031,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6222031,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -7440,412 +7439,412 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1124217910,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217910,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217910,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120373921,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120373921,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120373921,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120373921,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120373921,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124220042,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124220042,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124220042,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124220042,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124220042,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120841198,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120841198,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120841198,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120841198,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120841198,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1124219373,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219373,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219373,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-5394878,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5394878,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 5394878,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 5394878,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 5394878,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1007168133,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1007168133,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1007168133,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1007168133,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1007168133,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120375447,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120375447,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120375447,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120375447,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120375447,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1029151369,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1029151369,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1029151369,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1029151369,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1029151369,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120377038,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120377038,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120377038,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120377038,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120377038,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1071580879,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1071580879,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1071580879,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1071580879,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1071580879,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124218421,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124218421,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124218421,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124218421,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124218421,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120375966,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120375966,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120375966,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120375966,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120375966,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120926146,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120926146,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120926146,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120926146,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120926146,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120375586,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120375586,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120375586,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120375586,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120375586,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124218307,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124218307,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124218307,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124218307,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124218307,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124218306,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124218306,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124218306,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124218306,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124218306,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120375912,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120375912,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120375912,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120375912,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120375912,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1122130517,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1122130517,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1122130517,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1122130517,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1122130517,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1123532164,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1123532164,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1123532164,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1123532164,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1123532164,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120369805,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120369805,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120369805,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120369805,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120369805,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120373162,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120373162,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120373162,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120373162,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120373162,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120360083,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120360083,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120360083,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120360083,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120360083,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1144726755,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1144726755,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1144726755,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1144726755,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1144726755,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120393829,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120393829,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120393829,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120393829,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120393829,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124216866,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124216866,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124216866,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124216866,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124216866,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6609333,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6609333,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6609333,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6609333,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6609333,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1144724347,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1144724347,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1144724347,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1144724347,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1144724347,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124216802,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124216802,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124216802,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124216802,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124216802,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1122926823,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1122926823,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1122926823,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1122926823,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1122926823,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124216831,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124216831,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124216831,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124216831,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124216831,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217047,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217047,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217047,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217047,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217047,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217003,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217003,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217003,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217003,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217003,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217017,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217017,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217017,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217017,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217017,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1012358604,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1012358604,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1012358604,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1012358604,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1012358604,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1030583289,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1030583289,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1030583289,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1030583289,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1030583289,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217287,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217287,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217287,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217287,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217287,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217245,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217245,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217245,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217245,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217245,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1016834476,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1016834476,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1016834476,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1016834476,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1016834476,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120364237,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120364237,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120364237,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120364237,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120364237,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1121872248,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121872248,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121872248,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1121872248,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121872248,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1061531588,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1061531588,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1061531588,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1061531588,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1061531588,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1022956480,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1022956480,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1022956480,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1022956480,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1022956480,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1027402222,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1027402222,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1027402222,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1028820813,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1028820813,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1028820813,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1028820813,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1028820813,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120924937,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120924937,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120924937,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120924937,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120924937,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1121126153,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121126153,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121126153,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1121126153,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121126153,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1012371143,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1012371143,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1012371143,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1012371143,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1012371143,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1123437338,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1123437338,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1123437338,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1123437338,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1123437338,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1149443169,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1149443169,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1149443169,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1149443169,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1149443169,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217348,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217348,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217348,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217348,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217348,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1114818809,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1114818809,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1114818809,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1114818809,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1114818809,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120358434,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120358434,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120358434,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120358434,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120358434,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6601335,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6601335,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6601335,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6601335,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6601335,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124219211,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124219211,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124219211,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219211,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219211,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-40357138,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+40357138,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 40357138,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 40357138,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 40357138,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-27880263,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+27880263,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 27880263,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 27880263,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 27880263,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1123059848,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1123059848,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1123059848,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1123059848,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1123059848,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120368137,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120368137,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120368137,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120368137,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120368137,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1121890561,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121890561,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121890561,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1121890561,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121890561,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120368848,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120368848,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120368848,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120368848,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120368848,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120369147,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120369147,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120369147,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120369147,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120369147,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1145225942,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1145225942,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1145225942,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1145225942,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1145225942,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1103749905,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1103749905,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1103749905,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1103749905,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1103749905,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120365870,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120365870,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120365870,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120365870,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120365870,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1232399331,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1232399331,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1232399331,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1232399331,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1232399331,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120369577,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120369577,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120369577,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120369577,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120369577,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124219095,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124219095,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124219095,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219095,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219095,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1013134390,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1013134390,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1013134390,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1013134390,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1013134390,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217846,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217846,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217846,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217846,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217846,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120370294,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120370294,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120370294,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120370294,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120370294,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1013647462,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1013647462,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1013647462,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1013647462,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1013647462,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1076821753,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1076821753,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1076821753,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1076821753,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1076821753,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1139875056,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1139875056,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1139875056,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1139875056,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1139875056,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1029962915,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1029962915,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1029962915,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1029962915,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1029962915,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-40449086,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+40449086,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 40449086,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 40449086,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 40449086,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1144724837,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1144724837,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1144724837,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1144724837,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1144724837,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1120873266,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120873266,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120873266,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120873266,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1120873266,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1022977864,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1022977864,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1022977864,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1022977864,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1022977864,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1121907436,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121907436,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121907436,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1121907436,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121907436,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1045431881,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1045431881,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1045431881,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1045431881,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1045431881,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217792,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217792,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217792,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217792,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217792,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1007168248,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1007168248,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1007168248,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1007168248,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1007168248,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124220005,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124220005,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124220005,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124220005,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124220005,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-79382047,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+79382047,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 79382047,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 79382047,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 79382047,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1123117469,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1123117469,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1123117469,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1123117469,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1123117469,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217796,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217796,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217796,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217796,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217796,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1095180815,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1095180815,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1095180815,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1095180815,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1095180815,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124218044,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124218044,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124218044,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124218044,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124218044,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124217850,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124217850,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124217850,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124217850,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217850,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7060667,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7060667,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7060667,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7060667,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7060667,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-17495801,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+17495801,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 17495801,1958-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 17495801,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 17495801,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 17495801,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-7047611,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7047611,PT   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 7047611,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7047611,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7047611,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1106771210,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1106771210,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1106771210,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1106771210,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1106771210,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-86015138,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+86015138,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 86015138,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 86015138,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 86015138,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124219607,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124219607,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124219607,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219607,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219607,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1125185509,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125185509,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1125185509,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1125185509,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1125185509,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-79290940,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+79290940,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 79290940,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 79290940,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 79290940,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1125185948,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125185948,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1125185948,2020-08-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1125185948,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1125185948,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1125185948,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1121416618,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121416618,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121416618,2004-04-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121416618,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1121416618,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1121416618,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1072644861,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1072644861,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1072644861,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1072644861,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1072644861,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1076817805,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1076817805,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1076817805,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1076817805,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1076817805,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-1124219544,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124219544,RC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124219544,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219544,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219544,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
@@ -7875,7 +7874,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 7491002,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 7491002,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 7491002,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6948162,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6948162,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 39655339,1971-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 21205970,1947-11-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124219889,2022-06-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -7965,7 +7964,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 30001284,1951-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 28636786,1957-04-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006658310,1997-07-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6218369,PPT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6218369,1992-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1237688017,1989-11-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120374387,1994-08-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -7994,9 +7993,9 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1029971467,2024-11-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124220124,2025-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124220136,2025-06-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-6601401,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6601401,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6601401,2008-08-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5391271,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5391271,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124997000,2005-04-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1006693159,2000-08-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1124218514,1995-12-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -8064,7 +8063,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1007168096,2003-04-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1122918266,2004-03-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121418727,2010-02-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1121872248,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1121872248,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1121872248,1,Error379,"Si es gestante, las variables relacionadas con la gestación deben registrar un dato diferente a 'No aplica'"
 1124216843,2003-09-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120362748,2008-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -8108,7 +8107,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1014877282,2010-09-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1121957462,1998-09-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1123564318,2009-06-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1120370294,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120370294,TI   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1123565079,2011-06-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1030622751,2011-01-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1005132938,2000-02-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -8116,7 +8115,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1005132938,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1005132938,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1120392409,2021-10-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1124218626,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124218626,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1124218626,1996-05-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1193230112,1995-10-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1193230112,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
@@ -8157,7 +8156,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1124219703,2020-11-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1007168002,2000-06-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1072006324,1992-03-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-1120384764,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1120384764,CC   ,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 1120384764,1998-02-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 1120384764,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1120384764,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
@@ -8171,7 +8170,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 40260014,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 40260014,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 40260014,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-3659785,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+3659785,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 3659785,2001-09-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 40413672,1967-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 17495030,1958-05-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
@@ -8252,7 +8251,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1124217700,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124217700,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
 1120374189,2012-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
-5394385,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5394385,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 40331800,1983-09-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 3296367,1948-04-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
 3296367,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
@@ -8536,7 +8535,7 @@ VEN34337054    ,2008-01-24 00:00:00,Error421,contenido en el campo FechaNacimien
 1124219143,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 1124219143,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 1124219143,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
-6947505,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6947505,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE', 'CN']"
 6947505,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
 6947505,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
 6947505,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento

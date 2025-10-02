@@ -3,6 +3,7 @@ import pandas as pd
 import re
 from datetime import datetime, timedelta
 from errores import ERRORES
+from config import TIPOS_IDENTIFICACION
 
 class ValidadorESE:
     """Validador completo para archivos ESE según especificaciones"""
@@ -93,7 +94,7 @@ class ValidadorESE:
         valor = fila.iloc[3]
         id_usuario = fila.iloc[4]
         
-        valores_permitidos = ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']
+        valores_permitidos = TIPOS_IDENTIFICACION
         
         if valor not in valores_permitidos:
             self.agregar_error(id_usuario, valor, "Error003", f"Tipo de identificación debe ser uno de: {valores_permitidos}")
