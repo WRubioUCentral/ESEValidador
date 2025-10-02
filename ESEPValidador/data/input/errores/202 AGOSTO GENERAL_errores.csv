@@ -1,0 +1,1776 @@
+usuario,dato_erroneo,codigo,explicacion
+1113784189,2008-02-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1113784189,85.0,Error683,El peso de los adolescentes de 13 a 17 años debe ser mayor o igual a 30 kg y menor o igual a 80 kg
+86230984252,2002-06-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007228243,2000-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6238545,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6238545,1996-06-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1087198222,2010-01-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833122,1999-05-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1053326507,2005-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124819002,2005-05-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1193257666,2001-06-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+86231830484,2004-09-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944946,1999-01-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829741,1996-09-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116776895,2005-05-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820432,2006-04-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1069501567,1997-04-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124999625,2010-03-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007163067,2003-04-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120572926,2010-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1314131,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1314131,1999-08-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+86227489300,1999-09-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1193091581,2002-08-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1050543709,2004-12-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117325029,2006-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5446236,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5446236,1997-01-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124991411,1997-07-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1129264037,2005-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5346180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5346180,1997-03-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122123682,2006-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121894930,1992-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122516759,2007-10-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006693798,2000-10-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1094283154,1999-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120865923,2005-11-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1118124168,1996-04-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124827137,1994-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121926968,1992-10-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6630920,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6630920,2003-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5935627,2006-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006796467,2002-10-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120353528,2004-08-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1014480702,2006-08-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124991099,2006-01-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122122716,2006-09-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120964267,2004-05-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123114333,2006-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123802099,2005-03-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944513,2003-07-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127389317,1995-01-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1003290771,2000-05-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125006211,2003-01-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5254444,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5254444,1997-12-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1052399501,1993-06-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1114120320,1991-06-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1077969294,1989-07-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006457141,2002-10-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124824156,1992-11-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1092084253,2000-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1193040913,2002-05-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4638957,1992-10-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5901370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5901370,1987-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121945556,1997-03-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124819128,2005-03-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1002488313,1994-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116615897,1997-03-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+795218,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+795218,1999-10-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1151454481,2008-08-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1114155155,2002-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944256,2000-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127722105,2004-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006697858,2003-07-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820106,2005-10-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119946671,2005-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1090362836,2003-08-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1192894082,2000-01-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121834758,1986-10-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1193131496,1991-11-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124988702,2002-11-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4232203,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4232203,2006-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124996471,2007-10-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121709099,2006-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1115918889,1999-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120957727,2010-12-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006720241,1999-11-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1070730354,1986-08-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124822258,2008-11-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124822258,94.0,Error683,El peso de los adolescentes de 13 a 17 años debe ser mayor o igual a 30 kg y menor o igual a 80 kg
+5242907,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5242907,2005-03-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1118166531,1999-05-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116209063,1997-12-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1049316472,2002-08-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123562790,1996-08-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1115792356,2008-02-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123804481,2007-03-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1140436086,2009-08-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124822024,2006-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124993727,2002-03-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829516,1996-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1053820285,1992-08-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1005781608,2002-05-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1136275249,1984-03-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820911,2006-02-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124998769,1995-03-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1081760617,2006-06-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121834660,2005-07-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+45400710,1984-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818282,2003-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124218830,1997-06-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7531388,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7531388,2006-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828156,1995-09-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1118570291,1998-01-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124821183,1988-09-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818914,2004-11-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121948073,1997-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4968704,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4968704,2000-03-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1054543687,1987-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1022949530,1989-02-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119511938,1996-08-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006795649,2000-03-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007196600,2000-12-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120839257,2005-04-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1002700928,2000-09-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5639151,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5639151,2003-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831142,1997-09-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831142,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124831142,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831142,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1125549215,2006-07-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125549215,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125549215,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1125549215,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006414074,2002-11-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006414074,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006414074,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006414074,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1073690018,2004-10-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1073690018,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1073690018,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1073690018,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+86230857582,2001-05-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+86230857582,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+86230857582,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+86230857582,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1054539967,2004-06-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1054539967,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1054539967,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1054539967,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1050778831,2005-09-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1050778831,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1050778831,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1050778831,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1004075189,1995-01-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1004075189,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1004075189,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1004075189,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120586681,2020-11-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1082483015,2022-12-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122933862,2014-02-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841671,2025-01-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1079188728,2021-01-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971390,2024-09-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971570,2025-01-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841668,2025-01-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839524,2022-12-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122528909,2014-09-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122528909,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1122528909,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124839143,2022-09-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842062,2025-05-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120875264,2017-12-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1107517606,2016-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834461,2018-06-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829416,2014-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836641,2020-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122543310,2024-01-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840570,2023-11-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120877652,2023-11-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841245,2024-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1244828426,2023-12-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117460388,2016-03-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121126563,2015-10-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1065137076,2014-07-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1065137076,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1065137076,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125553766,2020-11-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840800,2024-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117974791,2016-02-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1222126135,2016-06-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829482,2014-06-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829482,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124829482,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1116877675,2021-01-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121943090,2014-03-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029970295,2022-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120579042,2014-01-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117975914,2017-09-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1129009225,2021-07-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121987501,2025-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121976630,2021-03-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837282,2021-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123443323,2013-09-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840337,2023-08-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837060,2020-12-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837794,2021-07-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840677,2023-12-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841715,2025-01-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837550,2021-03-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841316,2024-09-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841979,2025-05-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122148902,2022-09-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841721,2025-01-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840334,2023-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121969637,2018-05-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839540,2022-12-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840462,2023-09-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841306,2024-08-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828146,2013-10-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828146,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124828146,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121969136,2018-02-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123452584,2021-04-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841954,2025-04-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1050782243,2013-11-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1050782243,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1050782243,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124839138,2022-08-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842011,2025-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839515,2022-12-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842145,2025-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6074737,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6074737,2015-09-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837504,2021-04-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122939336,2018-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837574,2021-04-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121976920,2021-04-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837651,2021-03-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837651,122,Error686,La talla de los niños de 2 a 4 años debe ser mayor o igual a 70 cm y menor o igual a 110 cm
+1124841444,2024-10-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971607,2025-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971608,2025-01-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841689,2025-01-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121984588,2023-12-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971615,2025-02-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127397253,2020-09-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837525,2021-04-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841703,2025-01-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840858,2024-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841424,2024-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5094204,2015-02-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840402,2023-07-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837640,2021-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837462,2021-04-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6708506,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6708506,2015-01-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6708506,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+6708506,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121971529,2017-03-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841284,2024-07-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1192214320,2024-06-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1074537491,2023-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841033,2024-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841994,2025-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841556,2024-10-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125554115,2022-12-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840488,2023-10-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836962,2020-11-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836218,2020-01-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121983089,2023-05-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1044657177,2015-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120391535,2021-01-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839358,2022-10-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842093,2025-06-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834670,2018-08-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839045,2022-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124835434,2019-04-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842167,2025-07-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838934,2022-07-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841635,2025-01-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1234796263,2025-06-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840709,2023-12-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1077245569,2016-11-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122938843,2018-02-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839363,2022-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836293,2020-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840316,2023-08-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120875091,2017-10-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840885,2024-10-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839678,2023-02-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842066,2025-06-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834414,2018-05-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842108,2025-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841081,2024-05-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836588,2020-08-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840110,2023-06-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837258,2020-11-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837258,111,Error686,La talla de los niños de 2 a 4 años debe ser mayor o igual a 70 cm y menor o igual a 110 cm
+1120877741,2024-01-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836100,2019-12-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121983598,2023-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837189,2021-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840279,2023-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117326719,2019-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840143,2023-06-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836951,2020-11-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838617,2022-03-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842030,2025-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971087,2024-04-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841740,2025-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1115751276,2022-01-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842130,2025-07-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842103,2025-06-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836388,2020-03-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839588,2023-01-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837734,2021-07-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829672,2014-08-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124829672,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124829672,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123454918,2024-12-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837345,2021-03-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836480,2020-07-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840040,2023-05-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839987,2023-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837260,2021-02-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971871,2025-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837833,2021-08-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836394,2020-05-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842151,2025-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120509111,2024-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841782,2025-02-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1216983648,2021-10-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121988607,2025-06-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836788,2020-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836788,112,Error686,La talla de los niños de 2 a 4 años debe ser mayor o igual a 70 cm y menor o igual a 110 cm
+1105792936,2017-02-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841492,2024-10-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841243,2024-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839280,2022-09-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1234793266,2019-07-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1253358047,2024-06-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1012455292,2016-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123824976,2025-03-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840554,2023-10-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840848,2024-02-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841100,2024-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837952,2021-09-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120927710,2023-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837342,2021-03-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841219,2024-08-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840589,2023-10-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840951,2024-04-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841600,2024-12-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120877023,2022-05-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841312,2024-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840106,2023-06-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841506,2024-11-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121938033,2014-09-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1077253875,2021-03-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836939,2020-11-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837539,2021-06-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1115870041,2022-05-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836228,2020-02-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828110,2013-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828110,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124828110,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124833720,2017-10-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125009916,2022-06-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838853,2022-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123819250,2019-10-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119950174,2020-03-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841436,2024-08-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841436,999.0,Error041,Si no registra el peso de la persona no debe registrar fecha de medición
+1124841436,999,Error043,Si no registra la talla de la persona no debe registrar fecha de medición
+1122937786,2017-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121974647,2020-07-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1084870756,2021-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4928370,2015-09-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971809,2025-05-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1136299315,2020-12-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839600,2023-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839522,2022-09-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839291,2022-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122536256,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831910,2016-04-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6868351,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6868351,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6868280,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6868280,2018-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120384082,2016-03-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841408,2024-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120393818,2022-12-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1072433199,2020-12-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121979762,2022-04-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839833,2023-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832684,2016-12-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839635,2023-01-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837301,2021-03-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1072433200,2020-12-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840195,2023-07-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1064808001,2021-09-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841928,2025-04-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124840123,2023-06-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124842026,2025-04-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117560209,2024-05-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124835517,2019-05-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838381,2021-12-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1253358041,2024-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832911,2017-02-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971163,2024-05-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818791,2004-10-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818791,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124818791,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124818791,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029987716,2008-03-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029987716,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029987716,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029987716,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120864551,2004-08-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120864551,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120864551,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120864551,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8191594,1960-06-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+28936800,1975-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+28936800,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1143257197,1995-06-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121907054,1993-12-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121907054,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5956592,1949-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+25135656,1960-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121857708,1989-04-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5476593,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5476593,1978-11-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5476593,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6356553,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6356553,1976-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6356553,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125991,1979-07-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125991,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+23423831,1973-10-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23423831,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+63525268,1982-02-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+63525268,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5389676,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5389676,1985-06-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5389676,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+37345546,1980-10-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+37345546,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40416533,1968-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40416533,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1096223383,1993-08-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1096223383,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1067813015,1991-07-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1067813015,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1105783017,1988-02-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1105783017,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40422656,1982-03-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40422656,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+17355799,1972-02-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120865514,1987-03-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120865514,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982166,1968-04-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982166,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40266354,1963-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+8192871,1978-02-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40355379,1964-08-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4987426,1982-10-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7699328,1972-08-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40432267,1979-05-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40432267,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983258,1974-02-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983258,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+35536687,1983-01-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+35536687,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1073326222,1995-02-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1073326222,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+17292308,1968-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23835939,1977-10-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23835939,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21244612,1965-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+24552148,1978-05-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+24552148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121825832,1985-10-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121825832,999.0,Error041,Si no registra el peso de la persona no debe registrar fecha de medición
+1121825832,999,Error043,Si no registra la talla de la persona no debe registrar fecha de medición
+1124825002,1993-11-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124825002,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1122138184,1995-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122138184,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983695,1973-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983695,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+74261498,1982-06-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1090252148,1975-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1090252148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5473204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5473204,1988-10-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5473204,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40275516,1954-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30937945,1985-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30937945,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+11685856,1983-04-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+8191464,1969-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+3028144,1974-03-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6129649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6129649,1983-09-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6129649,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30521710,1984-02-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30521710,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41255084,1978-10-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+41255084,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+7832127,1938-04-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+349161,1971-02-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121822767,1986-02-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121822767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1096036571,1993-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1096036571,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982242,1972-04-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982242,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40219912,1982-04-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40219912,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+93365768,1966-07-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+93365768,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+93365768,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8191268,1967-03-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+8191268,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8191268,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1128625421,1989-06-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1128625421,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1128625421,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1128625421,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124818384,1986-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818384,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124818384,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124818384,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120579595,1996-05-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120579595,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120579595,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120579595,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6854743,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6854743,1998-04-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6854743,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6854743,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6854743,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841209,1995-10-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841209,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124841209,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841209,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6804221,1974-04-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6804221,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6804221,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6804221,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1117494590,1986-03-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117494590,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1117494590,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1117494590,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5346794,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5346794,1980-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5346794,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5346794,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5346794,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120369601,1993-01-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120369601,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120369601,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120369601,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6790808,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6790808,1994-04-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6790808,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6790808,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6790808,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21202777,1979-01-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21202777,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21202777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21202777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21177978,1969-07-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21177978,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21177978,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21177978,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121833114,1986-03-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121833114,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121833114,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121833114,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5674787,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5674787,1993-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5674787,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5674787,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5674787,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983515,1982-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983515,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983515,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983515,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30080115,1972-12-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30080115,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30080115,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30080115,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+7013746,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7013746,1999-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7013746,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+7013746,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+7013746,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40360485,1979-04-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40360485,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40360485,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40360485,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121943352,1996-10-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121943352,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121943352,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121943352,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40278135,1981-04-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40278135,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40278135,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40278135,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121852878,2006-12-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121852878,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121852878,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121852878,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120353399,1985-12-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120353399,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120353399,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120353399,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21244634,1960-12-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21244634,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+21244634,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21244634,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+41255041,1970-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+41255041,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41255041,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+41255041,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+68291097,1965-04-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+68291097,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+68291097,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+68291097,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124823823,1992-05-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124823823,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124823823,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124823823,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1263102,1981-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1263102,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1263102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1263102,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1234789130,1997-02-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1234789130,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1234789130,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1234789130,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40305723,1983-12-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40305723,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40305723,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40305723,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124823725,1992-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124823725,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124823725,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124823725,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121938442,1996-09-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121938442,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121938442,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121938442,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828049,1995-07-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828049,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828049,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828049,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6316294,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6316294,2000-04-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6316294,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6316294,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6316294,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121951133,1997-09-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121951133,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121951133,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121951133,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124827574,1995-04-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124827574,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124827574,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124827574,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30342164,1964-02-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30342164,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+30342164,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30342164,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982006,1967-01-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982006,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982006,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982006,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121707062,1984-10-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121707062,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121707062,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121707062,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1069899209,1992-03-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1069899209,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1069899209,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1069899209,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+38195751,1980-06-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+38195751,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+38195751,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+38195751,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6082064,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6082064,1999-06-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6082064,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6082064,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6082064,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1118202730,1998-01-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1118202730,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1118202730,999.0,Error041,Si no registra el peso de la persona no debe registrar fecha de medición
+1118202730,999,Error043,Si no registra la talla de la persona no debe registrar fecha de medición
+1127386399,2009-04-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127386399,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1126705335,2011-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124997994,2009-10-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6319158,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6319158,2007-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6319158,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1087795029,2006-10-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1087795029,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120871728,2013-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007653247,2000-11-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007653247,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006530743,1999-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006530743,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121969321,2013-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121969321,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1010062312,1999-07-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006772351,2001-02-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5092395,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5092395,2011-03-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5092395,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121146016,1997-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121146016,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006943742,2000-10-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006943742,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1023940182,2013-02-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1023940182,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1071888874,2007-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1071888874,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5476403,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5476403,2010-01-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5476403,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1082160466,1999-08-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1082160466,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124818883,2005-03-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124818883,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1108931163,2006-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1108931163,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125552140,2013-04-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006945107,1997-04-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006945107,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006945284,1999-07-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006945284,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124826585,2012-09-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029963609,2012-04-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029963609,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029963608,2012-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029963608,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1087486061,2004-02-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1087486061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1077236142,2011-11-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1028034756,1998-03-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1028034756,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006858942,2002-02-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006858942,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1054546708,2006-05-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1054546708,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006419197,2000-06-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1001667996,2001-08-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1001667996,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125006900,2011-10-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125006900,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124831088,1997-08-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831088,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6024905,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6024905,1996-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6024905,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029965031,2013-01-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029965031,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006778768,2003-03-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006778768,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006873767,2002-05-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006873767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120866050,2006-08-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120866050,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124831904,1998-05-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831904,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1095208240,2004-06-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1095208240,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124820441,2005-07-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820441,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006866541,2003-01-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006866541,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40394580,1971-04-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40394580,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40394580,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40394580,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30937668,1983-11-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30937668,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30937668,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30937668,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40076112,1977-02-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40076112,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40076112,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40076112,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121824490,1984-11-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121824490,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121824490,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121824490,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1193278417,1995-06-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1193278417,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1193278417,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1193278417,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+93390094,1973-10-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+93390094,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+93390094,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+20300998,1941-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+20300998,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+20300998,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+20300998,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120872954,1996-12-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120872954,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120872954,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120872954,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17330567,1965-05-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+17330567,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+17330567,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17330567,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+65715886,1973-06-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+65715886,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+65715886,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+65715886,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1043695147,2014-05-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1043695147,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1043695147,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121909405,1992-11-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121909405,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121909405,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121909405,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40278383,1970-06-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40278383,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40278383,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40278383,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40417839,1975-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40417839,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40417839,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40417839,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+29841858,1951-12-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+29841858,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+29841858,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+29841858,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006700423,2001-01-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006700423,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006700423,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006700423,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1032181975,2008-07-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1032181975,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1032181975,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1032181975,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+28732886,1968-02-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+28732886,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+28732886,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+28732886,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982015,1966-09-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982015,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982015,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982015,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40388700,1969-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40388700,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40388700,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40388700,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40402737,1974-06-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40402737,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40402737,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40402737,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+28977226,1967-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+28977226,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+28977226,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+28977226,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+31007023,1957-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+31007023,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+31007023,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+31007023,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+29291187,1960-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+29291187,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+29291187,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+29291187,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40419739,1983-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40419739,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40419739,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40419739,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1116041366,1991-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116041366,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1116041366,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1116041366,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983546,1982-08-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983546,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983546,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983546,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23709891,1967-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23709891,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+23709891,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23709891,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983370,1976-12-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983370,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983370,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983370,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1096226598,2012-02-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1096226598,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1096226598,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1110597108,2017-03-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1110597108,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1110597108,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6331111,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6331111,2017-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6331111,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6331111,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832779,2017-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832779,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832779,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123809550,2011-05-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123809550,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123809550,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828580,2013-12-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828580,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828580,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828580,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006945501,2000-06-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006945501,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006945501,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006945501,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833934,1997-04-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833934,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124833934,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833934,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833045,2017-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833045,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833045,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832710,2016-12-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832710,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832710,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52019821,1970-09-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+52019821,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52019821,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52019821,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5358606,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5358606,2000-06-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5358606,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5358606,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5358606,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1067719976,1990-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1067719976,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1067719976,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1067719976,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1116554552,1998-09-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116554552,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1116554552,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1116554552,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5891771,1946-01-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5891771,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+5891771,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5891771,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30937695,1984-07-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30937695,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30937695,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30937695,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+41243859,1983-09-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+41243859,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41243859,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+41243859,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5823767,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5823767,2006-05-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5823767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5823767,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5823767,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52260933,1973-05-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+52260933,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52260933,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52260933,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+86047234,1974-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+86047234,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+86047234,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40370112,1963-03-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40370112,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+40370112,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40370112,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30507352,1980-06-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30507352,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30507352,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30507352,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21249270,1967-04-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21249270,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21249270,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21249270,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21244670,1961-09-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21244670,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+21244670,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21244670,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52262930,1976-02-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+52262930,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52262930,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52262930,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+39699954,1963-06-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+39699954,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+39699954,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+39699954,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30385711,1973-08-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30385711,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30385711,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30385711,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+32694775,1965-01-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+32694775,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+32694775,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+32694775,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+28657616,1973-04-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+28657616,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+28657616,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+28657616,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23724989,1957-02-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23724989,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+23724989,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23724989,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+65775070,1976-05-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+65775070,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+65775070,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+65775070,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+47426777,1961-11-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+47426777,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+47426777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+47426777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123813410,2014-03-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123813410,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123813410,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123813410,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1118775945,2014-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1118775945,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1118775945,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6635134,1939-01-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6635134,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+6635134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6635134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+29765465,1959-01-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+29765465,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+29765465,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+29765465,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6443406,1978-09-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6443406,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6443406,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6443406,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6442607,1997-06-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6442607,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6442607,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6442607,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123805453,2008-02-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123805453,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123805453,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+32349291,1955-10-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+32349291,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+32349291,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+32349291,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1081512002,1996-11-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1081512002,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1081512002,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1081512002,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23724461,1946-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23724461,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+23724461,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23724461,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52740058,1981-01-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+52740058,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52740058,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52740058,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982337,1968-05-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982337,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982337,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982337,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+39542316,1965-07-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+39542316,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+39542316,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+39542316,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6168134,1981-10-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6168134,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6168134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6168134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40762676,1955-01-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40762676,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+40762676,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40762676,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1133929218,1999-06-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1133929218,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1133929218,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1133929218,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831267,2015-10-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831267,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831267,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1116616780,1999-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116616780,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1116616780,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1116616780,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1004446416,2002-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1004446416,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1004446416,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1004446416,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121955558,1998-06-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121955558,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121955558,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121955558,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1083168,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1083168,2000-11-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1083168,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1083168,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1083168,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1125553725,2020-02-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125553725,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1125553725,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21248875,1955-08-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+21248875,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+21248875,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21248875,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+26430378,1984-12-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+26430378,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+26430378,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+26430378,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982004,1968-08-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30982004,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982004,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982004,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52602262,1977-12-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+52602262,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52602262,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52602262,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838420,2022-01-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838420,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838420,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1234789267,2015-12-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1234789267,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1234789267,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836507,2020-07-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836507,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836507,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124820158,2005-05-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820158,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124820158,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124820158,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834736,2018-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834736,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834736,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029970129,2022-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029970129,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029970129,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836277,2019-12-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836277,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836277,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124822861,1991-03-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124822861,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124822861,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124822861,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1142914961,2006-07-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1142914961,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1142914961,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1142914961,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127141344,2011-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127141344,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1127141344,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127141344,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029965314,2013-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029965314,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029965314,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838836,2022-05-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838836,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838836,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124822223,2008-10-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124822223,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124822223,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124822223,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838167,2021-11-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838167,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838167,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124839454,2022-10-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839454,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124839454,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833785,2017-10-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833785,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833785,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029967308,2015-01-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029967308,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029967308,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029967308,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838852,2022-06-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838852,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838852,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1024514950,2008-02-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1024514950,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1024514950,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029963949,2012-07-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029963949,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029963949,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029963949,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+7745882,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7745882,2013-08-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7745882,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+7745882,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828777,1995-09-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828777,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831214,2015-09-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831214,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831214,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006697479,2001-12-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006697479,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006697479,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006697479,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1091078027,2012-12-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1091078027,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1091078027,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1091078027,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1056780979,2011-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1056780979,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1056780979,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124820575,2005-03-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124820575,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124820575,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124820575,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029966758,2014-07-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029966758,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029966758,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006943654,2000-10-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006943654,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006943654,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006943654,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1172463623,2010-10-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1172463623,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1172463623,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1119213442,2008-09-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119213442,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1119213442,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841153,2024-05-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841153,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841153,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120566515,2007-12-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120566515,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120566515,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120566515,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124837474,2020-10-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124837474,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124837474,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121970675,2018-08-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121970675,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121970675,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17340064,1969-03-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+17340064,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17340064,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17350308,1951-09-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+17350308,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+17350308,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17350308,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+79807099,1976-03-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+79807099,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+79807099,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+74859684,1977-08-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+74859684,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+74859684,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029966466,2014-03-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029966466,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029966466,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029966466,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121927940,1995-10-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121927940,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121927940,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121927940,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123444764,2014-09-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123444764,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123444764,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123444764,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+4831112,1952-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4831112,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+4831112,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+4831112,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1117522162,1990-11-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1117522162,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1117522162,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1117522162,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1091078327,2014-03-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1091078327,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1091078327,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834009,2018-01-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834009,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834009,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121943842,2014-11-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121943842,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121943842,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1050920381,1996-06-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1050920381,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1050920381,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1050920381,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1141136415,2017-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1141136415,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1141136415,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006691131,2002-07-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006691131,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006691131,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006691131,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1112766250,1988-01-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1112766250,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1112766250,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1112766250,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123039287,2015-06-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123039287,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123039287,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123039287,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831609,2016-03-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831609,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831609,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1106896736,2013-03-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1106896736,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1106896736,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+86014065,1983-11-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+86014065,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+86014065,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029962969,2011-07-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029962969,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029962969,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5731656,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5731656,1980-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5731656,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5731656,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5731656,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6387532,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6387532,2014-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6387532,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6387532,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828104,1995-08-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828104,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828104,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828104,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1043147609,2007-12-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1043147609,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1043147609,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1097409645,2020-07-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1097409645,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1097409645,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121899532,2011-04-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121899532,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121899532,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121899532,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1048849843,2012-02-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1048849843,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1048849843,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831181,2015-09-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831181,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831181,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828425,2013-10-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124828425,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828425,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828425,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40395712,1970-05-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40395712,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40395712,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40395712,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124826158,2012-08-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124826158,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124826158,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123039279,2015-07-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123039279,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123039279,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123039279,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123442787,2013-03-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123442787,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123442787,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123442787,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+2281934,1945-09-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+2281934,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+2281934,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+2281934,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834079,2018-01-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834079,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834079,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+7233231,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+7233231,2004-06-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7233231,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+7233231,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+7233231,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127387229,1992-07-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127387229,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1127387229,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127387229,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1004634852,1995-05-10 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1004634852,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1004634852,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1004634852,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029971606,2025-02-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029971606,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029971606,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124830231,2014-11-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124830231,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124830231,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124830231,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124839657,2023-02-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124839657,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124839657,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1007293560,1999-09-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007293560,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1007293560,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1007293560,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841169,2024-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841169,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841169,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832335,2016-08-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832335,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832335,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+74795578,1977-07-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+74795578,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+74795578,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1215966378,2016-07-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1215966378,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1215966378,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1087790856,1962-08-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1087790856,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+1087790856,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1087790856,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30519502,1973-12-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30519502,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30519502,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30519502,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1125473816,1989-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125473816,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125473816,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1125473816,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23840032,1950-08-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+23840032,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+23840032,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23840032,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8191035,1963-04-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+8191035,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+8191035,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8191035,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124995738,2004-07-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124995738,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124995738,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838155,2021-10-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838155,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838155,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841630,2024-12-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841630,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841630,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834171,2018-02-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834171,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834171,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836374,2020-06-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836374,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836374,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1119891418,1994-09-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119891418,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1119891418,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1119891418,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006799192,2003-06-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006799192,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006799192,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006799192,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120867780,1990-09-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120867780,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120867780,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120867780,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124830723,2015-04-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124830723,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124830723,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124830723,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124826220,1994-08-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124826220,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124826220,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124826220,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1049032746,2018-11-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1049032746,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1049032746,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029997127,2012-09-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029997127,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029997127,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029997127,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006944762,1998-07-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944762,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006944762,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006944762,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5036124,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5036124,2016-09-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5036124,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5036124,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1155649,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1155649,1994-08-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1155649,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1155649,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1155649,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120839180,2002-02-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120839180,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120839180,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120839180,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1145938298,2024-07-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1145938298,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1145938298,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1122119843,1986-08-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122119843,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1122119843,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1122119843,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006944683,2003-04-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944683,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006944683,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1122648357,1989-12-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1122648357,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1122648357,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127398799,2023-01-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127398799,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127398799,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+41241037,1972-09-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+41241037,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41241037,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+41241037,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17385711,1953-09-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+17385711,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+17385711,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17385711,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029967056,2014-10-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029967056,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1029967056,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029967056,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841167,2024-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841167,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841167,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832996,2017-03-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832996,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832996,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30972051,1983-02-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30972051,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30972051,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30972051,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1125550301,2002-09-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1125550301,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125550301,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1125550301,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006944518,2003-05-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1006944518,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006944518,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006944518,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838309,2022-01-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124838309,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838309,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+12254334,1961-12-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+12254334,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+12254334,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+12254334,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124825706,2012-02-25 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124825706,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124825706,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124825706,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124835102,2019-01-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124835102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124835102,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834419,2018-05-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834419,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834419,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+455718,1982-05-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+455718,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+455718,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+41225246,1975-05-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+41225246,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41225246,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+41225246,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127390322,2014-05-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127390322,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1127390322,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127390322,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6146062,2008-02-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6146062,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6146062,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6146062,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120872131,1995-12-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120872131,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120872131,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120872131,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1096224061,1993-10-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1096224061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1096224061,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1096224061,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+3277326,1982-01-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+3277326,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+3277326,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+4939367,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4939367,1967-06-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+4939367,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+4939367,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+7792279,1952-06-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+7792279,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+7792279,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+7792279,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30972078,1976-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30972078,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30972078,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30972078,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834797,2018-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834797,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834797,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8192501,1976-07-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+8192501,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8192501,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1109001706,2008-08-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1109001706,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1109001706,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1109001706,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40377846,1966-09-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40377846,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40377846,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40377846,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120566560,2008-08-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120566560,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120566560,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6298599,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6298599,1970-08-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6298599,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6298599,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6298599,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123433667,2005-06-06 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123433667,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123433667,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123433667,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1003804731,1989-12-20 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1003804731,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1003804731,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1003804731,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1129006690,2016-04-04 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1129006690,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1129006690,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1204963622,2020-11-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1204963622,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1204963622,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1116664357,1990-04-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1116664357,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1116664357,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833488,2017-06-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833488,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833488,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832513,2016-11-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124832513,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832513,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834032,2018-01-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834032,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834032,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836587,2020-08-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124836587,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836587,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841723,2024-07-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841723,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841723,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+25201070,1956-09-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+25201070,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+25201070,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+25201070,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1060874845,2007-05-07 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1060874845,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1060874845,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029984374,2006-11-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1029984374,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029984374,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833762,2017-10-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833762,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833762,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121874010,2008-12-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121874010,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121874010,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123449204,2018-04-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123449204,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123449204,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1007236142,2000-01-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1007236142,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1007236142,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1007236142,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831819,2016-03-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831819,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831819,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1046427352,2005-05-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1046427352,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1046427352,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1046427352,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127394632,2018-08-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127394632,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127394632,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+5404095,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+5404095,1959-11-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+5404095,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+5404095,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+5404095,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1127386922,2009-07-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1127386922,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1127386922,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1085035183,1997-06-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1085035183,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1085035183,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1085035183,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1049900201,2017-02-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1049900201,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1049900201,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833584,2017-09-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124833584,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833584,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841725,2025-02-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124841725,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841725,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834884,2018-10-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124834884,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834884,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983090,1978-09-19 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30983090,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983090,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983090,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40392409,1971-01-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+40392409,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40392409,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40392409,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1067091808,1977-10-27 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1067091808,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1067091808,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+27600251,1979-01-09 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+27600251,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+27600251,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+27600251,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120868025,1991-02-03 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120868025,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120868025,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120868025,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6818327,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6818327,1994-03-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6818327,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6818327,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6818327,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30286037,1957-09-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30286037,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+30286037,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30286037,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121710682,2003-11-24 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121710682,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121710682,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1069774780,2021-10-18 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1069774780,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1069774780,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120391843,2021-04-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120391843,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120391843,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30002229,1952-04-16 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+30002229,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+30002229,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30002229,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1115190061,1993-04-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1115190061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1115190061,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1115190061,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6564180,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6564180,2001-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+6564180,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6564180,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6564180,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831432,2015-09-28 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124831432,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831432,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
