@@ -333,9 +333,9 @@ class ValidadorESE:
     def validar_peso_talla(self, fila, fecha_corte):
         """Validar peso y talla (columnas 29-32)"""
         fecha_peso_str = fila.iloc[29]
-        peso = fila.iloc[30]
+        peso = pd.to_numeric(fila.iloc[30], errors='coerce')
         fecha_talla_str = fila.iloc[31]
-        talla = fila.iloc[32]
+        talla = pd.to_numeric(fila.iloc[32], errors='coerce')
         fecha_nacimiento_str = fila.iloc[9]
         id_usuario = fila.iloc[4]
 

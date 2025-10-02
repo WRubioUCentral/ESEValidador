@@ -1,0 +1,351 @@
+usuario,dato_erroneo,codigo,explicacion
+5935627,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+4638957,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124831142,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124831142,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831142,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1122528909,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1122528909,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124829482,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124829482,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828146,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124828146,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1050782243,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1050782243,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+5094204,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1124828110,0,Error223,"Si el sexo es Femenino y la edad está entre 10 años hasta 59 años, debe registrar un valor diferente de 0-no aplica en Gestante."
+1124828110,0,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+4928370,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+28936800,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125991,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1125991,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+63525268,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1067813015,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982166,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+4987426,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+40432267,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1073326222,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+24552148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983695,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1090252148,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41255084,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121822767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+93365768,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+93365768,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8191268,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8191268,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1128625421,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1128625421,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1128625421,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6804221,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6804221,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6804221,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6804221,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21202777,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21202777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21202777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+21177978,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+21177978,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+21177978,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121833114,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121833114,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121833114,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30080115,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30080115,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30080115,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121943352,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121943352,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121943352,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40278135,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40278135,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40278135,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+41255041,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+41255041,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+41255041,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124823823,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124823823,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124823823,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1263102,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+1263102,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1263102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1263102,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40305723,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40305723,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40305723,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124823725,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124823725,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124823725,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121938442,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121938442,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121938442,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30342164,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+30342164,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30342164,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982006,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982006,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982006,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1069899209,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1069899209,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1069899209,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006943742,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1071888874,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124818883,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006945284,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1087486061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006873767,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124831904,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124820441,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40394580,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40394580,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40394580,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1193278417,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1193278417,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1193278417,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17330567,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+17330567,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17330567,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+65715886,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+65715886,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+65715886,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1043695147,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1043695147,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121909405,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1121909405,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121909405,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40278383,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40278383,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40278383,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40417839,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40417839,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40417839,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+28732886,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+28732886,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+28732886,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30982015,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30982015,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30982015,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40402737,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40402737,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40402737,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+29291187,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+29291187,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+29291187,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40419739,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40419739,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40419739,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983546,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983546,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983546,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23709891,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+23709891,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23709891,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30983370,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30983370,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30983370,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832779,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832779,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123809550,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123809550,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006945501,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006945501,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006945501,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833934,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124833934,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833934,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+86047234,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+86047234,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23724989,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+23724989,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23724989,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+65775070,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+65775070,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+65775070,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+47426777,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+47426777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+47426777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6635134,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+6635134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6635134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6443406,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6443406,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6443406,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6443406,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6442607,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6442607,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6442607,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6442607,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+32349291,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+32349291,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+32349291,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+39542316,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+39542316,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+39542316,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6168134,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6168134,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6168134,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6168134,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831267,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831267,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+52602262,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+52602262,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+52602262,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836277,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836277,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124822861,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124822861,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124822861,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124822223,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124822223,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124822223,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124839454,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124839454,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838852,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838852,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828777,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828777,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828777,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831214,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831214,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1091078027,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1091078027,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1091078027,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1056780979,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1056780979,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006943654,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006943654,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006943654,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120566515,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1120566515,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120566515,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124837474,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124837474,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+17340064,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+17340064,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1117522162,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1117522162,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1117522162,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1091078327,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1091078327,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834009,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834009,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121943842,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121943842,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006691131,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006691131,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006691131,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1112766250,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1112766250,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1112766250,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1123039287,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1123039287,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1123039287,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1106896736,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1106896736,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029962969,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029962969,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828104,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828104,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828104,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1043147609,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1043147609,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831181,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831181,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124828425,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124828425,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124828425,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+40395712,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+40395712,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+40395712,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124826158,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124826158,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124839657,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124839657,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832335,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832335,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+74795578,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+74795578,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+23840032,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+23840032,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+23840032,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8191035,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+8191035,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8191035,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124838155,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124838155,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834171,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834171,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124836374,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124836374,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006799192,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006799192,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006799192,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124830723,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124830723,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124830723,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841167,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841167,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30972051,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+30972051,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30972051,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1125550301,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1125550301,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1125550301,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006944518,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1006944518,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1006944518,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+12254334,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+12254334,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+12254334,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124825706,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1124825706,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124825706,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124835102,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124835102,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834419,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834419,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+455718,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+455718,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+6146062,PT,Error003,"Tipo de identificación debe ser uno de: ['RC', 'TI', 'CE', 'CC', 'PA', 'MS', 'AS', 'NV', 'PE', 'SC', 'DE']"
+6146062,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+6146062,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+6146062,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+3277326,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+3277326,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+8192501,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+8192501,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124833488,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124833488,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124832513,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124832513,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834032,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834032,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+25201070,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+25201070,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+25201070,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1060874845,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1060874845,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1029984374,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1029984374,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121874010,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121874010,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831819,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831819,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1085035183,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1085035183,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1085035183,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1049900201,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1049900201,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124841725,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124841725,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124834884,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124834884,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+30286037,0,Error227,El valor del Resultado prueba mini-mental state registrado no es acorde al rango de edad 
+30286037,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+30286037,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1121710682,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121710682,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1115190061,2,Error244,"Si no es gestante, las variables relacionadas con la gestación deben registrar el valor equivalente a 'No aplica'"
+1115190061,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1115190061,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1124831432,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124831432,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento

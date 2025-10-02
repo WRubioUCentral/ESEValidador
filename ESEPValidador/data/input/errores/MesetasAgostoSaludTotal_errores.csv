@@ -1,0 +1,37 @@
+usuario,dato_erroneo,codigo,explicacion
+1124242431,1982-06-01 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1124242431,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1124242431,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+3274586,1967-01-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119948838,1995-06-08 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119948838,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
+1119948838,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1119948838,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1003558507,2001-05-26 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1019016419,1987-05-14 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1019016419,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1019016419,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1006658757,2001-10-02 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1123144325,2021-05-12 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1012365718,2008-05-31 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119947038,2006-05-23 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121834931,1987-06-21 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121834931,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121834931,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1119947201,2001-12-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1023369192,2005-07-11 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1023369192,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1023369192,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1104706008,1983-08-15 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121882790,2009-10-30 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119950361,2021-07-05 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1119947703,2008-06-29 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121875249,1991-03-22 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1121875249,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
+1121875249,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1121875249,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+1120355744,1987-04-17 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
+1120355744,21,Error507,"Riesgo no evaluado en Sintomático respiratorio, registre riesgo no evaluado en resultado baciloscopia y sin dato en fecha baciloscopia"
+1120355744,1800-01-01,Error171,Fecha peso es menor a la fecha de nacimiento
+1120355744,1800-01-01,Error172,Fecha talla es menor a la fecha de nacimiento
+2660625,1966-01-13 00:00:00,Error421,contenido en el campo FechaNacimiento  no válido
