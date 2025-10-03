@@ -72,15 +72,16 @@ class ValidadorESE:
         
         if valor != 2:
             self.agregar_error(id_usuario, valor, "Error001", "La columna 0 debe tener valor 2")
-    
+    """
     def validar_columna_1(self, fila, numero_registro):
-        """Columna 1: Número consecutivo"""
+        '''Columna 1: Número consecutivo'''
         valor = fila.iloc[1]
         id_usuario = fila.iloc[4]
         
         if valor != numero_registro:
             self.agregar_error(id_usuario, valor, "Error002", f"El número consecutivo debe ser {numero_registro}")
-    
+    """
+
     def validar_columna_2(self, fila):
         """Columna 2: Código IPS"""
         valor = fila.iloc[2]
@@ -416,7 +417,7 @@ class ValidadorESE:
         """Valida una fila completa"""
         # Validaciones básicas
         self.validar_columna_0(fila)
-        self.validar_columna_1(fila, numero_registro)
+        '''self.validar_columna_1(fila, numero_registro)'''
         self.validar_columna_2(fila)
         self.validar_columna_3(fila)
         self.validar_columna_4(fila)

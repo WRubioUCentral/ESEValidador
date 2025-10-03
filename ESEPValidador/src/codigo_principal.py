@@ -19,7 +19,8 @@ def procesar_documentos():
     for archivo in os.listdir(CARPETA_BASE):
         if archivo.endswith(".xlsx"):
             ruta = os.path.join(CARPETA_BASE, archivo)
-            df = pd.read_excel(ruta)
+            df = pd.read_excel(ruta, header=None)
+            df = df.iloc[1:]  # Omitir la primera fila que contiene los títulos de las columnas
 
             fecha_corte = pd.Timestamp("2025-08-31")
             

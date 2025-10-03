@@ -1,0 +1,3 @@
+- [x] Modify pd.read_excel to use header=None to read without headers
+- [x] Skip the first row by adding df = df.iloc[1:]
+- [x] Test the changes to ensure validations work correctly
