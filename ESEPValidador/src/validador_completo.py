@@ -1,4 +1,19 @@
 # validador_completo.py
+"""
+Validador completo para archivos ESE según Resolución 202 de 2021
+Ministerio de Salud y Protección Social
+
+Este módulo implementa las validaciones de calidad de datos y coherencia
+establecidas en la Resolución 202 de 2021 para la Base de Datos Única de Afiliados
+y el Sistema de Información de Precios de Medicamentos (SISMED).
+
+Las validaciones incluyen:
+- Validación de estructura de datos
+- Validación de rangos permitidos
+- Validación de coherencia entre campos
+- Validación de fechas y comodines
+- Validación de datos según edad y sexo
+"""
 import pandas as pd
 import re
 from datetime import datetime, timedelta
@@ -6,7 +21,13 @@ from errores import ERRORES
 from config import TIPOS_IDENTIFICACION
 
 class ValidadorESE:
-    """Validador completo para archivos ESE según especificaciones"""
+    """
+    Validador completo para archivos ESE según Resolución 202 de 2021
+
+    Implementa todas las validaciones de calidad de datos establecidas
+    en la normativa vigente para garantizar la coherencia e integridad
+    de la información de salud.
+    """
     
     def __init__(self):
         self.errores = []

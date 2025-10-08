@@ -1,5 +1,5 @@
 """
-Configuración del proyecto ESE
+Configuración del proyecto ESE - Validador según Resolución 202 de 2021
 """
 
 import os
@@ -9,11 +9,15 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).parent.parent
 SRC_DIR = PROJECT_ROOT / "src"
 DATA_DIR = PROJECT_ROOT / "data"
-INPUT_DIR = DATA_DIR / "input"
-OUTPUT_DIR = DATA_DIR / "output"
+INPUT_DIR = DATA_DIR / "input"  # Carpeta donde se cargan los documentos a validar
+OUTPUT_DIR = DATA_DIR / "output"  # Carpeta donde se generan los reportes de errores
 REFERENCE_DIR = DATA_DIR / "reference"
 DOCS_DIR = PROJECT_ROOT / "docs"
 TESTS_DIR = PROJECT_ROOT / "tests"
+
+# Crear carpetas si no existen
+INPUT_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Configuración de validación
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"

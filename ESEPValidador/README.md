@@ -1,84 +1,184 @@
-# Proyecto ESE - Validador de Eventos de Salud Específicos
+# Validador ESE - Resolución 202 de 2021
 
 ## Descripción
 
-Sistema de validación completo para archivos ESE (Eventos de Salud Específicos) que implementa todas las reglas de validación según las especificaciones técnicas oficiales.
+Sistema de validación completo para archivos ESE (Eventos de Salud Específicos) que implementa todas las validaciones de calidad de datos e incoherencias según los **lineamientos técnicos de la Resolución 202 de 2021** del Ministerio de Salud y Protección Social.
 
-## Estructura del Proyecto
+El validador se enfoca en la **calidad de los datos** y la **detección de incoherencias** para garantizar la integridad de la información de salud.
+
+## 🎯 Características Principales
+
+- ✅ **Validación según Resolución 202 de 2021**
+- ✅ **Generación directa de reportes en Excel** (sin paso intermedio por CSV)
+- ✅ **Detección de errores e incoherencias de datos**
+- ✅ **Tabla de distribución de frecuencia de errores**
+- ✅ **Validaciones cruzadas entre campos**
+- ✅ **Validación de formatos, rangos y coherencia**
+- ✅ **+200 tipos de errores documentados**
+
+## 📁 Estructura del Proyecto
 
 ```
-ProyectoESE/
-├── src/                    # Código fuente
-│   ├── validador_completo.py    # Validador principal
-│   ├── errores.py              # Códigos de error
-│   ├── validaciones.py         # Validaciones originales
-│   ├── validaciones_nuevas.py  # Validaciones adicionales
-│   ├── codigo_principal.py     # Script principal
-│   └── generador_csv.py        # Generador de datos de prueba
-├── tests/                  # Pruebas y demos
-│   └── demo_validador.py       # Script de demostración
-├── docs/                   # Documentación
-│   ├── DOCUMENTACION_VALIDACIONES.md  # Documentación completa
-│   └── PROMPT.txt              # Prompts del proyecto
-├── data/                   # Datos
-│   ├── input/              # Archivos de entrada
-│   ├── output/             # Archivos de salida
-│   └── reference/          # Archivos de referencia
-├── config/                 # Configuraciones
-├── documentos/             # Documentos originales (temporal)
-├── documentosbase/         # Documentos base (temporal)
-└── errores/                # Carpeta de errores (temporal)
+ESEPValidador/
+├── src/                          # Código fuente
+│   ├── validador_completo.py     # Validador principal (Resolución 202/2021)
+│   ├── errores.py                # Catálogo completo de errores
+│   ├── codigo_principal.py       # Script principal de ejecución
+│   └── generador_excel.py        # Generador de reportes Excel
+├── data/                         # Datos
+│   ├── input/                    # ⬅️ COLOCA AQUÍ tus archivos Excel a validar
+│   └── output/                   # ⬅️ REPORTES generados automáticamente
+├── config/                       # Configuraciones
+│   └── config.py                 # Configuración de rutas y parámetros
+├── tests/                        # Pruebas
+├── docs/                         # Documentación
+└── requirements.txt              # Dependencias del proyecto
 ```
 
-## Instalación
+## 🚀 Instalación
 
-1. Clona el repositorio
-2. Instala las dependencias:
+1. **Clona o descarga el repositorio**
+
+2. **Instala las dependencias:**
    ```bash
-   pip install pandas openpyxl
+   pip install -r requirements.txt
    ```
 
-## Uso Básico
+   O manualmente:
+   ```bash
+   pip install pandas openpyxl numpy
+   ```
 
-```python
-from src.validador_completo import validar_archivo_ese
-import pandas as pd
+## 📖 Uso
 
-# Cargar datos
-df = pd.read_xlsx('data/input/202 AGOSTO GENERAL.xlsx')
-fecha_corte = '2025-08-31'
+### 1. Coloca tus archivos a validar
 
-# Validar
-resultados = validar_archivo_ese(df, fecha_corte)
-
-# Revisar resultados
-print(f"Errores: {resultados['total_errores']}")
-print(f"Warnings: {resultados['total_warnings']}")
+Copia los archivos Excel (`.xlsx` o `.xls`) que deseas validar en la carpeta:
+```
+data/input/
 ```
 
-## Características
+### 2. Ejecuta el validador
 
-- ✅ Validación completa de todas las columnas ESE
-- ✅ Más de 50 tipos de validaciones implementadas
-- ✅ Manejo de errores y warnings
-- ✅ Validaciones cruzadas entre columnas
-- ✅ Cálculo automático de edades
-- ✅ Validación de formatos de fecha
-- ✅ Validación de rangos por edad
-- ✅ Reportes detallados de errores
+```bash
+python src/codigo_principal.py
+```
 
-## Documentación
+### 3. Revisa los reportes generados
 
-Para documentación completa, consulta [docs/DOCUMENTACION_VALIDACIONES.md](docs/DOCUMENTACION_VALIDACIONES.md)
+Los reportes se generan automáticamente en:
+```
+data/output/
+```
 
-## Contribuir
+Cada reporte incluye **4 hojas Excel**:
+- **Errores**: Listado detallado de todos los errores encontrados
+- **Distribución de Errores**: Tabla de frecuencia y porcentaje por tipo de error
+- **Advertencias**: Warnings detectados
+- **Resumen**: Resumen ejecutivo de la validación
 
-1. Fork el proyecto
-2. Crea una rama para tu feature
-3. Commit tus cambios
-4. Push a la rama
-5. Abre un Pull Request
+## 📊 Ejemplo de Reporte
 
-## Licencia
+```
+nombre_archivo_reporte_errores_20250108_153045.xlsx
 
-Este proyecto está bajo la Licencia MIT.
+📋 Hoja "Errores":
+Código Error | ID Usuario | Dato Erróneo | Explicación
+Error220    | 123456789  | ABC@123      | Número de identificación con caracteres no permitidos
+Error676    | 987654321  | 12345678901  | La longitud del número de identificación no corresponde...
+
+📊 Hoja "Distribución de Errores":
+Código Error | Descripción                              | Frecuencia | Porcentaje
+Error220    | Número de identificación con caracteres... | 145        | 23.5%
+Error676    | La longitud del número de identificación... | 89         | 14.4%
+```
+
+## 🔍 Validaciones Implementadas
+
+El validador implementa las siguientes categorías de validaciones según la Resolución 202 de 2021:
+
+### ✅ Validaciones de Estructura
+- Tipo de registro
+- Código IPS
+- Tipo y número de identificación
+- Caracteres permitidos
+
+### ✅ Validaciones de Fechas
+- Formato de fechas (AAAA-MM-DD)
+- Coherencia con fecha de corte
+- Coherencia con fecha de nacimiento
+- Validación de comodines
+
+### ✅ Validaciones por Edad y Sexo
+- Gestación (solo mujeres 10-59 años)
+- Tacto rectal (solo hombres ≥40 años)
+- Mamografía (solo mujeres ≥35 años)
+- Mini-mental (≥60 años)
+
+### ✅ Validaciones de Rangos
+- Peso y talla por grupos de edad
+- Rangos de laboratorios
+- Valores permitidos por campo
+
+### ✅ Validaciones Cruzadas
+- Coherencia entre gestación y variables relacionadas
+- Coherencia entre sintomático respiratorio y baciloscopia
+- Coherencia entre resultados y fechas de toma
+
+## 📝 Catálogo de Errores
+
+El sistema implementa **más de 200 tipos de errores** documentados en `src/errores.py`:
+
+- **Error001-Error099**: Errores de estructura y formato
+- **Error100-Error199**: Errores de fechas
+- **Error200-Error299**: Errores de coherencia
+- **Error300-Error399**: Errores de validaciones cruzadas
+- **Error400-Error499**: Errores de formato de campos
+- **Error500-Error599**: Errores de valores permitidos
+- **Error600-Error699**: Errores de coherencia avanzada
+
+## ⚙️ Configuración
+
+Puedes ajustar la configuración en `config/config.py`:
+
+```python
+# Rutas
+INPUT_DIR = DATA_DIR / "input"    # Carpeta de entrada
+OUTPUT_DIR = DATA_DIR / "output"  # Carpeta de salida
+
+# Fecha de corte (modifícala en src/codigo_principal.py)
+fecha_corte = pd.Timestamp("2025-08-31")
+```
+
+## 🛠️ Desarrollo
+
+### Estructura del Código
+
+- **validador_completo.py**: Clase `ValidadorESE` con todas las validaciones
+- **errores.py**: Diccionario con códigos y descripciones de errores
+- **codigo_principal.py**: Script de ejecución principal
+- **generador_excel.py**: Generador de reportes en Excel
+
+### Agregar Nuevas Validaciones
+
+1. Agrega el código de error en `src/errores.py`
+2. Implementa la validación en `src/validador_completo.py`
+3. Documenta la validación
+
+## 📋 Notas Importantes
+
+- ⚠️ **No se requiere** la carpeta `errores/` - ha sido eliminada
+- ✅ Los reportes se generan **directamente en Excel**
+- ✅ La carpeta `input/` es la **única fuente** de archivos a validar
+- ✅ La carpeta `output/` contiene **todos los reportes** generados
+
+## 🤝 Soporte
+
+Para reportar problemas o solicitar nuevas validaciones, por favor documenta:
+1. El archivo que genera el error
+2. El error específico encontrado
+3. El código de error (si aplica)
+
+## 📄 Licencia
+
+Este proyecto está desarrollado para cumplir con la normativa de la Resolución 202 de 2021 del Ministerio de Salud y Protección Social de Colombia.
