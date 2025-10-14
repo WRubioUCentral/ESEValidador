@@ -371,11 +371,11 @@ class ValidadorESE:
             # Error121: Fecha peso mayor a fecha de corte
             if fecha_peso > fecha_corte:
                 self.agregar_error(id_usuario, fecha_peso_str, "Error121", ERRORES["Error121"])
-            
+            """
             # Error171: Fecha peso menor a fecha de nacimiento
             if pd.notna(fecha_nacimiento) and fecha_peso < fecha_nacimiento:
                 self.agregar_error(id_usuario, fecha_peso_str, "Error171", ERRORES["Error171"])
-            
+            """
             # Warning674: Comodín 1800-01-01
             if str(fecha_peso_str) == '1800-01-01':
                 self.agregar_warning(id_usuario, fecha_peso_str, "Warning674", ERRORES["Warning674"])
@@ -405,11 +405,11 @@ class ValidadorESE:
             # Error122: Fecha talla mayor a fecha de corte
             if fecha_talla > fecha_corte:
                 self.agregar_error(id_usuario, fecha_talla_str, "Error122", ERRORES["Error122"])
-            
+            """
             # Error172: Fecha talla menor a fecha de nacimiento
             if pd.notna(fecha_nacimiento) and fecha_talla < fecha_nacimiento:
                 self.agregar_error(id_usuario, fecha_talla_str, "Error172", ERRORES["Error172"])
-            
+            """
             # Warning675: Comodín 1800-01-01
             if str(fecha_talla_str) == '1800-01-01':
                 self.agregar_warning(id_usuario, fecha_talla_str, "Warning675", ERRORES["Warning675"])

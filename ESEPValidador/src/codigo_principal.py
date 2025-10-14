@@ -42,7 +42,7 @@ def procesar_documentos():
                 df = pd.read_excel(ruta, header=None)
                 df = df.iloc[1:]  # Omitir la primera fila que contiene los títulos de las columnas
 
-                fecha_corte = pd.Timestamp("2025-08-31")
+                fecha_corte = pd.Timestamp("2025-09-30")
 
                 # Aplicar validaciones según Resolución 202 de 2021
                 resultado_validacion = validar_archivo_ese(df, fecha_corte)
