@@ -10,14 +10,18 @@ from typing import Dict, List, Any
 class CargadorRIPS:
     """Clase para cargar y procesar archivos RIPS en formato JSON"""
 
-    def __init__(self, ruta_cie10: str = "config/cie10_codigos.json"):
+    def __init__(self, ruta_cie10: str = "config/cie10_codigos.json", ruta_cups: str = "config/cups_codigos.json", ruta_maestros: str = "config/codigos_maestros.json"):
         """
         Inicializa el cargador RIPS
 
         Args:
             ruta_cie10: Ruta al archivo JSON con códigos CIE-10
+            ruta_cups: Ruta al archivo JSON con códigos CUPS
+            ruta_maestros: Ruta al archivo JSON con códigos maestros
         """
         self.codigos_cie10 = self._cargar_cie10(ruta_cie10)
+        self.codigos_cups = self._cargar_cups(ruta_cups)
+        self.codigos_maestros = self._cargar_maestros(ruta_maestros)
 
     def _cargar_cie10(self, ruta: str) -> Dict[str, Dict[str, str]]:
         """Carga el diccionario de códigos CIE-10"""
@@ -27,6 +31,24 @@ class CargadorRIPS:
         except FileNotFoundError:
             print(f"Advertencia: No se encontró el archivo {ruta}")
             return {}
+
+    def _cargar_cups(self, ruta: str) -> Dict[str, str]:
+        """Carga el diccionario de códigos CUPS"""
+        try:
+            with open(ruta, 'r', encoding='utf-8-sig') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print(f"Advertencia: No se encontró el archivo {ruta}")
+            return {}
+
+    def _cargar_maestros(self, ruta: str) -> Dict[str, Dict[str, str]]:
+        """Carga el diccionario de códigos maestros"""
+        try:
+            with open(ruta, 'r', encoding='utf-8-sig') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print(f"Advertencia: No se encontró el archivo {ruta}")
+            return {"prestadores": {}, "municipios": {}, "modalidades": {}, "paises": {}}
 
     def cargar_json(self, ruta_archivo: str) -> Dict[str, Any]:
         """
@@ -62,6 +84,44 @@ class CargadorRIPS:
             "nombre": info.get("nombre", "Código no encontrado"),
             "descripcion": info.get("descripcion", "")
         }
+
+    def obtener_nombre_cups(self, codigo: str) -> str:
+        """
+        Obtiene el nombre de un procedimiento CUPS
+
+        Args:
+            codigo: Código CUPS
+
+        Returns:
+            Nombre del procedimiento
+        """
+        if not codigo:
+            return ""
+        return self.codigos_cups.get(codigo, f"PROCEDIMIENTO {codigo}")
+
+    def obtener_nombre_municipio(self, codigo: str) -> str:
+        """Obtiene el nombre de un municipio"""
+        if not codigo:
+            return ""
+        return self.codigos_maestros.get("municipios", {}).get(codigo, f"MUNICIPIO {codigo}")
+
+    def obtener_nombre_prestador(self, codigo: str) -> str:
+        """Obtiene el nombre de un prestador"""
+        if not codigo:
+            return ""
+        return self.codigos_maestros.get("prestadores", {}).get(codigo, f"PRESTADOR {codigo}")
+
+    def obtener_nombre_modalidad(self, codigo: str) -> str:
+        """Obtiene el nombre de una modalidad"""
+        if not codigo:
+            return ""
+        return self.codigos_maestros.get("modalidades", {}).get(codigo, f"MODALIDAD {codigo}")
+
+    def obtener_nombre_pais(self, codigo: str) -> str:
+        """Obtiene el nombre de un país"""
+        if not codigo:
+            return ""
+        return self.codigos_maestros.get("paises", {}).get(codigo, f"PAÍS {codigo}")
 
     def calcular_edad(self, fecha_nacimiento: str, fecha_referencia: str = None) -> int:
         """

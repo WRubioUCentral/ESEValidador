@@ -448,6 +448,10 @@ class AnalizadorRIPS:
                 gestante_data = {
                     "documento": usuario.get("numDocumentoIdentificacion"),
                     "tipo_documento": usuario.get("tipoDocumentoIdentificacion"),
+                    "primerNombre": usuario.get("primerNombre", ""),
+                    "segundoNombre": usuario.get("segundoNombre", ""),
+                    "primerApellido": usuario.get("primerApellido", ""),
+                    "segundoApellido": usuario.get("segundoApellido", ""),
                     "edad": edad,
                     "municipio": usuario.get("codMunicipioResidencia"),
                     "zona": usuario.get("codZonaTerritorialResidencia"),
@@ -876,6 +880,118 @@ class AnalizadorRIPS:
             "distribucion_prestadores": dict(prestadores)
         }
 
+    def analisis_poblacion_extranjera(self, datos: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Análisis profundo de población extranjera
+
+        Args:
+            datos: Datos RIPS
+
+        Returns:
+            Diccionario con análisis de población extranjera
+        """
+        usuarios = self.cargador.extraer_usuarios(datos)
+
+        total_extranjeros = 0
+        distribucion_paises = Counter()
+        distribucion_sexo_extranjeros = Counter()
+        distribucion_edad_extranjeros = {"0-17": 0, "18-29": 0, "30-59": 0, "60+": 0}
+        municipios_extranjeros = Counter()
+        diagnosticos_extranjeros = Counter()
+        servicios_extranjeros = {"consultas": 0, "procedimientos": 0}
+
+        extranjeros_detalle = []
+
+        for usuario in usuarios:
+            cod_pais = usuario.get("codPaisResidencia", "170")
+
+            # 170 es Colombia
+            if cod_pais != "170":
+                total_extranjeros += 1
+                distribucion_paises[cod_pais] += 1
+
+                # Datos demográficos
+                sexo = usuario.get("codSexo", "")
+                distribucion_sexo_extranjeros[sexo] += 1
+
+                # Edad
+                fecha_nac = usuario.get("fechaNacimiento", "")
+                edad = self.cargador.calcular_edad(fecha_nac)
+                if edad is not None:
+                    if edad < 18:
+                        distribucion_edad_extranjeros["0-17"] += 1
+                    elif edad < 30:
+                        distribucion_edad_extranjeros["18-29"] += 1
+                    elif edad < 60:
+                        distribucion_edad_extranjeros["30-59"] += 1
+                    else:
+                        distribucion_edad_extranjeros["60+"] += 1
+
+                # Municipio
+                municipio = usuario.get("codMunicipioResidencia", "")
+                if municipio:
+                    municipios_extranjeros[municipio] += 1
+
+                # Servicios y diagnósticos
+                consultas = self.cargador.extraer_consultas(usuario)
+                procedimientos = self.cargador.extraer_procedimientos(usuario)
+
+                servicios_extranjeros["consultas"] += len(consultas)
+                servicios_extranjeros["procedimientos"] += len(procedimientos)
+
+                for consulta in consultas:
+                    dx = consulta.get("codDiagnosticoPrincipal", "")
+                    if dx:
+                        diagnosticos_extranjeros[dx] += 1
+
+                # Detalle del extranjero
+                nombre_completo = f"{usuario.get('primerNombre', '')} {usuario.get('segundoNombre', '')} {usuario.get('primerApellido', '')} {usuario.get('segundoApellido', '')}".strip()
+                extranjeros_detalle.append({
+                    "tipo_doc": usuario.get("tipoDocumentoIdentificacion", ""),
+                    "num_doc": usuario.get("numDocumentoIdentificacion", ""),
+                    "nombre": nombre_completo,
+                    "pais": cod_pais,
+                    "sexo": sexo,
+                    "edad": edad,
+                    "municipio": municipio,
+                    "total_servicios": len(consultas) + len(procedimientos)
+                })
+
+        # Preparar top países
+        top_paises = []
+        for cod_pais, cantidad in distribucion_paises.most_common(10):
+            nombre_pais = self.cargador.obtener_nombre_pais(cod_pais)
+            top_paises.append({
+                "codigo_pais": cod_pais,
+                "nombre_pais": nombre_pais,
+                "cantidad": cantidad,
+                "porcentaje": (cantidad / max(total_extranjeros, 1) * 100)
+            })
+
+        # Top diagnósticos en extranjeros
+        top_diagnosticos_extranjeros = []
+        for cod_dx, cantidad in diagnosticos_extranjeros.most_common(10):
+            info_dx = self.cargador.obtener_info_diagnostico(cod_dx)
+            top_diagnosticos_extranjeros.append({
+                "codigo": cod_dx,
+                "nombre": info_dx.get("nombre", ""),
+                "cantidad": cantidad
+            })
+
+        return {
+            "total_extranjeros": total_extranjeros,
+            "porcentaje_extranjeros": (total_extranjeros / len(usuarios) * 100) if usuarios else 0,
+            "distribucion_paises": dict(distribucion_paises),
+            "top_10_paises": top_paises,
+            "distribucion_sexo": dict(distribucion_sexo_extranjeros),
+            "distribucion_edad": distribucion_edad_extranjeros,
+            "municipios_con_extranjeros": dict(municipios_extranjeros.most_common(10)),
+            "total_consultas_extranjeros": servicios_extranjeros["consultas"],
+            "total_procedimientos_extranjeros": servicios_extranjeros["procedimientos"],
+            "top_diagnosticos_extranjeros": top_diagnosticos_extranjeros,
+            "detalle_extranjeros": extranjeros_detalle
+        }
+
     def generar_resumen_completo(self, datos: Dict[str, Any]) -> Dict[str, Any]:
         """
         Genera un resumen completo de todos los análisis
@@ -902,5 +1018,6 @@ class AnalizadorRIPS:
             "analisis_tipo_usuario": self.analisis_tipo_usuario(datos),
             "analisis_incapacidades": self.analisis_incapacidades(datos),
             "analisis_modalidad_diagnostico": self.analisis_modalidad_diagnostico(datos),
-            "analisis_prestadores": self.analisis_prestadores(datos)
+            "analisis_prestadores": self.analisis_prestadores(datos),
+            "analisis_poblacion_extranjera": self.analisis_poblacion_extranjera(datos)
         }

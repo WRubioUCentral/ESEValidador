@@ -21,16 +21,18 @@ from catalogos_rips import FINALIDADES_TECNOLOGIA_SALUD, CAUSAS_ATENCION
 class GeneradorReportes:
     """Clase para generar reportes de análisis RIPS"""
 
-    def __init__(self, directorio_salida: str = "output", nombre_archivo_json: str = None):
+    def __init__(self, directorio_salida: str = "output", nombre_archivo_json: str = None, cargador=None):
         """
         Inicializa el generador de reportes
 
         Args:
             directorio_salida: Directorio donde se guardarán los reportes
             nombre_archivo_json: Nombre del archivo JSON procesado (para crear subcarpeta)
+            cargador: Instancia de CargadorRIPS para acceso a códigos maestros
         """
         self.directorio_salida = Path(directorio_salida)
         self.directorio_salida.mkdir(exist_ok=True)
+        self.cargador = cargador
 
         # Crear subcarpeta específica para este reporte si se proporciona nombre de archivo
         if nombre_archivo_json:
@@ -539,8 +541,6 @@ class GeneradorReportes:
             ["Total de Gestantes", gestantes_data.get('total_gestantes', 0)],
             ["Edad Promedio", f"{gestantes_data.get('edad_promedio', 0)} años"],
             ["Gestantes Adolescentes", gestantes_data.get('gestantes_adolescentes', 0)],
-            ["Gestantes de Alto Riesgo", f"{gestantes_data.get('gestantes_alto_riesgo', 0)} ({gestantes_data.get('porcentaje_alto_riesgo', 0):.1f}%)"],
-            ["Gestantes con Complicaciones", f"{gestantes_data.get('gestantes_con_complicaciones', 0)} ({gestantes_data.get('porcentaje_complicaciones', 0):.1f}%)"],
             ["Cobertura de Controles Prenatales", f"{gestantes_data.get('cobertura_controles_prenatales', 0):.1f}%"]
         ]
 
@@ -550,6 +550,97 @@ class GeneradorReportes:
             ws[f'A{fila}'].font = Font(bold=True)
             ws[f'B{fila}'] = valor
             fila += 1
+
+        # GESTANTES DE ALTO RIESGO - Detalle con documento y municipio
+        fila += 2
+        ws[f'A{fila}'] = "GESTANTES DE ALTO RIESGO"
+        ws[f'A{fila}'].font = Font(bold=True, size=12, color="FFFFFF")
+        ws[f'A{fila}'].fill = PatternFill(start_color="FF5722", end_color="FF5722", fill_type="solid")
+        ws.merge_cells(f'A{fila}:F{fila}')
+        fila += 1
+
+        # Resumen de alto riesgo
+        total_alto_riesgo = gestantes_data.get('gestantes_alto_riesgo', 0)
+        porcentaje_alto_riesgo = gestantes_data.get('porcentaje_alto_riesgo', 0)
+        ws[f'A{fila}'] = "Total:"
+        ws[f'A{fila}'].font = Font(bold=True)
+        ws[f'B{fila}'] = f"{total_alto_riesgo} ({porcentaje_alto_riesgo:.1f}%)"
+        fila += 1
+
+        # Encabezados para gestantes de alto riesgo
+        encabezados_riesgo = ["Tipo Doc", "Número Documento", "Nombre Completo", "Edad", "Código Municipio", "Municipio"]
+        for col, encabezado in enumerate(encabezados_riesgo, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        # Detalle de gestantes de alto riesgo
+        gestantes_detalle = gestantes_data.get("gestantes_detalle", [])
+        for gestante in gestantes_detalle:
+            if gestante.get("tiene_alto_riesgo", False):
+                tipo_doc = gestante.get("tipo_documento", "")
+                num_doc = gestante.get("documento", "")
+                edad = gestante.get("edad", "")
+                cod_municipio = gestante.get("municipio", "")
+                nombre_municipio = self.cargador.obtener_nombre_municipio(cod_municipio)
+
+                # Obtener nombre completo del usuario desde datos RIPS
+                nombre_completo = f"{gestante.get('primerNombre', '')} {gestante.get('segundoNombre', '')} {gestante.get('primerApellido', '')} {gestante.get('segundoApellido', '')}".strip()
+                if not nombre_completo:
+                    nombre_completo = "N/A"
+
+                ws.cell(row=fila, column=1, value=tipo_doc)
+                ws.cell(row=fila, column=2, value=num_doc)
+                ws.cell(row=fila, column=3, value=nombre_completo)
+                ws.cell(row=fila, column=4, value=edad)
+                ws.cell(row=fila, column=5, value=cod_municipio)
+                ws.cell(row=fila, column=6, value=nombre_municipio)
+                fila += 1
+
+        # GESTANTES CON COMPLICACIONES - Detalle con documento y municipio
+        fila += 2
+        ws[f'A{fila}'] = "GESTANTES CON COMPLICACIONES"
+        ws[f'A{fila}'].font = Font(bold=True, size=12, color="FFFFFF")
+        ws[f'A{fila}'].fill = PatternFill(start_color="D32F2F", end_color="D32F2F", fill_type="solid")
+        ws.merge_cells(f'A{fila}:F{fila}')
+        fila += 1
+
+        # Resumen de complicaciones
+        total_complicaciones = gestantes_data.get('gestantes_con_complicaciones', 0)
+        porcentaje_complicaciones = gestantes_data.get('porcentaje_complicaciones', 0)
+        ws[f'A{fila}'] = "Total:"
+        ws[f'A{fila}'].font = Font(bold=True)
+        ws[f'B{fila}'] = f"{total_complicaciones} ({porcentaje_complicaciones:.1f}%)"
+        fila += 1
+
+        # Encabezados para gestantes con complicaciones
+        encabezados_complicaciones = ["Tipo Doc", "Número Documento", "Nombre Completo", "Edad", "Código Municipio", "Municipio"]
+        for col, encabezado in enumerate(encabezados_complicaciones, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        # Detalle de gestantes con complicaciones
+        for gestante in gestantes_detalle:
+            if gestante.get("tiene_complicaciones", False):
+                tipo_doc = gestante.get("tipo_documento", "")
+                num_doc = gestante.get("documento", "")
+                edad = gestante.get("edad", "")
+                cod_municipio = gestante.get("municipio", "")
+                nombre_municipio = self.cargador.obtener_nombre_municipio(cod_municipio)
+
+                # Obtener nombre completo del usuario desde datos RIPS
+                nombre_completo = f"{gestante.get('primerNombre', '')} {gestante.get('segundoNombre', '')} {gestante.get('primerApellido', '')} {gestante.get('segundoApellido', '')}".strip()
+                if not nombre_completo:
+                    nombre_completo = "N/A"
+
+                ws.cell(row=fila, column=1, value=tipo_doc)
+                ws.cell(row=fila, column=2, value=num_doc)
+                ws.cell(row=fila, column=3, value=nombre_completo)
+                ws.cell(row=fila, column=4, value=edad)
+                ws.cell(row=fila, column=5, value=cod_municipio)
+                ws.cell(row=fila, column=6, value=nombre_municipio)
+                fila += 1
 
         # Distribución de Controles Prenatales
         fila += 2
@@ -987,13 +1078,13 @@ class GeneradorReportes:
             ws.merge_cells(f'A{fila}:E{fila}')
             fila += 1
 
-            encabezados = ["Nivel", "Tipo", "Mensaje", "Recomendación", "Acción Requerida"]
+            encabezados = ["Nivel", "Tipo", "Mensaje", "Recomendación", "Usuarios Afectados"]
             for col, encabezado in enumerate(encabezados, start=1):
                 cell = ws.cell(row=fila, column=col, value=encabezado)
                 self._aplicar_estilo_encabezado(cell)
             fila += 1
 
-            colores_nivel = {"ALTA": "C00000", "MEDIA": "FFC000", "BAJA": "92D050"}
+            colores_nivel = {"ALTA": "C00000", "MEDIA": "FFC000", "BAJA": "92D050", "CRÍTICA": "8B0000"}
 
             for alerta in alertas:
                 nivel = alerta.get("nivel", "MEDIA")
@@ -1007,8 +1098,52 @@ class GeneradorReportes:
                 ws.cell(row=fila, column=2, value=alerta.get("tipo", ""))
                 ws.cell(row=fila, column=3, value=alerta.get("mensaje", ""))
                 ws.cell(row=fila, column=4, value=alerta.get("recomendacion", ""))
-                ws.cell(row=fila, column=5, value=alerta.get("accion_requerida", ""))
+
+                # Mostrar cantidad de usuarios afectados
+                usuarios_afectados = alerta.get("usuarios_afectados", [])
+                ws.cell(row=fila, column=5, value=len(usuarios_afectados) if usuarios_afectados else 0)
                 fila += 1
+
+                # Si hay usuarios afectados, mostrar su detalle
+                if usuarios_afectados and len(usuarios_afectados) > 0:
+                    fila += 1
+                    ws[f'A{fila}'] = "Detalle de Usuarios Afectados"
+                    ws[f'A{fila}'].font = Font(bold=True, size=10, italic=True)
+                    ws.merge_cells(f'A{fila}:F{fila}')
+                    fila += 1
+
+                    # Encabezados de usuarios
+                    encabezados_usuarios = ["Tipo Doc", "Documento", "Nombre Completo", "Código Municipio", "Municipio", "Observaciones"]
+                    for col, encabezado in enumerate(encabezados_usuarios, start=1):
+                        cell = ws.cell(row=fila, column=col, value=encabezado)
+                        cell.font = Font(bold=True, size=9)
+                        cell.fill = PatternFill(start_color="E0E0E0", end_color="E0E0E0", fill_type="solid")
+                    fila += 1
+
+                    # Detalle de cada usuario
+                    for usuario in usuarios_afectados:
+                        tipo_doc = usuario.get("tipo_documento", "")
+                        num_doc = usuario.get("documento", "")
+                        nombre = usuario.get("nombre_completo", "N/A")
+                        cod_municipio = usuario.get("municipio", "")
+                        nombre_municipio = self.cargador.obtener_nombre_municipio(cod_municipio)
+
+                        # Observaciones adicionales según tipo de alerta
+                        observaciones = ""
+                        if "edad" in usuario:
+                            observaciones = f"Edad: {usuario['edad']} años"
+                        elif "comorbilidades_total" in usuario:
+                            observaciones = f"Comorbilidades: {usuario['comorbilidades_total']}"
+
+                        ws.cell(row=fila, column=1, value=tipo_doc)
+                        ws.cell(row=fila, column=2, value=num_doc)
+                        ws.cell(row=fila, column=3, value=nombre)
+                        ws.cell(row=fila, column=4, value=cod_municipio)
+                        ws.cell(row=fila, column=5, value=nombre_municipio)
+                        ws.cell(row=fila, column=6, value=observaciones)
+                        fila += 1
+
+                    fila += 1  # Espacio adicional entre alertas
         else:
             ws['A5'] = "No se generaron alertas. ¡Excelente desempeño!"
             ws['A5'].font = Font(bold=True, color="00B050")
@@ -1220,16 +1355,19 @@ class GeneradorReportes:
         ws.merge_cells(f'A{fila}:D{fila}')
         fila += 1
 
-        encabezados = ["Código CUPS", "Cantidad", "Porcentaje"]
+        encabezados = ["Código CUPS", "Nombre Procedimiento", "Cantidad", "Porcentaje"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=fila, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
         fila += 1
 
         for proc_info in proc.get("top_20_procedimientos", []):
-            ws.cell(row=fila, column=1, value=proc_info.get("codigo", ""))
-            ws.cell(row=fila, column=2, value=proc_info.get("cantidad", 0))
-            ws.cell(row=fila, column=3, value=f"{proc_info.get('porcentaje', 0):.1f}%")
+            codigo = proc_info.get("codigo", "")
+            nombre_cups = self.cargador.obtener_nombre_cups(codigo)
+            ws.cell(row=fila, column=1, value=codigo)
+            ws.cell(row=fila, column=2, value=nombre_cups)
+            ws.cell(row=fila, column=3, value=proc_info.get("cantidad", 0))
+            ws.cell(row=fila, column=4, value=f"{proc_info.get('porcentaje', 0):.1f}%")
             fila += 1
 
         self._ajustar_columnas(ws)
@@ -1375,16 +1513,20 @@ class GeneradorReportes:
         ws[f'A{fila}'].font = Font(bold=True, size=12)
         fila += 1
 
-        ws[f'A{fila}'] = "Modalidad"
-        ws[f'B{fila}'] = "Cantidad"
+        ws[f'A{fila}'] = "Código"
+        ws[f'B{fila}'] = "Modalidad"
+        ws[f'C{fila}'] = "Cantidad"
         self._aplicar_estilo_encabezado(ws[f'A{fila}'])
         self._aplicar_estilo_encabezado(ws[f'B{fila}'])
+        self._aplicar_estilo_encabezado(ws[f'C{fila}'])
         fila += 1
 
         dist_modalidad = modal.get("distribucion_modalidad", {})
-        for modalidad, cantidad in dist_modalidad.items():
-            ws[f'A{fila}'] = modalidad
-            ws[f'B{fila}'] = cantidad
+        for modalidad_cod, cantidad in dist_modalidad.items():
+            nombre_modalidad = self.cargador.obtener_nombre_modalidad(modalidad_cod)
+            ws[f'A{fila}'] = modalidad_cod
+            ws[f'B{fila}'] = nombre_modalidad
+            ws[f'C{fila}'] = cantidad
             fila += 1
 
         self._ajustar_columnas(ws)
@@ -1411,18 +1553,21 @@ class GeneradorReportes:
         ws.merge_cells(f'A{fila}:E{fila}')
         fila += 1
 
-        encabezados = ["Código Prestador", "Total Servicios", "Consultas", "Procedimientos", "Valor Total"]
+        encabezados = ["Código Prestador", "Nombre Prestador", "Total Servicios", "Consultas", "Procedimientos", "Valor Total"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=fila, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
         fila += 1
 
         for prestador in prest.get("top_10_prestadores", []):
-            ws.cell(row=fila, column=1, value=prestador.get("codigo_prestador", ""))
-            ws.cell(row=fila, column=2, value=prestador.get("total_servicios", 0))
-            ws.cell(row=fila, column=3, value=prestador.get("consultas", 0))
-            ws.cell(row=fila, column=4, value=prestador.get("procedimientos", 0))
-            ws.cell(row=fila, column=5, value=f"${prestador.get('valor_total', 0):,.2f}")
+            codigo_prest = prestador.get("codigo_prestador", "")
+            nombre_prest = self.cargador.obtener_nombre_prestador(codigo_prest)
+            ws.cell(row=fila, column=1, value=codigo_prest)
+            ws.cell(row=fila, column=2, value=nombre_prest)
+            ws.cell(row=fila, column=3, value=prestador.get("total_servicios", 0))
+            ws.cell(row=fila, column=4, value=prestador.get("consultas", 0))
+            ws.cell(row=fila, column=5, value=prestador.get("procedimientos", 0))
+            ws.cell(row=fila, column=6, value=f"${prestador.get('valor_total', 0):,.2f}")
             fila += 1
 
         self._ajustar_columnas(ws)
@@ -1525,24 +1670,50 @@ class GeneradorReportes:
         # Información general
         info_gen = analisis.get("informacion_general", {})
         doc.add_paragraph(f"Fecha de Generación: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        doc.add_paragraph(f"Número de Factura: {info_gen.get('num_factura', 'N/A')}")
-        doc.add_paragraph(f"Documento Obligado: {info_gen.get('num_documento_obligado', 'N/A')}")
+
+        # Número de facturas - puede ser una lista si es consolidado
+        facturas = info_gen.get('archivos_procesados', [])
+        if facturas:
+            doc.add_paragraph("Facturas procesadas:")
+            for factura in facturas:
+                doc.add_paragraph(f"  • {factura}", style='List Bullet')
+        else:
+            doc.add_paragraph(f"Número de Factura: {info_gen.get('num_factura', 'N/A')}")
 
         doc.add_page_break()
 
-        # 1. RESUMEN EJECUTIVO
-        doc.add_heading('1. RESUMEN EJECUTIVO', level=1)
+        # 1. RESÚMEN EJECUTIVO
+        doc.add_heading('1. RESÚMEN EJECUTIVO', level=1)
 
         demo = analisis.get("analisis_demografico", {})
         diag = analisis.get("analisis_diagnosticos", {})
         serv = analisis.get("analisis_servicios", {})
+        proc = analisis.get("analisis_procedimientos", {})
+        tipo_usuario = analisis.get("analisis_tipo_usuario", {})
+        gestantes = analisis.get("analisis_poblacion_gestante", {})
+
+        # Cifras clave
+        total_usuarios = demo.get('total_usuarios', 0)
+        total_consultas = serv.get('total_consultas', 0)
+        total_procedimientos = proc.get('total_procedimientos', 0)
+        total_servicios = total_consultas + total_procedimientos
+        diagnosticos_unicos = diag.get('diagnosticos_unicos', 0)
+        total_gestantes = gestantes.get('total_gestantes', 0)
 
         resumen_text = f"""
-Este informe presenta un análisis detallado de los servicios de salud prestados, basado en la información contenida en los archivos RIPS (Resolución 2275 de 2023).
+Este informe presenta un análisis detallado consolidado de los servicios de salud prestados, basado en la información contenida en los archivos RIPS (Resolución 2275 de 2023).
 
-Durante el periodo analizado se atendieron {demo.get('total_usuarios', 0)} usuarios, generando un total de {serv.get('total_consultas', 0)} consultas. Se identificaron {diag.get('diagnosticos_unicos', 0)} diagnósticos únicos, siendo los más frecuentes aquellos relacionados con consultas de rutina, seguimiento y atención preventiva.
+CIFRAS PRINCIPALES:
+• Total de usuarios atendidos: {total_usuarios}
+• Total de consultas: {total_consultas}
+• Total de procedimientos: {total_procedimientos}
+• Total de servicios prestados: {total_servicios}
+• Diagnósticos únicos identificados: {diagnosticos_unicos}
+• Gestantes identificadas: {total_gestantes}
 
-El análisis demográfico muestra una distribución predominante del sexo femenino con {demo.get('distribucion_sexo', {}).get('F', 0)} pacientes ({(demo.get('distribucion_sexo', {}).get('F', 0) / demo.get('total_usuarios', 1) * 100):.1f}%), frente a {demo.get('distribucion_sexo', {}).get('M', 0)} pacientes masculinos ({(demo.get('distribucion_sexo', {}).get('M', 0) / demo.get('total_usuarios', 1) * 100):.1f}%).
+El análisis demográfico muestra una distribución de {demo.get('distribucion_sexo', {}).get('F', 0)} pacientes femeninos ({(demo.get('distribucion_sexo', {}).get('F', 0) / max(total_usuarios, 1) * 100):.1f}%) y {demo.get('distribucion_sexo', {}).get('M', 0)} pacientes masculinos ({(demo.get('distribucion_sexo', {}).get('M', 0) / max(total_usuarios, 1) * 100):.1f}%).
+
+Los diagnósticos más frecuentes corresponden a consultas de rutina, seguimiento y atención preventiva, reflejando un enfoque en la atención primaria en salud.
 """
         doc.add_paragraph(resumen_text.strip())
 
@@ -1736,9 +1907,100 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
         else:
             doc.add_paragraph("No se identificaron pacientes gestantes en el período analizado.")
 
-        # 6. ANÁLISIS DE MOTIVOS DE CONSULTA
+        # 6. ANÁLISIS DE POBLACIÓN EXTRANJERA
         doc.add_page_break()
-        doc.add_heading('6. MOTIVOS DE CONSULTA', level=1)
+        doc.add_heading('6. ANÁLISIS DE POBLACIÓN EXTRANJERA', level=1)
+
+        extranjeros_data = analisis.get("analisis_poblacion_extranjera", {})
+        total_extranjeros = extranjeros_data.get('total_extranjeros', 0)
+        total_usuarios = demo.get('total_usuarios', 0)
+
+        if total_extranjeros > 0:
+            # Resumen general
+            doc.add_paragraph(f"Total de población extranjera atendida: {total_extranjeros}")
+            porcentaje_extranjeros = extranjeros_data.get('porcentaje_extranjeros', 0)
+            doc.add_paragraph(f"Porcentaje de la población total: {porcentaje_extranjeros:.1f}%")
+
+            # Distribución por país
+            doc.add_heading('6.1 Distribución por País de Procedencia', level=2)
+
+            top_paises = extranjeros_data.get("top_10_paises", [])
+            if top_paises:
+                # Preparar datos para gráfico
+                datos_paises = {}
+                for pais_info in top_paises[:10]:
+                    nombre_pais = pais_info.get('nombre_pais', 'Desconocido')
+                    cantidad = pais_info.get('cantidad', 0)
+                    datos_paises[nombre_pais] = cantidad
+
+                # Gráfico de distribución
+                grafico_paises = self._generar_grafico('pie', 'Distribución de Población Extranjera por País', datos_paises)
+                doc.add_picture(grafico_paises, width=Inches(5.5))
+
+                # Tabla detallada
+                tabla_paises = doc.add_table(rows=1, cols=4)
+                tabla_paises.style = 'Light Grid Accent 1'
+                enc_paises = tabla_paises.rows[0].cells
+                enc_paises[0].text = 'País'
+                enc_paises[1].text = 'Código'
+                enc_paises[2].text = 'Cantidad'
+                enc_paises[3].text = 'Porcentaje'
+
+                for pais_info in top_paises:
+                    row_cells = tabla_paises.add_row().cells
+                    row_cells[0].text = pais_info.get('nombre_pais', 'Desconocido')
+                    row_cells[1].text = pais_info.get('codigo_pais', '')
+                    row_cells[2].text = str(pais_info.get('cantidad', 0))
+                    row_cells[3].text = f"{pais_info.get('porcentaje', 0):.1f}%"
+
+            # Características demográficas
+            doc.add_heading('6.2 Características Demográficas', level=2)
+
+            dist_sexo_extranjeros = extranjeros_data.get("distribucion_sexo", {})
+            if dist_sexo_extranjeros:
+                doc.add_paragraph("Distribución por sexo:")
+                for sexo, cantidad in dist_sexo_extranjeros.items():
+                    sexo_desc = "Femenino" if sexo == "F" else "Masculino" if sexo == "M" else "Indeterminado"
+                    porcentaje = (cantidad / total_extranjeros * 100) if total_extranjeros > 0 else 0
+                    doc.add_paragraph(f"  • {sexo_desc}: {cantidad} ({porcentaje:.1f}%)", style='List Bullet')
+
+            edad_promedio_extranjeros = extranjeros_data.get("edad_promedio", 0)
+            if edad_promedio_extranjeros:
+                doc.add_paragraph(f"Edad promedio: {edad_promedio_extranjeros:.1f} años")
+
+            dist_edad_extranjeros = extranjeros_data.get("distribucion_edad", {})
+            if dist_edad_extranjeros:
+                doc.add_paragraph("Distribución por grupo de edad:")
+                for grupo, cantidad in dist_edad_extranjeros.items():
+                    if cantidad > 0:
+                        porcentaje = (cantidad / total_extranjeros * 100) if total_extranjeros > 0 else 0
+                        doc.add_paragraph(f"  • {grupo}: {cantidad} ({porcentaje:.1f}%)", style='List Bullet')
+
+            # Servicios más utilizados
+            doc.add_heading('6.3 Servicios de Salud Utilizados', level=2)
+
+            total_consultas_extranjeros = extranjeros_data.get("total_consultas", 0)
+            total_procedimientos_extranjeros = extranjeros_data.get("total_procedimientos", 0)
+
+            doc.add_paragraph(f"Total de consultas: {total_consultas_extranjeros}")
+            doc.add_paragraph(f"Total de procedimientos: {total_procedimientos_extranjeros}")
+
+            # Diagnósticos principales
+            top_diag_extranjeros = extranjeros_data.get("top_10_diagnosticos", [])
+            if top_diag_extranjeros:
+                doc.add_paragraph("Diagnósticos principales en población extranjera:")
+                for i, diag_info in enumerate(top_diag_extranjeros[:5], 1):
+                    codigo = diag_info.get('codigo', '')
+                    nombre = diag_info.get('nombre', '')
+                    cantidad = diag_info.get('cantidad', 0)
+                    doc.add_paragraph(f"  {i}. [{codigo}] {nombre} - {cantidad} casos", style='List Number')
+
+        else:
+            doc.add_paragraph("No se identificó población extranjera en el período analizado.")
+
+        # 7. ANÁLISIS DE MOTIVOS DE CONSULTA
+        doc.add_page_break()
+        doc.add_heading('7. MOTIVOS DE CONSULTA', level=1)
 
         # Distribución por causa de atención
         dist_causa = serv.get("distribucion_causa_atencion", {})
@@ -1764,9 +2026,9 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
             row_cells[1].text = self._obtener_descripcion_causa(causa)
             row_cells[2].text = str(cantidad)
 
-        # 7. ANÁLISIS DE SERVICIOS
+        # 8. ANÁLISIS DE SERVICIOS
         doc.add_page_break()
-        doc.add_heading('7. ANÁLISIS DE SERVICIOS', level=1)
+        doc.add_heading('8. ANÁLISIS DE SERVICIOS', level=1)
 
         doc.add_paragraph(f"Total de consultas realizadas: {serv.get('total_consultas', 0)}")
         doc.add_paragraph(f"Servicios sin autorización: {serv.get('servicios_sin_autorizacion', 0)}")
@@ -1785,7 +2047,7 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
 
         # 8. VALIDACIÓN DE CALIDAD DE DATOS
         doc.add_page_break()
-        doc.add_heading('8. VALIDACIÓN DE CALIDAD DE DATOS', level=1)
+        doc.add_heading('9. VALIDACIÓN DE CALIDAD DE DATOS', level=1)
 
         calidad = validacion.get("calidad_datos", "N/A")
         total_anomalias = validacion.get("total_anomalias", 0)
@@ -1870,7 +2132,7 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
 
         # 9. CONCLUSIONES Y RECOMENDACIONES
         doc.add_page_break()
-        doc.add_heading('9. CONCLUSIONES Y RECOMENDACIONES', level=1)
+        doc.add_heading('10. CONCLUSIONES Y RECOMENDACIONES', level=1)
 
         conclusiones = f"""
 Con base en el análisis realizado, se pueden destacar las siguientes conclusiones:

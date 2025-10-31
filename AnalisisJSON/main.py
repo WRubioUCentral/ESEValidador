@@ -16,6 +16,8 @@ from validador_calidad import ValidadorCalidadRIPS
 from validador_avanzado import ValidadorAvanzadoRIPS
 from consolidador_rips import ConsolidadorRIPS
 from generador_tablas_especiales import GeneradorTablasEspeciales
+from generador_dashboard import GeneradorDashboard
+from generador_dashboard_html import GeneradorDashboardHTML
 
 
 def main():
@@ -208,7 +210,7 @@ def main():
     print("Generando reportes consolidados...")
 
     # Generar reporte consolidado tradicional
-    generador = GeneradorReportes(nombre_archivo_json="CONSOLIDADO")
+    generador = GeneradorReportes(nombre_archivo_json="CONSOLIDADO", cargador=cargador)
 
     ruta_excel = generador.generar_excel_completo(
         analisis_consolidado,
@@ -234,6 +236,20 @@ def main():
     ruta_excel_especial = str(directorio_output / "tablas_especiales_consolidado.xlsx")
     generador_especial.generar_tabla_ac_ap(datos_consolidados, ruta_excel_especial)
     print(f"[OK] Excel con tablas especiales: {ruta_excel_especial}")
+
+    # Generar Dashboard interactivo Excel
+    print("\nGenerando Dashboard interactivo Excel con gráficos...")
+    generador_dashboard = GeneradorDashboard(cargador)
+    ruta_dashboard = str(directorio_output / "dashboard_interactivo.xlsx")
+    generador_dashboard.generar_dashboard(datos_consolidados, ruta_dashboard)
+    print(f"[OK] Dashboard Excel: {ruta_dashboard}")
+
+    # Generar Dashboard HTML interactivo con JavaScript
+    print("\nGenerando Dashboard HTML interactivo con filtros...")
+    generador_dashboard_html = GeneradorDashboardHTML(cargador)
+    ruta_dashboard_html = str(directorio_output / "dashboard_interactivo.html")
+    generador_dashboard_html.generar_dashboard(datos_consolidados, ruta_dashboard_html)
+    print(f"[OK] Dashboard HTML: {ruta_dashboard_html}")
 
     print()
     print("=" * 80)
@@ -287,9 +303,11 @@ def main():
     print("=" * 80)
     print()
     print("Reportes generados:")
-    print(f"  1. {ruta_excel}")
-    print(f"  2. {ruta_docx}")
-    print(f"  3. {ruta_excel_especial}")
+    print(f"  1. Informe Consolidado Excel: {ruta_excel}")
+    print(f"  2. Informe Gerencial DOCX: {ruta_docx}")
+    print(f"  3. Tablas Especiales (AC, AP, AH, AN, USUARIOS, RESUMEN): {ruta_excel_especial}")
+    print(f"  4. Dashboard Excel: {ruta_dashboard}")
+    print(f"  5. Dashboard HTML Interactivo: {ruta_dashboard_html}")
     print()
     print("=" * 80)
 

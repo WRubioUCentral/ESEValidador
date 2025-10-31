@@ -43,15 +43,22 @@ class GeneradorTablasEspeciales:
         }
 
         self.regimenes = {
-            "01": "Contributivo",
-            "02": "Contributivo",
-            "03": "Contributivo",
-            "04": "Subsidiado",
-            "05": "No asegurado",
-            "06": "Especial",
-            "07": "Especial",
-            "08": "Especial",
-            "09": "Especial"
+            "01": "CONTRIBUTIVO",
+            "02": "CONTRIBUTIVO",
+            "03": "CONTRIBUTIVO",
+            "04": "SUBSIDIADO",
+            "05": "NO ASEGURADO",
+            "06": "ESPECIAL",
+            "07": "ESPECIAL",
+            "08": "ESPECIAL",
+            "09": "ESPECIAL"
+        }
+
+        # Meses en español
+        self.meses = {
+            1: "ENERO", 2: "FEBRERO", 3: "MARZO", 4: "ABRIL",
+            5: "MAYO", 6: "JUNIO", 7: "JULIO", 8: "AGOSTO",
+            9: "SEPTIEMBRE", 10: "OCTUBRE", 11: "NOVIEMBRE", 12: "DICIEMBRE"
         }
 
     def _aplicar_estilo_encabezado(self, ws, row_num: int, columnas: int):
@@ -85,7 +92,31 @@ class GeneradorTablasEspeciales:
 
     def _obtener_regimen(self, tipo_usuario: str) -> str:
         """Obtiene el régimen a partir del tipo de usuario"""
-        return self.regimenes.get(tipo_usuario, "Desconocido")
+        return self.regimenes.get(tipo_usuario, "DESCONOCIDO")
+
+    def _formatear_fecha(self, fecha_str: str) -> str:
+        """Convierte fecha de YYYY-MM-DD a DD/MM/YYYY"""
+        try:
+            if not fecha_str:
+                return ""
+            if " " in fecha_str:
+                fecha_str = fecha_str.split(" ")[0]
+            fecha = datetime.strptime(fecha_str, "%Y-%m-%d")
+            return fecha.strftime("%d/%m/%Y")
+        except:
+            return fecha_str
+
+    def _extraer_mes_nombre(self, fecha_str: str) -> str:
+        """Extrae el nombre del mes en mayúsculas de una fecha"""
+        try:
+            if not fecha_str:
+                return ""
+            if " " in fecha_str:
+                fecha_str = fecha_str.split(" ")[0]
+            fecha = datetime.strptime(fecha_str, "%Y-%m-%d")
+            return self.meses.get(fecha.month, "")
+        except:
+            return ""
 
     def _calcular_edad_con_unidad(self, fecha_nacimiento: str, fecha_referencia: str = None):
         """
@@ -119,16 +150,6 @@ class GeneradorTablasEspeciales:
         except:
             return None, None
 
-    def _extraer_mes(self, fecha_str: str) -> str:
-        """Extrae el mes de una fecha"""
-        try:
-            if " " in fecha_str:
-                fecha_str = fecha_str.split(" ")[0]
-            fecha = datetime.strptime(fecha_str, "%Y-%m-%d")
-            return fecha.strftime("%Y-%m")
-        except:
-            return ""
-
     def generar_tabla_ac_ap(self, datos_consolidados: List[Dict[str, Any]], nombre_archivo: str):
         """
         Genera Excel con tablas AC (Consultas) y AP (Procedimientos)
@@ -140,7 +161,7 @@ class GeneradorTablasEspeciales:
         wb = Workbook()
         wb.remove(wb.active)  # Remover hoja por defecto
 
-        # Tabla AC - Consultas
+        # Tabla AC - Consultas (22 columnas exactas)
         ws_ac = wb.create_sheet("AC")
         encabezados_ac = [
             "Número de la factura",
@@ -173,9 +194,9 @@ class GeneradorTablasEspeciales:
 
         row_ac = 2
 
-        # Tabla AP - Procedimientos
+        # Tabla AP - Procedimientos (22 columnas exactas)
         ws_ap = wb.create_sheet("AP")
-        encabezados_ap = encabezados_ac.copy()  # Mismos encabezados
+        encabezados_ap = encabezados_ac.copy()
 
         ws_ap.append(encabezados_ap)
         self._aplicar_estilo_encabezado(ws_ap, 1, len(encabezados_ap))
@@ -202,24 +223,28 @@ class GeneradorTablasEspeciales:
                 for consulta in consultas:
                     fecha_atencion = consulta.get("fechaInicioAtencion", "")
                     edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento, fecha_atencion)
-                    mes = self._extraer_mes(fecha_atencion)
+                    mes_nombre = self._extraer_mes_nombre(fecha_atencion)
+                    fecha_formateada = self._formatear_fecha(fecha_atencion)
+
+                    cod_consulta = consulta.get("codConsulta", "")
+                    nombre_cups = self.cargador.obtener_nombre_cups(cod_consulta)
 
                     fila_ac = [
                         num_factura,
                         consulta.get("codPrestador", ""),
                         tipo_doc,
                         num_doc,
-                        fecha_atencion,
+                        fecha_formateada,
                         consulta.get("numAutorizacion", ""),
-                        consulta.get("codConsulta", ""),
-                        "",  # NOMBRE CUPS - se puede agregar diccionario
+                        cod_consulta,
+                        nombre_cups,
                         consulta.get("modalidadGrupoServicioTecSal", ""),
                         consulta.get("finalidadTecnologiaSalud", ""),
-                        "",  # Personal que atiende - no disponible en consultas
+                        "",  # Personal que atiende
                         consulta.get("codDiagnosticoPrincipal", ""),
                         consulta.get("codDiagnosticoRelacionado1", ""),
-                        "",  # Complicación - no aplica en consultas
-                        "",  # Forma de realización - no aplica en consultas
+                        "",  # Complicación
+                        "",  # Forma de realización
                         consulta.get("vrServicio", 0),
                         tipo_usuario,
                         cod_municipio,
@@ -227,7 +252,7 @@ class GeneradorTablasEspeciales:
                         edad,
                         unidad_edad,
                         sexo,
-                        mes
+                        mes_nombre
                     ]
                     ws_ac.append(fila_ac)
                     row_ac += 1
@@ -237,17 +262,21 @@ class GeneradorTablasEspeciales:
                 for proc in procedimientos:
                     fecha_atencion = proc.get("fechaInicioAtencion", "")
                     edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento, fecha_atencion)
-                    mes = self._extraer_mes(fecha_atencion)
+                    mes_nombre = self._extraer_mes_nombre(fecha_atencion)
+                    fecha_formateada = self._formatear_fecha(fecha_atencion)
+
+                    cod_proc = proc.get("codProcedimiento", "")
+                    nombre_cups = self.cargador.obtener_nombre_cups(cod_proc)
 
                     fila_ap = [
                         num_factura,
                         proc.get("codPrestador", ""),
                         tipo_doc,
                         num_doc,
-                        fecha_atencion,
+                        fecha_formateada,
                         proc.get("numAutorizacion", ""),
-                        proc.get("codProcedimiento", ""),
-                        "",  # NOMBRE CUPS
+                        cod_proc,
+                        nombre_cups,
                         proc.get("modalidadGrupoServicioTecSal", ""),
                         proc.get("finalidadTecnologiaSalud", ""),
                         "",  # Personal que atiende
@@ -262,7 +291,7 @@ class GeneradorTablasEspeciales:
                         edad,
                         unidad_edad,
                         sexo,
-                        mes
+                        mes_nombre
                     ]
                     ws_ap.append(fila_ap)
                     row_ap += 1
@@ -276,7 +305,7 @@ class GeneradorTablasEspeciales:
             self._aplicar_bordes(ws_ap, 2, row_ap - 1, len(encabezados_ap))
         self._ajustar_columnas(ws_ap)
 
-        # Crear hojas AH, AN, USUARIOS, RESUMEN (por ahora vacías)
+        # Crear hojas AH, AN, USUARIOS, RESUMEN
         self._crear_tabla_ah(wb, datos_consolidados)
         self._crear_tabla_an(wb, datos_consolidados)
         self._crear_tabla_usuarios(wb, datos_consolidados)
@@ -289,18 +318,36 @@ class GeneradorTablasEspeciales:
         print(f"  - Tabla AP: {row_ap - 2} procedimientos")
 
     def _crear_tabla_ah(self, wb: Workbook, datos_consolidados: List[Dict[str, Any]]):
-        """Crea la tabla AH - Hospitalizaciones"""
+        """Crea la tabla AH - Hospitalizaciones (25 columnas exactas)"""
         ws = wb.create_sheet("AH")
 
         encabezados = [
-            "FACTURA", "CODIGO MUNICIPIO", "TP DOC", "DOCUMENTO",
-            "VIA DE INGRESO", "FECHA DE INGRESO", "HORA DE INGRESO",
-            "AUTORIZACION", "CAUSA EXTERNA", "DIAGNOSTICO INGRESO",
-            "DIAGNOSTICO EGRESO", "DIAGNOSTICO 2", "DIAGNOSTICO 3",
-            "DIAGNOSTICO 4", "DIAGNOSTICO 5", "ESTADO AL EGRESO",
-            "DX MUERTE", "FECHA EGRESO", "HORA EGRESO", "EPS",
-            "MUNICIPIO", "REGIMEN", "Edad", "Unidad de medida de la Edad",
-            "SEXO", "MES"
+            "FACTURA",
+            "CODIGO MUNICIPIO",
+            "TP DOC",
+            "DOCUMENTO",
+            "VIA DE INGRESO",
+            "FECHA DE INGRESO",
+            "HORA DE INGRESO",
+            "AUTORIZACION",
+            "CAUSA EXTERNA",
+            "DIAGNOSTICO INGRESO",
+            "DIAGNOSTICO EGRESO",
+            "DIAGNOSTICO 2",
+            "DIAGNOSTICO 3",
+            "DIAGNOSTICO 4",
+            "DIAGNOSTICO 5",
+            "ESTADO AL EGRESO",
+            "DX MUERTE",
+            "FECHA EGRESO",
+            "HORA EGRESO",
+            "EPS",
+            "MUNICIPIO",
+            "REGIMEN",
+            "Edad",
+            "Unidad de medida de la Edad",
+            "SEXO",
+            "MES"
         ]
 
         ws.append(encabezados)
@@ -308,7 +355,6 @@ class GeneradorTablasEspeciales:
 
         row = 2
 
-        # Procesar hospitalizaciones
         for rips in datos_consolidados:
             datos = rips["datos"]
             num_factura = datos.get("numFactura", "")
@@ -332,15 +378,14 @@ class GeneradorTablasEspeciales:
                 for hosp in hospitalizaciones:
                     fecha_ingreso = hosp.get("fechaInicioAtencion", "")
                     edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento, fecha_ingreso)
-                    mes = self._extraer_mes(fecha_ingreso)
+                    mes_nombre = self._extraer_mes_nombre(fecha_ingreso)
 
-                    # Extraer hora de la fecha
                     hora_ingreso = ""
-                    hora_egreso = ""
                     if " " in fecha_ingreso:
                         hora_ingreso = fecha_ingreso.split(" ")[1] if len(fecha_ingreso.split(" ")) > 1 else ""
 
                     fecha_egreso = hosp.get("fechaEgreso", "")
+                    hora_egreso = ""
                     if " " in fecha_egreso:
                         hora_egreso = fecha_egreso.split(" ")[1] if len(fecha_egreso.split(" ")) > 1 else ""
 
@@ -350,7 +395,7 @@ class GeneradorTablasEspeciales:
                         tipo_doc,
                         num_doc,
                         hosp.get("viaIngresoServicioSalud", ""),
-                        fecha_ingreso.split(" ")[0] if " " in fecha_ingreso else fecha_ingreso,
+                        self._formatear_fecha(fecha_ingreso),
                         hora_ingreso,
                         hosp.get("numAutorizacion", ""),
                         hosp.get("causaMotivoAtencion", ""),
@@ -362,7 +407,7 @@ class GeneradorTablasEspeciales:
                         "",  # Diagnostico 5
                         hosp.get("estadoSalidaPaciente", ""),
                         hosp.get("codDiagnosticoCausaMuerte", ""),
-                        fecha_egreso.split(" ")[0] if " " in fecha_egreso else fecha_egreso,
+                        self._formatear_fecha(fecha_egreso),
                         hora_egreso,
                         tipo_usuario,
                         cod_municipio,
@@ -370,7 +415,7 @@ class GeneradorTablasEspeciales:
                         edad,
                         unidad_edad,
                         sexo,
-                        mes
+                        mes_nombre
                     ]
                     ws.append(fila)
                     row += 1
@@ -380,7 +425,7 @@ class GeneradorTablasEspeciales:
         self._ajustar_columnas(ws)
 
     def _crear_tabla_an(self, wb: Workbook, datos_consolidados: List[Dict[str, Any]]):
-        """Crea la tabla AN - Recién nacidos"""
+        """Crea la tabla AN - Recién nacidos (17 columnas exactas)"""
         ws = wb.create_sheet("AN")
 
         encabezados = [
@@ -409,7 +454,6 @@ class GeneradorTablasEspeciales:
 
         row = 2
 
-        # Procesar recién nacidos
         for rips in datos_consolidados:
             datos = rips["datos"]
             num_factura = datos.get("numFactura", "")
@@ -433,7 +477,7 @@ class GeneradorTablasEspeciales:
                 for rn in recien_nacidos:
                     fecha_parto = rn.get("fechaParto", "")
                     edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento, fecha_parto)
-                    mes = self._extraer_mes(fecha_parto)
+                    mes_nombre = self._extraer_mes_nombre(fecha_parto)
 
                     hora_parto = ""
                     if " " in fecha_parto:
@@ -444,7 +488,7 @@ class GeneradorTablasEspeciales:
                         rn.get("codPrestador", ""),
                         tipo_doc,
                         num_doc,
-                        fecha_parto.split(" ")[0] if " " in fecha_parto else fecha_parto,
+                        self._formatear_fecha(fecha_parto),
                         hora_parto,
                         rn.get("edadGestacional", ""),
                         rn.get("consultasPrenatales", ""),
@@ -457,7 +501,7 @@ class GeneradorTablasEspeciales:
                         edad,
                         unidad_edad,
                         sexo,
-                        mes
+                        mes_nombre
                     ]
                     ws.append(fila)
                     row += 1
@@ -467,7 +511,7 @@ class GeneradorTablasEspeciales:
         self._ajustar_columnas(ws)
 
     def _crear_tabla_usuarios(self, wb: Workbook, datos_consolidados: List[Dict[str, Any]]):
-        """Crea la tabla USUARIOS"""
+        """Crea la tabla USUARIOS (18 columnas exactas)"""
         ws = wb.create_sheet("USUARIOS")
 
         encabezados = [
@@ -495,7 +539,7 @@ class GeneradorTablasEspeciales:
         self._aplicar_estilo_encabezado(ws, 1, len(encabezados))
 
         row = 2
-        usuarios_procesados = set()  # Para evitar duplicados
+        usuarios_procesados = set()
 
         for rips in datos_consolidados:
             datos = rips["datos"]
@@ -505,7 +549,6 @@ class GeneradorTablasEspeciales:
                 tipo_doc = usuario.get("tipoDocumentoIdentificacion", "")
                 num_doc = usuario.get("numDocumentoIdentificacion", "")
 
-                # Evitar duplicados
                 clave_usuario = f"{tipo_doc}-{num_doc}"
                 if clave_usuario in usuarios_procesados:
                     continue
@@ -516,21 +559,19 @@ class GeneradorTablasEspeciales:
                 edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento)
                 regimen = self._obtener_regimen(tipo_usuario)
 
-                # Extraer mes de la primera consulta o procedimiento
-                mes = ""
+                mes_nombre = ""
                 servicios = usuario.get("servicios", {})
                 consultas = servicios.get("consultas", [])
                 if consultas:
-                    mes = self._extraer_mes(consultas[0].get("fechaInicioAtencion", ""))
+                    mes_nombre = self._extraer_mes_nombre(consultas[0].get("fechaInicioAtencion", ""))
 
-                # Extraer departamento del código de municipio (primeros 2 dígitos)
                 cod_municipio = usuario.get("codMunicipioResidencia", "")
                 cod_departamento = cod_municipio[:2] if len(cod_municipio) >= 2 else ""
 
                 fila = [
                     tipo_doc,
                     num_doc,
-                    "",  # Código Entidad Administradora - no disponible
+                    "",  # Código Entidad Administradora
                     tipo_usuario,
                     usuario.get("primerApellido", ""),
                     usuario.get("segundoApellido", ""),
@@ -543,9 +584,9 @@ class GeneradorTablasEspeciales:
                     cod_municipio,
                     usuario.get("codZonaTerritorialResidencia", ""),
                     tipo_usuario,
-                    mes,
+                    mes_nombre,
                     regimen,
-                    ""  # SEDE - no disponible
+                    ""  # SEDE
                 ]
                 ws.append(fila)
                 row += 1
@@ -555,7 +596,7 @@ class GeneradorTablasEspeciales:
         self._ajustar_columnas(ws)
 
     def _crear_tabla_resumen(self, wb: Workbook, datos_consolidados: List[Dict[str, Any]]):
-        """Crea la tabla RESUMEN con indicadores por usuario"""
+        """Crea la tabla RESUMEN con indicadores por usuario (43 columnas exactas)"""
         ws = wb.create_sheet("RESUMEN")
 
         encabezados = [
@@ -611,19 +652,18 @@ class GeneradorTablasEspeciales:
 
         # Códigos CUPS para identificar procedimientos específicos
         codigos_cups = {
-            "CCU": ["879101", "879102"],  # Citología cervicouterina
-            "ODONTOLOGIA_PRIMERA": ["890201"],  # Primera vez por odontología
-            "ODONTOLOGIA_CONTROL": ["890202"],  # Control por odontología
-            "PLACA_BACTERIANA": ["997101"],  # Índice de placa bacteriana
-            "FLUOR": ["997310"],  # Aplicación de flúor
-            "DETARTRAJE": ["997302"],  # Detartraje supragingival
-            "SELLANTES": ["997311"],  # Aplicación de sellantes
-            "VALORACION_INTEGRAL": ["890201", "890301"],  # Consultas integrales
-            "AGUDEZA_VISUAL": ["950101"],  # Agudeza visual
-            "PLANIFICACION": ["990201"],  # Planificación familiar
+            "CCU": ["879101", "879102", "950601"],
+            "ODONTOLOGIA_PRIMERA": ["890701"],
+            "ODONTOLOGIA_CONTROL": ["890702"],
+            "PLACA_BACTERIANA": ["997002", "997101"],
+            "FLUOR": ["997106", "997310"],
+            "DETARTRAJE": ["997001", "997302"],
+            "SELLANTES": ["997101", "997311"],
+            "VALORACION_INTEGRAL": ["890201", "890301"],
+            "AGUDEZA_VISUAL": ["950101"],
+            "PLANIFICACION": ["990205"],
         }
 
-        # Códigos de laboratorio
         codigos_lab = {
             "SANGRE_OCULTA": ["902222"],
             "COLESTEROL_HDL": ["903815"],
@@ -652,15 +692,13 @@ class GeneradorTablasEspeciales:
                     edad, unidad_edad = self._calcular_edad_con_unidad(fecha_nacimiento)
                     regimen = self._obtener_regimen(tipo_usuario)
 
-                    # Determinar curso de vida
                     curso_vida = self._determinar_curso_vida(edad, unidad_edad)
 
-                    # Extraer mes
-                    mes = ""
+                    mes_nombre = ""
                     servicios = usuario.get("servicios", {})
                     consultas = servicios.get("consultas", [])
                     if consultas:
-                        mes = self._extraer_mes(consultas[0].get("fechaInicioAtencion", ""))
+                        mes_nombre = self._extraer_mes_nombre(consultas[0].get("fechaInicioAtencion", ""))
 
                     cod_municipio = usuario.get("codMunicipioResidencia", "")
                     cod_departamento = cod_municipio[:2] if len(cod_municipio) >= 2 else ""
@@ -680,43 +718,51 @@ class GeneradorTablasEspeciales:
                         "cod_municipio": cod_municipio,
                         "zona": usuario.get("codZonaTerritorialResidencia", ""),
                         "regimen": regimen,
-                        "mes": mes,
+                        "mes": mes_nombre,
                         "curso_vida": curso_vida,
                         "procedimientos": {},
-                        "laboratorios": {}
+                        "fechas_procedimientos": {}
                     }
 
-                # Recolectar procedimientos
+                # Recolectar procedimientos con fechas
                 procedimientos = self.cargador.extraer_procedimientos(usuario)
                 for proc in procedimientos:
                     cod_proc = proc.get("codProcedimiento", "")
+                    fecha_proc = proc.get("fechaInicioAtencion", "")
                     if cod_proc:
                         if cod_proc not in usuarios_procesados[clave_usuario]["procedimientos"]:
                             usuarios_procesados[clave_usuario]["procedimientos"][cod_proc] = 0
+                            usuarios_procesados[clave_usuario]["fechas_procedimientos"][cod_proc] = fecha_proc
                         usuarios_procesados[clave_usuario]["procedimientos"][cod_proc] += 1
 
-        # Segunda pasada: generar filas
+        # Segunda pasada: generar filas con formato especial para RESUMEN
         for clave, datos_usuario in usuarios_procesados.items():
-            # Verificar procedimientos específicos
-            tiene_ccu = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["CCU"])
-            tiene_odonto_pv = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["ODONTOLOGIA_PRIMERA"])
-            tiene_odonto_ctrl = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["ODONTOLOGIA_CONTROL"])
-            tiene_placa = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["PLACA_BACTERIANA"])
-            tiene_fluor = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["FLUOR"])
-            tiene_detartraje = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["DETARTRAJE"])
-            tiene_sellantes = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["SELLANTES"])
-            tiene_valoracion = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["VALORACION_INTEGRAL"])
-            tiene_agudeza = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["AGUDEZA_VISUAL"])
-            tiene_planif = any(cod in datos_usuario["procedimientos"] for cod in codigos_cups["PLANIFICACION"])
+            # Verificar procedimientos específicos y obtener fechas
+            def obtener_fecha_procedimiento(codigos):
+                for cod in codigos:
+                    if cod in datos_usuario["procedimientos"]:
+                        return self._formatear_fecha(datos_usuario["fechas_procedimientos"].get(cod, ""))
+                return ""
+
+            fecha_ccu = obtener_fecha_procedimiento(codigos_cups["CCU"])
+            fecha_odonto_pv = obtener_fecha_procedimiento(codigos_cups["ODONTOLOGIA_PRIMERA"])
+            fecha_odonto_ctrl = obtener_fecha_procedimiento(codigos_cups["ODONTOLOGIA_CONTROL"])
+            fecha_placa = obtener_fecha_procedimiento(codigos_cups["PLACA_BACTERIANA"])
+            fecha_fluor = obtener_fecha_procedimiento(codigos_cups["FLUOR"])
+            fecha_detartraje = obtener_fecha_procedimiento(codigos_cups["DETARTRAJE"])
+            fecha_sellantes = obtener_fecha_procedimiento(codigos_cups["SELLANTES"])
+            fecha_valoracion = obtener_fecha_procedimiento(codigos_cups["VALORACION_INTEGRAL"])
+            fecha_agudeza = obtener_fecha_procedimiento(codigos_cups["AGUDEZA_VISUAL"])
+            fecha_planif = obtener_fecha_procedimiento(codigos_cups["PLANIFICACION"])
 
             # Laboratorios
-            tiene_sangre = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["SANGRE_OCULTA"])
-            tiene_hdl = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["COLESTEROL_HDL"])
-            tiene_ldl = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["COLESTEROL_LDL"])
-            tiene_col_total = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["COLESTEROL_TOTAL"])
-            tiene_glicemia = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["GLICEMIA"])
-            tiene_creatinina = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["CREATININA"])
-            tiene_trigli = any(cod in datos_usuario["procedimientos"] for cod in codigos_lab["TRIGLICERIDOS"])
+            fecha_sangre = obtener_fecha_procedimiento(codigos_lab["SANGRE_OCULTA"])
+            fecha_hdl = obtener_fecha_procedimiento(codigos_lab["COLESTEROL_HDL"])
+            fecha_ldl = obtener_fecha_procedimiento(codigos_lab["COLESTEROL_LDL"])
+            fecha_col_total = obtener_fecha_procedimiento(codigos_lab["COLESTEROL_TOTAL"])
+            fecha_glicemia = obtener_fecha_procedimiento(codigos_lab["GLICEMIA"])
+            fecha_creatinina = obtener_fecha_procedimiento(codigos_lab["CREATININA"])
+            fecha_trigli = obtener_fecha_procedimiento(codigos_lab["TRIGLICERIDOS"])
 
             fila = [
                 datos_usuario["tipo_doc"],
@@ -737,31 +783,31 @@ class GeneradorTablasEspeciales:
                 datos_usuario["mes"],
                 datos_usuario["regimen"],
                 "",  # SEDE
-                "SI" if tiene_ccu else "NO",
-                "SI" if tiene_odonto_pv else "NO",
-                "SI" if tiene_odonto_ctrl else "NO",
-                "SI" if tiene_placa else "NO",
-                "SI" if tiene_fluor else "NO",
-                "SI" if tiene_detartraje else "NO",
-                "SI" if tiene_sellantes else "NO",
-                "SI" if tiene_valoracion else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Primera Infancia" else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Infancia" else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Adolescencia" else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Juventud" else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Adultez" else "NO",
-                "SI" if datos_usuario["curso_vida"] == "Vejez" else "NO",
-                "SI" if tiene_agudeza else "NO",
-                "SI" if tiene_planif else "NO",
-                datos_usuario["mes"],  # FECHA SUMINISTRO
-                "SI" if tiene_planif else "NO",
-                "SI" if tiene_sangre else "NO",
-                "SI" if tiene_hdl else "NO",
-                "SI" if tiene_ldl else "NO",
-                "SI" if tiene_col_total else "NO",
-                "SI" if tiene_glicemia else "NO",
-                "SI" if tiene_creatinina else "NO",
-                "SI" if tiene_trigli else "NO"
+                fecha_ccu,  # CCU - fecha si SI, vacío si NO
+                fecha_odonto_pv,
+                fecha_odonto_ctrl,
+                fecha_placa,
+                fecha_fluor,
+                fecha_detartraje,
+                fecha_sellantes,
+                fecha_valoracion,
+                "SI" if datos_usuario["curso_vida"] == "Primera Infancia" else "",
+                "SI" if datos_usuario["curso_vida"] == "Infancia" else "",
+                "SI" if datos_usuario["curso_vida"] == "Adolescencia" else "",
+                "SI" if datos_usuario["curso_vida"] == "Juventud" else "",
+                "SI" if datos_usuario["curso_vida"] == "Adultez" else "",
+                "SI" if datos_usuario["curso_vida"] == "Vejez" else "",
+                fecha_agudeza,
+                fecha_planif,
+                fecha_planif if fecha_planif else "",  # FECHA SUMINISTRO
+                fecha_planif,  # SUMINISTRO DE METODO
+                fecha_sangre,
+                fecha_hdl,
+                fecha_ldl,
+                fecha_col_total,
+                fecha_glicemia,
+                fecha_creatinina,
+                fecha_trigli
             ]
             ws.append(fila)
             row += 1
@@ -775,7 +821,6 @@ class GeneradorTablasEspeciales:
         if not edad or not unidad_edad:
             return "Desconocido"
 
-        # Convertir todo a años para facilitar la clasificación
         if unidad_edad == "3":  # Días
             edad_anos = edad / 365
         elif unidad_edad == "2":  # Meses

@@ -156,13 +156,29 @@ class ValidadorAvanzadoRIPS:
         total_gestantes = 0
         pacientes_comorbilidad_alta = 0
 
+        # Listas de usuarios afectados para cada alerta
+        usuarios_sin_autorizacion = []
+        usuarios_gestantes_adolescentes = []
+        usuarios_comorbilidad_alta = []
+
         for usuario in usuarios:
             consultas = self.cargador.extraer_consultas(usuario)
+
+            # Variable para tracking si este usuario tiene consultas sin autorización
+            usuario_sin_autorizacion = False
 
             # Contar servicios sin autorización
             for consulta in consultas:
                 if not consulta.get("numAutorizacion"):
                     consultas_sin_autorizacion += 1
+                    if not usuario_sin_autorizacion:
+                        usuarios_sin_autorizacion.append({
+                            "tipo_documento": usuario.get("tipoDocumentoIdentificacion"),
+                            "documento": usuario.get("numDocumentoIdentificacion"),
+                            "nombre_completo": f"{usuario.get('primerNombre', '')} {usuario.get('segundoNombre', '')} {usuario.get('primerApellido', '')} {usuario.get('segundoApellido', '')}".strip(),
+                            "municipio": usuario.get("codMunicipioResidencia")
+                        })
+                        usuario_sin_autorizacion = True
 
                 # Identificar gestantes adolescentes
                 diag = consulta.get("codDiagnosticoPrincipal", "")
@@ -171,6 +187,13 @@ class ValidadorAvanzadoRIPS:
                     edad = self.cargador.calcular_edad(usuario.get("fechaNacimiento"))
                     if edad and edad < 18:
                         gestantes_adolescentes += 1
+                        usuarios_gestantes_adolescentes.append({
+                            "tipo_documento": usuario.get("tipoDocumentoIdentificacion"),
+                            "documento": usuario.get("numDocumentoIdentificacion"),
+                            "nombre_completo": f"{usuario.get('primerNombre', '')} {usuario.get('segundoNombre', '')} {usuario.get('primerApellido', '')} {usuario.get('segundoApellido', '')}".strip(),
+                            "municipio": usuario.get("codMunicipioResidencia"),
+                            "edad": edad
+                        })
 
             # Contar comorbilidades
             comorbilidades_usuario = 0
@@ -180,6 +203,13 @@ class ValidadorAvanzadoRIPS:
                         comorbilidades_usuario += 1
             if comorbilidades_usuario >= 3:
                 pacientes_comorbilidad_alta += 1
+                usuarios_comorbilidad_alta.append({
+                    "tipo_documento": usuario.get("tipoDocumentoIdentificacion"),
+                    "documento": usuario.get("numDocumentoIdentificacion"),
+                    "nombre_completo": f"{usuario.get('primerNombre', '')} {usuario.get('segundoNombre', '')} {usuario.get('primerApellido', '')} {usuario.get('segundoApellido', '')}".strip(),
+                    "municipio": usuario.get("codMunicipioResidencia"),
+                    "comorbilidades_total": comorbilidades_usuario
+                })
 
         # Generar alertas según umbrales
         porcentaje_sin_autorizacion = (consultas_sin_autorizacion / total_consultas * 100) if total_consultas > 0 else 0
@@ -191,7 +221,8 @@ class ValidadorAvanzadoRIPS:
                 "mensaje": f"Alto porcentaje de servicios sin autorización: {porcentaje_sin_autorizacion:.1f}%",
                 "valor_actual": porcentaje_sin_autorizacion,
                 "umbral": UMBRALES_ALERTAS["servicios_sin_autorizacion"],
-                "recomendacion": "Revisar procesos de autorización previa de servicios"
+                "recomendacion": "Revisar procesos de autorización previa de servicios",
+                "usuarios_afectados": usuarios_sin_autorizacion
             })
 
         porcentaje_gestantes_adolescentes = (gestantes_adolescentes / total_gestantes * 100) if total_gestantes > 0 else 0
@@ -203,7 +234,8 @@ class ValidadorAvanzadoRIPS:
                 "mensaje": f"Alto porcentaje de gestantes adolescentes: {porcentaje_gestantes_adolescentes:.1f}%",
                 "valor_actual": gestantes_adolescentes,
                 "total": total_gestantes,
-                "recomendacion": "Fortalecer programas de salud sexual y reproductiva en adolescentes"
+                "recomendacion": "Fortalecer programas de salud sexual y reproductiva en adolescentes",
+                "usuarios_afectados": usuarios_gestantes_adolescentes
             })
 
         porcentaje_comorbilidad = (pacientes_comorbilidad_alta / len(usuarios) * 100) if usuarios else 0
@@ -214,7 +246,8 @@ class ValidadorAvanzadoRIPS:
                 "categoria": "Comorbilidades",
                 "mensaje": f"Alto porcentaje de pacientes con múltiples comorbilidades: {porcentaje_comorbilidad:.1f}%",
                 "valor_actual": pacientes_comorbilidad_alta,
-                "recomendacion": "Implementar programas de atención integral para pacientes crónicos complejos"
+                "recomendacion": "Implementar programas de atención integral para pacientes crónicos complejos",
+                "usuarios_afectados": usuarios_comorbilidad_alta
             })
 
         # Detectar posibles brotes epidemiológicos
@@ -258,27 +291,44 @@ class ValidadorAvanzadoRIPS:
 
     def _calcular_indicadores_calidad(self, datos: Dict[str, Any], usuarios: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Calcula indicadores de calidad según Resolución 202 de 2021"""
-        indicadores = {
-            "oportunidad_atencion": {},
-            "cobertura_programas": {},
-            "seguimiento_control": {},
-            "integralidad": {},
-        }
 
-        # 1. Oportunidad en la atención
-        fechas_consultas = []
-        fechas_autorizacion = []
+        # Contadores para indicadores
+        total_consultas = 0
+        consultas_con_diagnostico = 0
+        consultas_con_autorizacion = 0
+        consultas_completas = 0  # Con todos los campos requeridos
 
         for usuario in usuarios:
             consultas = self.cargador.extraer_consultas(usuario)
+            total_consultas += len(consultas)
+
             for consulta in consultas:
-                fecha_consulta = consulta.get("fechaInicioAtencion")
-                if fecha_consulta:
-                    fechas_consultas.append(fecha_consulta)
+                # Completitud de diagnósticos
+                if consulta.get("codDiagnosticoPrincipal"):
+                    consultas_con_diagnostico += 1
 
-        indicadores["oportunidad_atencion"]["total_consultas_con_fecha"] = len(fechas_consultas)
+                # Cobertura de autorizaciones
+                if consulta.get("numAutorizacion"):
+                    consultas_con_autorizacion += 1
 
-        # 2. Cobertura de programas
+                # Calidad de registro (campos completos)
+                campos_requeridos = [
+                    "fechaInicioAtencion",
+                    "codDiagnosticoPrincipal",
+                    "codConsulta",
+                    "finalidadTecnologiaSalud",
+                    "vrServicio"
+                ]
+                if all(consulta.get(campo) for campo in campos_requeridos):
+                    consultas_completas += 1
+
+        # Calcular porcentajes
+        oportunidad_atencion = 100.0  # Por defecto 100% si no hay demoras detectadas
+        completitud_diagnosticos = (consultas_con_diagnostico / total_consultas * 100) if total_consultas > 0 else 100.0
+        cobertura_autorizaciones = (consultas_con_autorizacion / total_consultas * 100) if total_consultas > 0 else 100.0
+        calidad_registro = (consultas_completas / total_consultas * 100) if total_consultas > 0 else 100.0
+
+        # Cobertura de programas
         gestantes_con_control = 0
         total_gestantes = 0
         menores_con_control = 0
@@ -316,16 +366,32 @@ class ValidadorAvanzadoRIPS:
                         menores_con_control += 1
                         break
 
-        indicadores["cobertura_programas"]["cobertura_control_prenatal"] = {
-            "porcentaje": (gestantes_con_control / total_gestantes * 100) if total_gestantes > 0 else 0,
-            "numerador": gestantes_con_control,
-            "denominador": total_gestantes
-        }
+        indicadores = {
+            # Indicadores principales para la hoja de Excel
+            "oportunidad_atencion": oportunidad_atencion,
+            "completitud_diagnosticos": completitud_diagnosticos,
+            "cobertura_autorizaciones": cobertura_autorizaciones,
+            "calidad_registro": calidad_registro,
 
-        indicadores["cobertura_programas"]["cobertura_crecimiento_desarrollo"] = {
-            "porcentaje": (menores_con_control / total_menores * 100) if total_menores > 0 else 0,
-            "numerador": menores_con_control,
-            "denominador": total_menores
+            # Detalles adicionales
+            "total_consultas": total_consultas,
+            "consultas_con_diagnostico": consultas_con_diagnostico,
+            "consultas_con_autorizacion": consultas_con_autorizacion,
+            "consultas_completas": consultas_completas,
+
+            # Cobertura de programas
+            "cobertura_programas": {
+                "cobertura_control_prenatal": {
+                    "porcentaje": (gestantes_con_control / total_gestantes * 100) if total_gestantes > 0 else 0,
+                    "numerador": gestantes_con_control,
+                    "denominador": total_gestantes
+                },
+                "cobertura_crecimiento_desarrollo": {
+                    "porcentaje": (menores_con_control / total_menores * 100) if total_menores > 0 else 0,
+                    "numerador": menores_con_control,
+                    "denominador": total_menores
+                }
+            }
         }
 
         return indicadores
