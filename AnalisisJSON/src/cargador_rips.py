@@ -22,7 +22,7 @@ class CargadorRIPS:
     def _cargar_cie10(self, ruta: str) -> Dict[str, Dict[str, str]]:
         """Carga el diccionario de códigos CIE-10"""
         try:
-            with open(ruta, 'r', encoding='utf-8') as f:
+            with open(ruta, 'r', encoding='utf-8-sig') as f:
                 return json.load(f)
         except FileNotFoundError:
             print(f"Advertencia: No se encontró el archivo {ruta}")
@@ -38,7 +38,7 @@ class CargadorRIPS:
         Returns:
             Diccionario con los datos del archivo
         """
-        with open(ruta_archivo, 'r', encoding='utf-8') as f:
+        with open(ruta_archivo, 'r', encoding='utf-8-sig') as f:
             return json.load(f)
 
     def obtener_info_diagnostico(self, codigo: str) -> Dict[str, str]:
@@ -113,3 +113,16 @@ class CargadorRIPS:
         """
         servicios = usuario.get("servicios", {})
         return servicios.get("consultas", [])
+
+    def extraer_procedimientos(self, usuario: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """
+        Extrae los procedimientos de un usuario
+
+        Args:
+            usuario: Diccionario con datos del usuario
+
+        Returns:
+            Lista de procedimientos
+        """
+        servicios = usuario.get("servicios", {})
+        return servicios.get("procedimientos", [])

@@ -2,8 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(python:*)",
-      "Bash(pip install:*)",
-      "Bash(del *.json)"
+      "Bash(timeout 120 python:*)"
     ],
     "deny": [],
     "ask": []

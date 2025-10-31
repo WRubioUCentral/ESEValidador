@@ -13,6 +13,7 @@ from cargador_rips import CargadorRIPS
 from analizador_rips import AnalizadorRIPS
 from generador_reportes import GeneradorReportes
 from validador_calidad import ValidadorCalidadRIPS
+from validador_avanzado import ValidadorAvanzadoRIPS
 
 
 def procesar_archivo(archivo_rips: str, cargador: CargadorRIPS, archivo_num: int, total_archivos: int):
@@ -49,23 +50,47 @@ def procesar_archivo(archivo_rips: str, cargador: CargadorRIPS, archivo_num: int
         print("[OK] Análisis completado")
         print()
 
-        # Validación de calidad de datos
+        # Validación de calidad de datos básica
         print("Validando calidad de datos...")
         validador = ValidadorCalidadRIPS()
         validacion = validador.validar_datos_completos(datos_rips)
-        print(f"[OK] Validación completada - Nivel de calidad: {validacion.get('calidad_datos')}")
+        print(f"[OK] Validación básica completada - Nivel de calidad: {validacion.get('calidad_datos')}")
         print(f"    Total de anomalías detectadas: {validacion.get('total_anomalias', 0)}")
         if validacion.get('total_anomalias', 0) > 0:
             por_sev = validacion.get('por_severidad', {})
             print(f"    - Alta: {por_sev.get('ALTA', 0)}, Media: {por_sev.get('MEDIA', 0)}, Baja: {por_sev.get('BAJA', 0)}")
         print()
 
+        # Validación avanzada con análisis automático
+        print("Ejecutando validación avanzada y análisis de alertas...")
+        validador_avanzado = ValidadorAvanzadoRIPS(cargador)
+        analisis_avanzado = validador_avanzado.validar_y_analizar(datos_rips)
+        print(f"[OK] Validación avanzada completada")
+
+        # Mostrar alertas críticas si existen
+        alertas = analisis_avanzado.get("alertas", [])
+        alertas_alta = [a for a in alertas if a.get("nivel") == "ALTA"]
+        if alertas_alta:
+            print(f"    [!] ALERTAS DE SEVERIDAD ALTA: {len(alertas_alta)}")
+            for alerta in alertas_alta[:3]:  # Mostrar las primeras 3
+                print(f"       - {alerta.get('tipo')}: {alerta.get('mensaje')}")
+
+        # Mostrar indicadores clave
+        indicadores = analisis_avanzado.get("indicadores_calidad", {})
+        if indicadores and isinstance(indicadores, dict):
+            oportunidad = indicadores.get('oportunidad_atencion', 0)
+            completitud = indicadores.get('completitud_diagnosticos', 0)
+            if isinstance(oportunidad, (int, float)) and isinstance(completitud, (int, float)):
+                print(f"    Oportunidad en atención: {oportunidad:.1f}%")
+                print(f"    Completitud de diagnósticos: {completitud:.1f}%")
+        print()
+
         # Generar reportes en carpeta específica
         print("Generando reportes...")
         generador = GeneradorReportes(nombre_archivo_json=archivo_rips)
 
-        # Reporte Excel completo con múltiples hojas
-        ruta_excel = generador.generar_excel_completo(analisis_completo, datos_rips, validacion, "informe_completo")
+        # Reporte Excel completo con múltiples hojas (incluye análisis avanzado)
+        ruta_excel = generador.generar_excel_completo(analisis_completo, datos_rips, validacion, "informe_completo", analisis_avanzado)
         print(f"[OK] Reporte Excel: {ruta_excel}")
 
         # Informe gerencial en DOCX con gráficos
@@ -81,14 +106,19 @@ def procesar_archivo(archivo_rips: str, cargador: CargadorRIPS, archivo_num: int
         demo = analisis_completo["analisis_demografico"]
         diag = analisis_completo["analisis_diagnosticos"]
         serv = analisis_completo["analisis_servicios"]
+        proc = analisis_completo.get("analisis_procedimientos", {})
+        incap = analisis_completo.get("analisis_incapacidades", {})
 
         print(f"\nTotal de usuarios: {demo['total_usuarios']}")
         print(f"Total de consultas: {serv['total_consultas']}")
+        print(f"Total de procedimientos: {proc.get('total_procedimientos', 0)}")
         print(f"Diagnósticos únicos: {diag['diagnosticos_unicos']}")
+        print(f"Usuarios con incapacidad: {incap.get('total_con_incapacidad', 0)}")
         print(f"Nivel de calidad: {validacion.get('calidad_datos')}")
 
         print("\n--- TOP 3 DIAGNÓSTICOS ---")
-        for i, d in enumerate(diag["top_10_diagnosticos"][:3], 1):
+        todos_diag = diag.get("todos_diagnosticos", [])
+        for i, d in enumerate(todos_diag[:3], 1):
             print(f"{i}. [{d['codigo']}] {d['nombre']} - Cantidad: {d['cantidad']}")
 
         print()
@@ -96,8 +126,10 @@ def procesar_archivo(archivo_rips: str, cargador: CargadorRIPS, archivo_num: int
         return True
 
     except Exception as e:
+        import traceback
         print(f"\n[ERROR] al procesar archivo: {str(e)}")
         print(f"        El archivo {archivo_rips} sera omitido")
+        traceback.print_exc()
         return False
 
 

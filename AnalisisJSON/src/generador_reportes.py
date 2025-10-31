@@ -15,6 +15,7 @@ from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 import io
+from catalogos_rips import FINALIDADES_TECNOLOGIA_SALUD, CAUSAS_ATENCION
 
 
 class GeneradorReportes:
@@ -97,9 +98,9 @@ class GeneradorReportes:
             for sexo, cantidad in demo.get("distribucion_sexo", {}).items():
                 f.write(f"  {sexo}: {cantidad}\n")
 
-            f.write("\nDistribución por Edad:\n")
-            for grupo, cantidad in demo.get("distribucion_edad", {}).items():
-                f.write(f"  {grupo} años: {cantidad}\n")
+            f.write("\nDistribución por Ruta de Vida (Resolución 3280 de 2018):\n")
+            for grupo, cantidad in demo.get("distribucion_ruta_vida", {}).items():
+                f.write(f"  {grupo}: {cantidad}\n")
 
             f.write("\nDistribución por Tipo de Documento:\n")
             for tipo, cantidad in demo.get("distribucion_tipo_documento", {}).items():
@@ -119,12 +120,12 @@ class GeneradorReportes:
             f.write(f"Diagnósticos Únicos: {diag.get('diagnosticos_unicos', 0)}\n")
             f.write(f"Casos con Comorbilidades: {diag.get('diagnosticos_con_comorbilidades', 0)}\n\n")
 
-            f.write("TOP 10 DIAGNÓSTICOS MÁS FRECUENTES:\n")
+            f.write("TODOS LOS DIAGNÓSTICOS IDENTIFICADOS:\n")
             f.write("-" * 80 + "\n")
-            for i, diag_info in enumerate(diag.get("top_10_diagnosticos", []), 1):
+            for i, diag_info in enumerate(diag.get("todos_diagnosticos", []), 1):
                 f.write(f"{i}. [{diag_info.get('codigo')}] {diag_info.get('nombre')}\n")
                 f.write(f"   Descripción: {diag_info.get('descripcion')}\n")
-                f.write(f"   Cantidad: {diag_info.get('cantidad')}\n\n")
+                f.write(f"   Cantidad: {diag_info.get('cantidad')} ({diag_info.get('porcentaje', 0):.1f}%)\n\n")
 
             # Comorbilidades
             comorbilidades = diag.get("comorbilidades_detalle", [])
@@ -198,70 +199,38 @@ class GeneradorReportes:
         ruta = self.directorio_reporte / f"{nombre_archivo}.csv"
 
         diag = analisis.get("analisis_diagnosticos", {})
-        top_diagnosticos = diag.get("top_10_diagnosticos", [])
+        todos_diagnosticos = diag.get("todos_diagnosticos", [])
 
         with open(ruta, 'w', encoding='utf-8') as f:
-            f.write("Codigo,Nombre,Descripcion,Cantidad\n")
-            for diag_info in top_diagnosticos:
+            f.write("Codigo,Nombre,Descripcion,Cantidad,Porcentaje\n")
+            for diag_info in todos_diagnosticos:
                 codigo = diag_info.get('codigo', '')
                 nombre = diag_info.get('nombre', '').replace(',', ';')
                 descripcion = diag_info.get('descripcion', '').replace(',', ';')
                 cantidad = diag_info.get('cantidad', 0)
-                f.write(f'"{codigo}","{nombre}","{descripcion}",{cantidad}\n')
+                porcentaje = diag_info.get('porcentaje', 0)
+                f.write(f'"{codigo}","{nombre}","{descripcion}",{cantidad},{porcentaje:.1f}\n')
 
         return str(ruta)
 
     def _obtener_descripcion_finalidad(self, codigo: str) -> str:
         """Obtiene descripción de código de finalidad"""
-        finalidades = {
-            "01": "Diagnóstico",
-            "02": "Tratamiento",
-            "03": "Protección específica",
-            "04": "Detección temprana",
-            "05": "Protección específica y detección temprana",
-            "06": "Protección específica, detección temprana y tratamiento",
-            "10": "Atención de parto",
-            "11": "Atención del recién nacido",
-            "12": "Atención en planificación familiar",
-            "13": "Detección de alteraciones de crecimiento y desarrollo del menor de 10 años",
-            "14": "Detección de alteraciones del desarrollo joven",
-            "15": "Detección de alteraciones del embarazo",
-            "16": "Detección de alteraciones en el adulto",
-            "17": "Detección de alteraciones de agudeza visual"
-        }
-        return finalidades.get(codigo, "No especificado")
+        return FINALIDADES_TECNOLOGIA_SALUD.get(codigo, "No especificado")
 
     def _obtener_descripcion_causa(self, codigo: str) -> str:
         """Obtiene descripción de código de causa"""
-        causas = {
-            "01": "Accidente de trabajo",
-            "02": "Accidente de tránsito",
-            "03": "Accidente rábico",
-            "04": "Accidente ofídico",
-            "05": "Otro tipo de accidente",
-            "06": "Evento catastrófico de origen natural",
-            "07": "Lesión por agresión",
-            "08": "Lesión autoinfligida",
-            "09": "Sospecha de maltrato físico",
-            "10": "Sospecha de abuso sexual",
-            "11": "Sospecha de violencia sexual",
-            "12": "Sospecha de maltrato emocional",
-            "13": "Enfermedad general",
-            "14": "Enfermedad profesional",
-            "15": "Otra",
-            "26": "Planificación familiar",
-            "38": "Promoción y prevención"
-        }
-        return causas.get(codigo, "No especificado")
+        return CAUSAS_ATENCION.get(codigo, "No especificado")
 
-    def generar_excel_completo(self, analisis: Dict[str, Any], datos_rips: Dict[str, Any], validacion: Dict[str, Any], nombre_archivo: str) -> str:
+    def generar_excel_completo(self, analisis: Dict[str, Any], datos_rips: Dict[str, Any], validacion: Dict[str, Any], nombre_archivo: str, analisis_avanzado: Dict[str, Any] = None) -> str:
         """
         Genera un archivo Excel completo con múltiples hojas de análisis
 
         Args:
             analisis: Diccionario con análisis completo
             datos_rips: Datos originales RIPS
+            validacion: Diccionario con validación de calidad
             nombre_archivo: Nombre del archivo (sin extensión)
+            analisis_avanzado: Diccionario con análisis avanzado (opcional)
 
         Returns:
             Ruta del archivo generado
@@ -287,10 +256,10 @@ class GeneradorReportes:
         # 5. Hoja de Diagnósticos
         self._crear_hoja_diagnosticos(wb, analisis)
 
-        # 6. Hoja de Diagnósticos por Género
-        self._crear_hoja_diagnosticos_genero(wb, datos_rips, analisis)
+        # 6. Hoja de Población Gestante
+        self._crear_hoja_poblacion_gestante(wb, analisis)
 
-        # 7. Hoja de Distribución por Edad
+        # 7. Hoja de Distribución por Ruta de Vida
         self._crear_hoja_distribucion_edad(wb, analisis)
 
         # 8. Hoja de Distribución Territorial
@@ -304,6 +273,33 @@ class GeneradorReportes:
 
         # 11. Hoja de Validación de Calidad
         self._crear_hoja_validacion_calidad(wb, validacion)
+
+        # 12. Hoja de Alertas Automáticas (si existe análisis avanzado)
+        if analisis_avanzado:
+            self._crear_hoja_alertas(wb, analisis_avanzado)
+
+        # 13. Hoja de Indicadores de Calidad (si existe análisis avanzado)
+        if analisis_avanzado:
+            self._crear_hoja_indicadores_calidad(wb, analisis_avanzado)
+
+        # 14. Hoja de Análisis de Morbilidad (si existe análisis avanzado)
+        if analisis_avanzado:
+            self._crear_hoja_morbilidad_especifica(wb, analisis_avanzado)
+
+        # 15. Hoja de Procedimientos CUPS
+        self._crear_hoja_procedimientos(wb, analisis)
+
+        # 16. Hoja de Tipo de Usuario/Régimen
+        self._crear_hoja_tipo_usuario(wb, analisis)
+
+        # 17. Hoja de Incapacidades
+        self._crear_hoja_incapacidades(wb, analisis)
+
+        # 18. Hoja de Modalidad y Tipo Diagnóstico
+        self._crear_hoja_modalidad_diagnostico(wb, analisis)
+
+        # 19. Hoja de Prestadores
+        self._crear_hoja_prestadores(wb, analisis)
 
         wb.save(ruta)
         return str(ruta)
@@ -359,38 +355,37 @@ class GeneradorReportes:
         ws = wb.create_sheet("Datos Personales")
 
         # Encabezados
-        encabezados = ["Tipo Doc", "Número Documento", "Nombre Completo", "Sexo", "Edad",
-                      "Municipio", "Zona Territorial", "Tipo Usuario", "Cobertura"]
+        encabezados = ["Tipo Doc", "Número Documento", "Sexo", "Fecha Nacimiento", "Edad",
+                      "Municipio", "Zona Territorial", "Tipo Usuario", "País Residencia"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=1, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
 
-        # Datos de pacientes únicos
-        pacientes_unicos = {}
-        for consulta in datos_rips.get("consultas", []):
-            doc = consulta.get("num_documento_identificacion")
-            if doc not in pacientes_unicos:
-                pacientes_unicos[doc] = consulta
+        # Extraer usuarios desde la estructura correcta
+        from cargador_rips import CargadorRIPS
+        cargador = CargadorRIPS()
+        usuarios = datos_rips.get("usuarios", [])
 
         fila = 2
-        for consulta in pacientes_unicos.values():
-            ws.cell(row=fila, column=1, value=consulta.get("tipo_documento_identificacion"))
-            ws.cell(row=fila, column=2, value=consulta.get("num_documento_identificacion"))
+        for usuario in usuarios:
+            ws.cell(row=fila, column=1, value=usuario.get("tipoDocumentoIdentificacion"))
+            ws.cell(row=fila, column=2, value=usuario.get("numDocumentoIdentificacion"))
+            ws.cell(row=fila, column=3, value="Femenino" if usuario.get("codSexo") == "F" else "Masculino" if usuario.get("codSexo") == "M" else usuario.get("codSexo"))
+            ws.cell(row=fila, column=4, value=usuario.get("fechaNacimiento"))
 
-            # Nombre completo
-            nombre = f"{consulta.get('primer_apellido', '')} {consulta.get('segundo_apellido', '')} {consulta.get('primer_nombre', '')} {consulta.get('segundo_nombre', '')}".strip()
-            ws.cell(row=fila, column=3, value=nombre)
+            # Calcular edad
+            fecha_nac = usuario.get("fechaNacimiento")
+            edad = cargador.calcular_edad(fecha_nac) if fecha_nac else None
+            ws.cell(row=fila, column=5, value=edad)
 
-            ws.cell(row=fila, column=4, value=consulta.get("sexo"))
-            ws.cell(row=fila, column=5, value=consulta.get("edad"))
-            ws.cell(row=fila, column=6, value=consulta.get("cod_municipio"))
+            ws.cell(row=fila, column=6, value=usuario.get("codMunicipioResidencia"))
 
-            zona = consulta.get("zona_territorial_residencia")
+            zona = usuario.get("codZonaTerritorialResidencia")
             zona_desc = "Urbana" if zona == "01" else "Rural" if zona == "02" else zona
             ws.cell(row=fila, column=7, value=zona_desc)
 
-            ws.cell(row=fila, column=8, value=consulta.get("tipo_usuario"))
-            ws.cell(row=fila, column=9, value=consulta.get("cobertura"))
+            ws.cell(row=fila, column=8, value=usuario.get("tipoUsuario"))
+            ws.cell(row=fila, column=9, value=usuario.get("codPaisResidencia"))
             fila += 1
 
         self._ajustar_columnas(ws)
@@ -400,26 +395,35 @@ class GeneradorReportes:
         ws = wb.create_sheet("Servicios por Paciente")
 
         # Encabezados
-        encabezados = ["Tipo Doc", "Número Documento", "Nombre", "Fecha Consulta", "Finalidad",
-                      "Causa Externa", "Diagnóstico Principal", "Valor Consulta", "Copago"]
+        encabezados = ["Tipo Doc Usuario", "Núm. Doc Usuario", "Sexo", "Fecha Consulta", "Modalidad",
+                      "Finalidad", "Motivo Consulta", "Diagnóstico Principal", "Valor Servicio", "Copago"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=1, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
 
+        # Extraer consultas desde la estructura correcta
+        usuarios = datos_rips.get("usuarios", [])
         fila = 2
-        for consulta in datos_rips.get("consultas", []):
-            ws.cell(row=fila, column=1, value=consulta.get("tipo_documento_identificacion"))
-            ws.cell(row=fila, column=2, value=consulta.get("num_documento_identificacion"))
 
-            nombre = f"{consulta.get('primer_apellido', '')} {consulta.get('primer_nombre', '')}".strip()
-            ws.cell(row=fila, column=3, value=nombre)
-            ws.cell(row=fila, column=4, value=consulta.get("fecha_consulta"))
-            ws.cell(row=fila, column=5, value=self._obtener_descripcion_finalidad(consulta.get("finalidad_consulta", "")))
-            ws.cell(row=fila, column=6, value=self._obtener_descripcion_causa(consulta.get("causa_externa", "")))
-            ws.cell(row=fila, column=7, value=consulta.get("diagnostico_principal"))
-            ws.cell(row=fila, column=8, value=consulta.get("valor_consulta", 0))
-            ws.cell(row=fila, column=9, value=consulta.get("valor_cuota_moderadora", 0))
-            fila += 1
+        for usuario in usuarios:
+            tipo_doc_usuario = usuario.get("tipoDocumentoIdentificacion")
+            num_doc_usuario = usuario.get("numDocumentoIdentificacion")
+            sexo = "Femenino" if usuario.get("codSexo") == "F" else "Masculino" if usuario.get("codSexo") == "M" else usuario.get("codSexo")
+
+            consultas = usuario.get("servicios", {}).get("consultas", [])
+
+            for consulta in consultas:
+                ws.cell(row=fila, column=1, value=tipo_doc_usuario)
+                ws.cell(row=fila, column=2, value=num_doc_usuario)
+                ws.cell(row=fila, column=3, value=sexo)
+                ws.cell(row=fila, column=4, value=consulta.get("fechaInicioAtencion"))
+                ws.cell(row=fila, column=5, value=consulta.get("modalidadGrupoServicioTecSal"))
+                ws.cell(row=fila, column=6, value=self._obtener_descripcion_finalidad(consulta.get("finalidadTecnologiaSalud", "")))
+                ws.cell(row=fila, column=7, value=self._obtener_descripcion_causa(consulta.get("causaMotivoAtencion", "")))
+                ws.cell(row=fila, column=8, value=consulta.get("codDiagnosticoPrincipal"))
+                ws.cell(row=fila, column=9, value=consulta.get("vrServicio", 0))
+                ws.cell(row=fila, column=10, value=consulta.get("valorPagoModerador", 0))
+                fila += 1
 
         self._ajustar_columnas(ws)
 
@@ -451,19 +455,19 @@ class GeneradorReportes:
             ws[f'B{fila}'] = cantidad
             fila += 1
 
-        # Distribución por Edad
+        # Distribución por Ruta de Vida (Resolución 3280 de 2018)
         fila += 1
-        ws[f'A{fila}'] = "Distribución por Edad"
+        ws[f'A{fila}'] = "Distribución por Ruta de Vida (Resolución 3280 de 2018)"
         ws[f'A{fila}'].font = Font(bold=True, size=12)
         fila += 1
-        ws[f'A{fila}'] = "Rango de Edad"
+        ws[f'A{fila}'] = "Ruta de Vida"
         ws[f'B{fila}'] = "Cantidad"
         self._aplicar_estilo_encabezado(ws[f'A{fila}'])
         self._aplicar_estilo_encabezado(ws[f'B{fila}'])
         fila += 1
 
-        for rango, cantidad in demo.get("distribucion_edad", {}).items():
-            ws[f'A{fila}'] = f"{rango} años"
+        for ruta_vida, cantidad in demo.get("distribucion_ruta_vida", {}).items():
+            ws[f'A{fila}'] = ruta_vida
             ws[f'B{fila}'] = cantidad
             fila += 1
 
@@ -491,127 +495,181 @@ class GeneradorReportes:
         diag = analisis.get("analisis_diagnosticos", {})
 
         # Encabezados
-        ws['A1'] = "TOP DIAGNÓSTICOS MÁS FRECUENTES"
+        ws['A1'] = "TODOS LOS DIAGNÓSTICOS IDENTIFICADOS"
         ws['A1'].font = Font(bold=True, size=14)
-        ws.merge_cells('A1:D1')
+        ws.merge_cells('A1:E1')
 
         ws['A3'] = f"Total de Diagnósticos: {diag.get('total_diagnosticos', 0)}"
         ws['A4'] = f"Diagnósticos Únicos: {diag.get('diagnosticos_unicos', 0)}"
 
-        encabezados = ["Código", "Nombre", "Descripción", "Cantidad"]
+        encabezados = ["Código", "Nombre", "Descripción", "Cantidad", "Porcentaje"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=6, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
 
         fila = 7
-        for diag_info in diag.get("top_10_diagnosticos", []):
+        for diag_info in diag.get("todos_diagnosticos", []):
+            ws.cell(row=fila, column=1, value=diag_info.get('codigo'))
+            ws.cell(row=fila, column=2, value=diag_info.get('nombre'))
+            ws.cell(row=fila, column=3, value=diag_info.get('descripcion'))
+            ws.cell(row=fila, column=4, value=diag_info.get('cantidad'))
+            ws.cell(row=fila, column=5, value=f"{diag_info.get('porcentaje', 0):.1f}%")
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_poblacion_gestante(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis de población gestante"""
+        ws = wb.create_sheet("Población Gestante")
+
+        gestantes_data = analisis.get("analisis_poblacion_gestante", {})
+
+        # Encabezado
+        ws['A1'] = "ANÁLISIS DE POBLACIÓN GESTANTE"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="E91E63", end_color="E91E63", fill_type="solid")
+        ws.merge_cells('A1:F1')
+
+        # Resumen
+        ws['A3'] = "RESUMEN"
+        ws['A3'].font = Font(bold=True, size=12)
+        ws.merge_cells('A3:C3')
+
+        datos_resumen = [
+            ["Total de Gestantes", gestantes_data.get('total_gestantes', 0)],
+            ["Edad Promedio", f"{gestantes_data.get('edad_promedio', 0)} años"],
+            ["Gestantes Adolescentes", gestantes_data.get('gestantes_adolescentes', 0)],
+            ["Gestantes de Alto Riesgo", f"{gestantes_data.get('gestantes_alto_riesgo', 0)} ({gestantes_data.get('porcentaje_alto_riesgo', 0):.1f}%)"],
+            ["Gestantes con Complicaciones", f"{gestantes_data.get('gestantes_con_complicaciones', 0)} ({gestantes_data.get('porcentaje_complicaciones', 0):.1f}%)"],
+            ["Cobertura de Controles Prenatales", f"{gestantes_data.get('cobertura_controles_prenatales', 0):.1f}%"]
+        ]
+
+        fila = 4
+        for campo, valor in datos_resumen:
+            ws[f'A{fila}'] = campo
+            ws[f'A{fila}'].font = Font(bold=True)
+            ws[f'B{fila}'] = valor
+            fila += 1
+
+        # Distribución de Controles Prenatales
+        fila += 2
+        ws[f'A{fila}'] = "Distribución de Controles Prenatales"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:C{fila}')
+        fila += 1
+
+        encabezados = ["Número de Controles", "Cantidad de Gestantes", "Porcentaje"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        dist_controles = gestantes_data.get("distribucion_controles_prenatales", {})
+        total_gestantes = gestantes_data.get('total_gestantes', 0)
+        for num_controles, cantidad in sorted(dist_controles.items()):
+            porcentaje = (cantidad / total_gestantes * 100) if total_gestantes > 0 else 0
+            ws.cell(row=fila, column=1, value=f"{num_controles} controles")
+            ws.cell(row=fila, column=2, value=cantidad)
+            ws.cell(row=fila, column=3, value=f"{porcentaje:.1f}%")
+            fila += 1
+
+        # Distribución por edad
+        fila += 2
+        ws[f'A{fila}'] = "Distribución por Grupo de Edad"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        fila += 1
+
+        encabezados = ["Grupo de Edad", "Cantidad", "Porcentaje"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        dist_edad = gestantes_data.get("distribucion_edad_gestantes", {})
+        for grupo, cantidad in dist_edad.items():
+            porcentaje = (cantidad / total_gestantes * 100) if total_gestantes > 0 else 0
+            ws.cell(row=fila, column=1, value=grupo)
+            ws.cell(row=fila, column=2, value=cantidad)
+            ws.cell(row=fila, column=3, value=f"{porcentaje:.1f}%")
+            fila += 1
+
+        # Top diagnósticos en gestantes
+        fila += 2
+        ws[f'A{fila}'] = "Top 10 Diagnósticos en Población Gestante"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        fila += 1
+
+        encabezados = ["Código", "Nombre", "Descripción", "Cantidad"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        for diag_info in gestantes_data.get("top_diagnosticos_gestantes", []):
             ws.cell(row=fila, column=1, value=diag_info.get('codigo'))
             ws.cell(row=fila, column=2, value=diag_info.get('nombre'))
             ws.cell(row=fila, column=3, value=diag_info.get('descripcion'))
             ws.cell(row=fila, column=4, value=diag_info.get('cantidad'))
             fila += 1
 
-        self._ajustar_columnas(ws)
-
-    def _crear_hoja_diagnosticos_genero(self, wb: Workbook, datos_rips: Dict[str, Any], analisis: Dict[str, Any]):
-        """Crea hoja de análisis de diagnósticos y motivo de consulta por género"""
-        ws = wb.create_sheet("Diagnósticos por Género")
-
-        # Encabezado
-        ws['A1'] = "ANÁLISIS DE DIAGNÓSTICOS Y MOTIVOS DE CONSULTA POR GÉNERO"
-        ws['A1'].font = Font(bold=True, size=14)
-        ws.merge_cells('A1:E1')
-
-        # Agrupar diagnósticos por género
-        diagnosticos_por_genero = {"F": {}, "M": {}}
-        motivos_por_genero = {"F": {}, "M": {}}
-
-        for consulta in datos_rips.get("consultas", []):
-            sexo = consulta.get("sexo", "")
-            diag = consulta.get("diagnostico_principal", "")
-            causa = consulta.get("causa_externa", "")
-
-            if sexo in diagnosticos_por_genero and diag:
-                diagnosticos_por_genero[sexo][diag] = diagnosticos_por_genero[sexo].get(diag, 0) + 1
-
-            if sexo in motivos_por_genero and causa:
-                motivos_por_genero[sexo][causa] = motivos_por_genero[sexo].get(causa, 0) + 1
-
-        # Diagnósticos por género
-        ws['A3'] = "Diagnósticos por Género"
-        ws['A3'].font = Font(bold=True, size=12)
-
-        encabezados = ["Código Diagnóstico", "Femenino", "Masculino", "Total"]
-        for col, encabezado in enumerate(encabezados, start=1):
-            cell = ws.cell(row=4, column=col, value=encabezado)
-            self._aplicar_estilo_encabezado(cell)
-
-        todos_diagnosticos = set(list(diagnosticos_por_genero["F"].keys()) + list(diagnosticos_por_genero["M"].keys()))
-        fila = 5
-        for diag in sorted(todos_diagnosticos):
-            fem = diagnosticos_por_genero["F"].get(diag, 0)
-            masc = diagnosticos_por_genero["M"].get(diag, 0)
-            ws.cell(row=fila, column=1, value=diag)
-            ws.cell(row=fila, column=2, value=fem)
-            ws.cell(row=fila, column=3, value=masc)
-            ws.cell(row=fila, column=4, value=fem + masc)
-            fila += 1
-
-        # Motivos de consulta por género
+        # Detalle de gestantes
         fila += 2
-        ws[f'A{fila}'] = "Motivos de Consulta (Causa Externa) por Género"
+        ws[f'A{fila}'] = "Detalle de Gestantes Identificadas"
         ws[f'A{fila}'].font = Font(bold=True, size=12)
         fila += 1
 
-        encabezados = ["Código Causa", "Descripción", "Femenino", "Masculino", "Total"]
+        encabezados = ["Tipo Doc", "Número Documento", "Edad", "Municipio", "Zona"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=fila, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
         fila += 1
 
-        todos_motivos = set(list(motivos_por_genero["F"].keys()) + list(motivos_por_genero["M"].keys()))
-        for motivo in sorted(todos_motivos):
-            fem = motivos_por_genero["F"].get(motivo, 0)
-            masc = motivos_por_genero["M"].get(motivo, 0)
-            ws.cell(row=fila, column=1, value=motivo)
-            ws.cell(row=fila, column=2, value=self._obtener_descripcion_causa(motivo))
-            ws.cell(row=fila, column=3, value=fem)
-            ws.cell(row=fila, column=4, value=masc)
-            ws.cell(row=fila, column=5, value=fem + masc)
+        for gestante in gestantes_data.get("gestantes_detalle", []):
+            ws.cell(row=fila, column=1, value=gestante.get("tipo_documento"))
+            ws.cell(row=fila, column=2, value=gestante.get("documento"))
+            ws.cell(row=fila, column=3, value=gestante.get("edad"))
+            ws.cell(row=fila, column=4, value=gestante.get("municipio"))
+            zona = gestante.get("zona")
+            zona_desc = "Urbana" if zona == "01" else "Rural" if zona == "02" else zona
+            ws.cell(row=fila, column=5, value=zona_desc)
             fila += 1
 
         self._ajustar_columnas(ws)
 
     def _crear_hoja_distribucion_edad(self, wb: Workbook, analisis: Dict[str, Any]):
-        """Crea hoja de distribución por edad"""
-        ws = wb.create_sheet("Distribución por Edad")
+        """Crea hoja de distribución por Ruta de Vida"""
+        ws = wb.create_sheet("Distribución por Ruta de Vida")
         demo = analisis.get("analisis_demografico", {})
 
-        ws['A1'] = "DISTRIBUCIÓN DE PACIENTES POR EDAD"
+        ws['A1'] = "DISTRIBUCIÓN DE PACIENTES POR RUTA DE VIDA"
         ws['A1'].font = Font(bold=True, size=14)
         ws.merge_cells('A1:C1')
 
-        encabezados = ["Rango de Edad", "Cantidad", "Porcentaje"]
+        ws['A2'] = "(Resolución 3280 de 2018)"
+        ws['A2'].font = Font(italic=True, size=10)
+        ws.merge_cells('A2:C2')
+
+        encabezados = ["Ruta de Vida", "Cantidad", "Porcentaje"]
         for col, encabezado in enumerate(encabezados, start=1):
-            cell = ws.cell(row=3, column=col, value=encabezado)
+            cell = ws.cell(row=4, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
 
         total_usuarios = demo.get('total_usuarios', 0)
-        fila = 4
-        for rango, cantidad in demo.get("distribucion_edad", {}).items():
+        fila = 5
+        for ruta_vida, cantidad in demo.get("distribucion_ruta_vida", {}).items():
             porcentaje = (cantidad / total_usuarios * 100) if total_usuarios > 0 else 0
-            ws.cell(row=fila, column=1, value=f"{rango} años")
+            ws.cell(row=fila, column=1, value=ruta_vida)
             ws.cell(row=fila, column=2, value=cantidad)
             ws.cell(row=fila, column=3, value=f"{porcentaje:.1f}%")
             fila += 1
 
-        # Distribución por sexo y edad
+        # Distribución por sexo y ruta de vida
         fila += 2
-        ws[f'A{fila}'] = "Distribución por Sexo y Edad"
+        ws[f'A{fila}'] = "Distribución por Sexo y Ruta de Vida"
         ws[f'A{fila}'].font = Font(bold=True, size=12)
         fila += 1
 
-        encabezados = ["Sexo", "Rango de Edad", "Cantidad"]
+        encabezados = ["Sexo", "Ruta de Vida", "Cantidad"]
         for col, encabezado in enumerate(encabezados, start=1):
             cell = ws.cell(row=fila, column=col, value=encabezado)
             self._aplicar_estilo_encabezado(cell)
@@ -620,9 +678,9 @@ class GeneradorReportes:
         dist_sexo_edad = demo.get("distribucion_sexo_edad", {})
         for sexo in ["F", "M"]:
             sexo_desc = "Femenino" if sexo == "F" else "Masculino"
-            for rango, cantidad in dist_sexo_edad.get(sexo, {}).items():
+            for ruta_vida, cantidad in dist_sexo_edad.get(sexo, {}).items():
                 ws.cell(row=fila, column=1, value=sexo_desc)
-                ws.cell(row=fila, column=2, value=f"{rango} años")
+                ws.cell(row=fila, column=2, value=ruta_vida)
                 ws.cell(row=fila, column=3, value=cantidad)
                 fila += 1
 
@@ -891,6 +949,484 @@ class GeneradorReportes:
         ws.column_dimensions['G'].width = 20
         ws.column_dimensions['H'].width = 20
 
+    def _crear_hoja_alertas(self, wb: Workbook, analisis_avanzado: Dict[str, Any]):
+        """Crea hoja de alertas automáticas"""
+        ws = wb.create_sheet("Alertas Automáticas")
+
+        # Título
+        ws['A1'] = "SISTEMA DE ALERTAS AUTOMÁTICAS"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="FF6600", end_color="FF6600", fill_type="solid")
+        ws.merge_cells('A1:E1')
+
+        alertas = analisis_avanzado.get("alertas", [])
+
+        ws['A3'] = f"Total de Alertas Generadas: {len(alertas)}"
+        ws['A3'].font = Font(bold=True, size=12)
+
+        if alertas:
+            # Distribución por nivel
+            ws['A5'] = "Distribución por Nivel de Severidad"
+            ws['A5'].font = Font(bold=True, size=11)
+
+            niveles = {}
+            for alerta in alertas:
+                nivel = alerta.get("nivel", "MEDIA")
+                niveles[nivel] = niveles.get(nivel, 0) + 1
+
+            fila = 6
+            for nivel, cantidad in niveles.items():
+                ws[f'A{fila}'] = nivel
+                ws[f'B{fila}'] = cantidad
+                fila += 1
+
+            # Detalle de todas las alertas
+            fila += 2
+            ws[f'A{fila}'] = "DETALLE DE ALERTAS"
+            ws[f'A{fila}'].font = Font(bold=True, size=12)
+            ws.merge_cells(f'A{fila}:E{fila}')
+            fila += 1
+
+            encabezados = ["Nivel", "Tipo", "Mensaje", "Recomendación", "Acción Requerida"]
+            for col, encabezado in enumerate(encabezados, start=1):
+                cell = ws.cell(row=fila, column=col, value=encabezado)
+                self._aplicar_estilo_encabezado(cell)
+            fila += 1
+
+            colores_nivel = {"ALTA": "C00000", "MEDIA": "FFC000", "BAJA": "92D050"}
+
+            for alerta in alertas:
+                nivel = alerta.get("nivel", "MEDIA")
+
+                cell_nivel = ws.cell(row=fila, column=1, value=nivel)
+                cell_nivel.fill = PatternFill(start_color=colores_nivel.get(nivel, "FFFFFF"),
+                                              end_color=colores_nivel.get(nivel, "FFFFFF"),
+                                              fill_type="solid")
+                cell_nivel.font = Font(bold=True, color="FFFFFF")
+
+                ws.cell(row=fila, column=2, value=alerta.get("tipo", ""))
+                ws.cell(row=fila, column=3, value=alerta.get("mensaje", ""))
+                ws.cell(row=fila, column=4, value=alerta.get("recomendacion", ""))
+                ws.cell(row=fila, column=5, value=alerta.get("accion_requerida", ""))
+                fila += 1
+        else:
+            ws['A5'] = "No se generaron alertas. ¡Excelente desempeño!"
+            ws['A5'].font = Font(bold=True, color="00B050")
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_indicadores_calidad(self, wb: Workbook, analisis_avanzado: Dict[str, Any]):
+        """Crea hoja de indicadores de calidad"""
+        ws = wb.create_sheet("Indicadores de Calidad")
+
+        # Título
+        ws['A1'] = "INDICADORES DE CALIDAD - RESOLUCIÓN 202 DE 2021"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="0070C0", end_color="0070C0", fill_type="solid")
+        ws.merge_cells('A1:D1')
+
+        indicadores = analisis_avanzado.get("indicadores_calidad", {})
+
+        # Encabezados
+        encabezados = ["Indicador", "Valor", "Meta", "Cumplimiento"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=3, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+
+        fila = 4
+        datos_indicadores = [
+            ["Oportunidad en Atención", indicadores.get("oportunidad_atencion", 0), 95, "%"],
+            ["Completitud de Diagnósticos", indicadores.get("completitud_diagnosticos", 0), 98, "%"],
+            ["Cobertura de Autorizaciones", indicadores.get("cobertura_autorizaciones", 0), 100, "%"],
+            ["Calidad de Registro", indicadores.get("calidad_registro", 0), 95, "%"]
+        ]
+
+        for nombre, valor, meta, unidad in datos_indicadores:
+            ws.cell(row=fila, column=1, value=nombre)
+
+            # Verificar que valor sea numérico
+            if isinstance(valor, (int, float)):
+                ws.cell(row=fila, column=2, value=f"{valor:.1f}{unidad}")
+                cumple = "Si" if valor >= meta else "No"
+                cell_cumple = ws.cell(row=fila, column=4, value=cumple)
+                if valor >= meta:
+                    cell_cumple.font = Font(bold=True, color="00B050")
+                else:
+                    cell_cumple.font = Font(bold=True, color="C00000")
+            else:
+                ws.cell(row=fila, column=2, value="N/A")
+                ws.cell(row=fila, column=4, value="N/A")
+
+            ws.cell(row=fila, column=3, value=f"{meta}{unidad}")
+            fila += 1
+
+        # Análisis de oportunidad
+        fila += 2
+        ws[f'A{fila}'] = "ANÁLISIS DE OPORTUNIDAD EN ATENCIÓN"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:D{fila}')
+        fila += 1
+
+        oportunidad = analisis_avanzado.get("analisis_oportunidad", {})
+        datos_oportunidad = [
+            ["Servicios Oportunos (≤24h)", oportunidad.get("servicios_oportunos", 0)],
+            ["Servicios con Demora Moderada (1-3 días)", oportunidad.get("servicios_moderados", 0)],
+            ["Servicios con Demora Alta (>3 días)", oportunidad.get("servicios_demorados", 0)]
+        ]
+
+        for concepto, valor in datos_oportunidad:
+            ws.cell(row=fila, column=1, value=concepto)
+            ws.cell(row=fila, column=2, value=valor)
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_morbilidad_especifica(self, wb: Workbook, analisis_avanzado: Dict[str, Any]):
+        """Crea hoja de análisis de morbilidad específica"""
+        ws = wb.create_sheet("Morbilidad Específica")
+
+        # Título
+        ws['A1'] = "ANÁLISIS DE MORBILIDAD ESPECÍFICA"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="7030A0", end_color="7030A0", fill_type="solid")
+        ws.merge_cells('A1:D1')
+
+        morbilidad = analisis_avanzado.get("morbilidad_especifica", {})
+
+        # Enfermedades Crónicas No Transmisibles (ECNT)
+        ws['A3'] = "ENFERMEDADES CRÓNICAS NO TRANSMISIBLES (ECNT)"
+        ws['A3'].font = Font(bold=True, size=12)
+        ws.merge_cells('A3:D3')
+
+        encabezados = ["Patología", "Casos Identificados", "Porcentaje", "Observaciones"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=4, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+
+        fila = 5
+        ecnt = morbilidad.get("ecnt", {})
+        total_casos = morbilidad.get("total_casos_ecnt", 0)
+
+        for patologia, casos in ecnt.items():
+            porcentaje = (casos / total_casos * 100) if total_casos > 0 else 0
+            ws.cell(row=fila, column=1, value=patologia.replace("_", " ").title())
+            ws.cell(row=fila, column=2, value=casos)
+            ws.cell(row=fila, column=3, value=f"{porcentaje:.1f}%")
+
+            # Añadir observación basada en cantidad
+            if casos > 10:
+                ws.cell(row=fila, column=4, value="Requiere seguimiento prioritario")
+            elif casos > 0:
+                ws.cell(row=fila, column=4, value="Requiere seguimiento")
+
+            fila += 1
+
+        # Eventos de Salud Pública
+        fila += 2
+        ws[f'A{fila}'] = "EVENTOS DE SALUD PÚBLICA IDENTIFICADOS"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:D{fila}')
+        fila += 1
+
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        eventos_sp = morbilidad.get("eventos_salud_publica", {})
+
+        for evento, casos in eventos_sp.items():
+            if casos > 0:
+                ws.cell(row=fila, column=1, value=evento.replace("_", " ").title())
+                ws.cell(row=fila, column=2, value=casos)
+                ws.cell(row=fila, column=3, value="")
+                ws.cell(row=fila, column=4, value="Notificar al sistema de vigilancia")
+                cell_notif = ws.cell(row=fila, column=4)
+                cell_notif.font = Font(bold=True, color="C00000")
+                fila += 1
+
+        if not eventos_sp or all(v == 0 for v in eventos_sp.values()):
+            ws.cell(row=fila, column=1, value="No se identificaron eventos de salud pública")
+            ws.cell(row=fila, column=1).font = Font(bold=True, color="00B050")
+
+        # Grupos de riesgo
+        fila += 2
+        ws[f'A{fila}'] = "GRUPOS DE RIESGO IDENTIFICADOS"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:D{fila}')
+        fila += 1
+
+        grupos_riesgo = analisis_avanzado.get("grupos_riesgo", [])
+
+        if grupos_riesgo and isinstance(grupos_riesgo, list):
+            for col, encabezado in enumerate(["Grupo de Riesgo", "Casos", "Recomendación"], start=1):
+                cell = ws.cell(row=fila, column=col, value=encabezado)
+                self._aplicar_estilo_encabezado(cell)
+            fila += 1
+
+            for grupo in grupos_riesgo:
+                if isinstance(grupo, dict):
+                    ws.cell(row=fila, column=1, value=grupo.get("nombre", ""))
+                    ws.cell(row=fila, column=2, value=grupo.get("cantidad", 0))
+                    ws.cell(row=fila, column=3, value=grupo.get("recomendacion", ""))
+                    fila += 1
+                elif isinstance(grupo, str):
+                    # Si es string, mostrarlo directamente
+                    ws.cell(row=fila, column=1, value=grupo)
+                    ws.cell(row=fila, column=2, value="N/A")
+                    ws.cell(row=fila, column=3, value="")
+                    fila += 1
+        else:
+            ws.cell(row=fila, column=1, value="No se identificaron grupos de riesgo especiales")
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_procedimientos(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis de procedimientos CUPS"""
+        ws = wb.create_sheet("Procedimientos CUPS")
+
+        proc = analisis.get("analisis_procedimientos", {})
+
+        # Título
+        ws['A1'] = "ANÁLISIS DE PROCEDIMIENTOS CUPS"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="4472C4", end_color="4472C4", fill_type="solid")
+        ws.merge_cells('A1:E1')
+
+        # Resumen
+        ws['A3'] = "RESUMEN"
+        ws['A3'].font = Font(bold=True, size=12)
+
+        datos_resumen = [
+            ["Total de Procedimientos", proc.get('total_procedimientos', 0)],
+            ["Procedimientos Únicos (códigos CUPS)", proc.get('procedimientos_unicos', 0)],
+            ["Complicaciones Reportadas", proc.get('total_complicaciones', 0)],
+            ["Procedimientos con MIPRES", proc.get('procedimientos_con_mipres', 0)],
+            ["Procedimientos sin Autorización", proc.get('procedimientos_sin_autorizacion', 0)],
+            ["Valor Total Procedimientos", f"${proc.get('total_valor_procedimientos', 0):,.2f}"]
+        ]
+
+        fila = 4
+        for campo, valor in datos_resumen:
+            ws[f'A{fila}'] = campo
+            ws[f'A{fila}'].font = Font(bold=True)
+            ws[f'B{fila}'] = valor
+            fila += 1
+
+        # Top 20 procedimientos
+        fila += 2
+        ws[f'A{fila}'] = "TOP 20 PROCEDIMIENTOS MÁS FRECUENTES"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:D{fila}')
+        fila += 1
+
+        encabezados = ["Código CUPS", "Cantidad", "Porcentaje"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        for proc_info in proc.get("top_20_procedimientos", []):
+            ws.cell(row=fila, column=1, value=proc_info.get("codigo", ""))
+            ws.cell(row=fila, column=2, value=proc_info.get("cantidad", 0))
+            ws.cell(row=fila, column=3, value=f"{proc_info.get('porcentaje', 0):.1f}%")
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_tipo_usuario(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis por tipo de usuario/régimen"""
+        ws = wb.create_sheet("Tipo Usuario-Régimen")
+
+        tipo_usuario = analisis.get("analisis_tipo_usuario", {})
+
+        # Título
+        ws['A1'] = "ANÁLISIS POR TIPO DE USUARIO (RÉGIMEN)"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="70AD47", end_color="70AD47", fill_type="solid")
+        ws.merge_cells('A1:D1')
+
+        # Distribución
+        ws['A3'] = "DISTRIBUCIÓN POR TIPO DE USUARIO"
+        ws['A3'].font = Font(bold=True, size=12)
+        fila = 4
+
+        encabezados = ["Código", "Descripción", "Cantidad Usuarios", "Total Servicios", "Valor Total"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        distribucion = tipo_usuario.get("distribucion_tipo_usuario", {})
+        servicios_por_tipo = tipo_usuario.get("servicios_por_tipo", {})
+        valor_por_tipo = tipo_usuario.get("valor_por_tipo", {})
+        descripciones = tipo_usuario.get("descripciones_tipo", {})
+
+        for tipo, cantidad in distribucion.items():
+            ws.cell(row=fila, column=1, value=tipo)
+            ws.cell(row=fila, column=2, value=descripciones.get(tipo, "No especificado"))
+            ws.cell(row=fila, column=3, value=cantidad)
+            ws.cell(row=fila, column=4, value=servicios_por_tipo.get(tipo, 0))
+            ws.cell(row=fila, column=5, value=f"${valor_por_tipo.get(tipo, 0):,.2f}")
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_incapacidades(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis de incapacidades"""
+        ws = wb.create_sheet("Incapacidades")
+
+        incap = analisis.get("analisis_incapacidades", {})
+
+        # Título
+        ws['A1'] = "ANÁLISIS DE INCAPACIDADES"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="FF6600", end_color="FF6600", fill_type="solid")
+        ws.merge_cells('A1:D1')
+
+        # Resumen
+        ws['A3'] = f"Total de usuarios con incapacidad: {incap.get('total_con_incapacidad', 0)}"
+        ws['A3'].font = Font(bold=True, size=12)
+
+        ws['A4'] = f"Porcentaje: {incap.get('porcentaje_incapacidad', 0):.1f}%"
+        ws['A4'].font = Font(bold=True)
+
+        # Distribución por sexo
+        fila = 6
+        ws[f'A{fila}'] = "DISTRIBUCIÓN POR SEXO"
+        ws[f'A{fila}'].font = Font(bold=True, size=11)
+        fila += 1
+
+        dist_sexo = incap.get("distribucion_por_sexo", {})
+        for sexo, cantidad in dist_sexo.items():
+            sexo_desc = "Femenino" if sexo == "F" else "Masculino" if sexo == "M" else sexo
+            ws[f'A{fila}'] = sexo_desc
+            ws[f'B{fila}'] = cantidad
+            fila += 1
+
+        # Distribución por edad
+        fila += 1
+        ws[f'A{fila}'] = "DISTRIBUCIÓN POR GRUPO DE EDAD"
+        ws[f'A{fila}'].font = Font(bold=True, size=11)
+        fila += 1
+
+        dist_edad = incap.get("distribucion_por_edad", {})
+        for grupo, cantidad in dist_edad.items():
+            ws[f'A{fila}'] = grupo
+            ws[f'B{fila}'] = cantidad
+            fila += 1
+
+        # Top diagnósticos asociados
+        fila += 1
+        ws[f'A{fila}'] = "TOP DIAGNÓSTICOS ASOCIADOS A INCAPACIDAD"
+        ws[f'A{fila}'].font = Font(bold=True, size=11)
+        ws.merge_cells(f'A{fila}:D{fila}')
+        fila += 1
+
+        encabezados = ["Código", "Nombre", "Cantidad"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        for diag in incap.get("top_diagnosticos_incapacidad", []):
+            ws.cell(row=fila, column=1, value=diag.get("codigo", ""))
+            ws.cell(row=fila, column=2, value=diag.get("nombre", ""))
+            ws.cell(row=fila, column=3, value=diag.get("cantidad", 0))
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_modalidad_diagnostico(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis de modalidad y tipo de diagnóstico"""
+        ws = wb.create_sheet("Modalidad y Tipo Diag")
+
+        modal = analisis.get("analisis_modalidad_diagnostico", {})
+
+        # Título
+        ws['A1'] = "ANÁLISIS DE MODALIDAD Y TIPO DE DIAGNÓSTICO"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="9966CC", end_color="9966CC", fill_type="solid")
+        ws.merge_cells('A1:D1')
+
+        # Tipo de diagnóstico (calidad)
+        ws['A3'] = "TIPO DE DIAGNÓSTICO (CALIDAD)"
+        ws['A3'].font = Font(bold=True, size=12)
+        ws.merge_cells('A3:D3')
+        fila = 4
+
+        encabezados = ["Tipo", "Descripción", "Cantidad", "Porcentaje"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        tipo_diag_detalle = modal.get("tipo_diagnostico_detalle", {})
+        for tipo, info in tipo_diag_detalle.items():
+            ws.cell(row=fila, column=1, value=tipo)
+            ws.cell(row=fila, column=2, value=info.get("descripcion", ""))
+            ws.cell(row=fila, column=3, value=info.get("cantidad", 0))
+            ws.cell(row=fila, column=4, value=f"{info.get('porcentaje', 0):.1f}%")
+            fila += 1
+
+        # Distribución por modalidad
+        fila += 2
+        ws[f'A{fila}'] = "DISTRIBUCIÓN POR MODALIDAD DE ATENCIÓN"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        fila += 1
+
+        ws[f'A{fila}'] = "Modalidad"
+        ws[f'B{fila}'] = "Cantidad"
+        self._aplicar_estilo_encabezado(ws[f'A{fila}'])
+        self._aplicar_estilo_encabezado(ws[f'B{fila}'])
+        fila += 1
+
+        dist_modalidad = modal.get("distribucion_modalidad", {})
+        for modalidad, cantidad in dist_modalidad.items():
+            ws[f'A{fila}'] = modalidad
+            ws[f'B{fila}'] = cantidad
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
+    def _crear_hoja_prestadores(self, wb: Workbook, analisis: Dict[str, Any]):
+        """Crea hoja de análisis de prestadores"""
+        ws = wb.create_sheet("Prestadores")
+
+        prest = analisis.get("analisis_prestadores", {})
+
+        # Título
+        ws['A1'] = "ANÁLISIS DE PRESTADORES DE SERVICIOS"
+        ws['A1'].font = Font(bold=True, size=14, color="FFFFFF")
+        ws['A1'].fill = PatternFill(start_color="00B0F0", end_color="00B0F0", fill_type="solid")
+        ws.merge_cells('A1:E1')
+
+        ws['A3'] = f"Total de prestadores: {prest.get('total_prestadores', 0)}"
+        ws['A3'].font = Font(bold=True, size=12)
+
+        # Top 10 prestadores
+        fila = 5
+        ws[f'A{fila}'] = "TOP 10 PRESTADORES"
+        ws[f'A{fila}'].font = Font(bold=True, size=12)
+        ws.merge_cells(f'A{fila}:E{fila}')
+        fila += 1
+
+        encabezados = ["Código Prestador", "Total Servicios", "Consultas", "Procedimientos", "Valor Total"]
+        for col, encabezado in enumerate(encabezados, start=1):
+            cell = ws.cell(row=fila, column=col, value=encabezado)
+            self._aplicar_estilo_encabezado(cell)
+        fila += 1
+
+        for prestador in prest.get("top_10_prestadores", []):
+            ws.cell(row=fila, column=1, value=prestador.get("codigo_prestador", ""))
+            ws.cell(row=fila, column=2, value=prestador.get("total_servicios", 0))
+            ws.cell(row=fila, column=3, value=prestador.get("consultas", 0))
+            ws.cell(row=fila, column=4, value=prestador.get("procedimientos", 0))
+            ws.cell(row=fila, column=5, value=f"${prestador.get('valor_total', 0):,.2f}")
+            fila += 1
+
+        self._ajustar_columnas(ws)
+
     def _generar_grafico(self, tipo: str, titulo: str, datos: Dict[str, Any], labels: List[str] = None) -> io.BytesIO:
         """
         Genera un gráfico y lo retorna como BytesIO para insertarlo en el documento
@@ -908,24 +1444,44 @@ class GeneradorReportes:
 
         if tipo == 'bar':
             if labels:
-                plt.bar(labels, list(datos.values()), color='steelblue')
+                bars = plt.bar(labels, list(datos.values()), color='steelblue')
             else:
-                plt.bar(datos.keys(), datos.values(), color='steelblue')
+                bars = plt.bar(datos.keys(), datos.values(), color='steelblue')
             plt.xticks(rotation=45, ha='right')
+
+            # Agregar etiquetas de datos en las barras
+            for bar in bars:
+                height = bar.get_height()
+                plt.text(bar.get_x() + bar.get_width()/2., height,
+                        f'{int(height)}',
+                        ha='center', va='bottom', fontsize=9, fontweight='bold')
 
         elif tipo == 'pie':
             if labels:
-                plt.pie(datos.values(), labels=labels, autopct='%1.1f%%', startangle=90)
+                wedges, texts, autotexts = plt.pie(datos.values(), labels=labels, autopct='%1.1f%%', startangle=90)
             else:
-                plt.pie(datos.values(), labels=datos.keys(), autopct='%1.1f%%', startangle=90)
+                wedges, texts, autotexts = plt.pie(datos.values(), labels=datos.keys(), autopct='%1.1f%%', startangle=90)
+
+            # Mejorar legibilidad de las etiquetas
+            for autotext in autotexts:
+                autotext.set_color('white')
+                autotext.set_fontweight('bold')
+                autotext.set_fontsize(10)
+
             plt.axis('equal')
 
         elif tipo == 'line':
             if labels:
-                plt.plot(labels, list(datos.values()), marker='o', linewidth=2, markersize=8)
+                line = plt.plot(labels, list(datos.values()), marker='o', linewidth=2, markersize=8)
             else:
-                plt.plot(list(datos.keys()), list(datos.values()), marker='o', linewidth=2, markersize=8)
+                line = plt.plot(list(datos.keys()), list(datos.values()), marker='o', linewidth=2, markersize=8)
             plt.xticks(rotation=45, ha='right')
+
+            # Agregar etiquetas de datos en los puntos
+            valores = list(datos.values()) if labels else list(datos.values())
+            etiquetas_x = labels if labels else list(datos.keys())
+            for i, (x, y) in enumerate(zip(range(len(valores)), valores)):
+                plt.text(x, y, f'{int(y)}', ha='center', va='bottom', fontsize=9, fontweight='bold')
 
         plt.title(titulo, fontsize=14, fontweight='bold', pad=20)
         plt.tight_layout()
@@ -1007,26 +1563,25 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
         p.add_run(f"Total de Femenino: {dist_sexo.get('F', 0)}\n").bold = True
         p.add_run(f"Total de Masculino: {dist_sexo.get('M', 0)}\n").bold = True
 
-        # Gráfico de distribución por edad
-        doc.add_heading('2.2 Distribución por Edad', level=2)
-        dist_edad = demo.get("distribucion_edad", {})
-        labels_edad = [f"{k} años" for k in dist_edad.keys()]
+        # Gráfico de distribución por Ruta de Vida
+        doc.add_heading('2.2 Distribución por Ruta de Vida (Resolución 3280 de 2018)', level=2)
+        dist_ruta_vida = demo.get("distribucion_ruta_vida", {})
 
-        grafico_edad = self._generar_grafico('bar', 'Distribución de Pacientes por Rango de Edad', dist_edad, labels_edad)
-        doc.add_picture(grafico_edad, width=Inches(6))
+        grafico_ruta_vida = self._generar_grafico('bar', 'Distribución de Pacientes por Ruta de Vida', dist_ruta_vida)
+        doc.add_picture(grafico_ruta_vida, width=Inches(6))
 
-        # Tabla de distribución por edad
+        # Tabla de distribución por Ruta de Vida
         tabla = doc.add_table(rows=1, cols=3)
         tabla.style = 'Light Grid Accent 1'
         encabezados = tabla.rows[0].cells
-        encabezados[0].text = 'Rango de Edad'
+        encabezados[0].text = 'Ruta de Vida'
         encabezados[1].text = 'Cantidad'
         encabezados[2].text = 'Porcentaje'
 
         total_usuarios = demo.get('total_usuarios', 0)
-        for rango, cantidad in dist_edad.items():
+        for ruta_vida, cantidad in dist_ruta_vida.items():
             row_cells = tabla.add_row().cells
-            row_cells[0].text = f"{rango} años"
+            row_cells[0].text = ruta_vida
             row_cells[1].text = str(cantidad)
             porcentaje = (cantidad / total_usuarios * 100) if total_usuarios > 0 else 0
             row_cells[2].text = f"{porcentaje:.1f}%"
@@ -1058,55 +1613,128 @@ El análisis demográfico muestra una distribución predominante del sexo femeni
         doc.add_paragraph(f"Diagnósticos únicos identificados: {diag.get('diagnosticos_unicos', 0)}")
         doc.add_paragraph(f"Casos con comorbilidades: {diag.get('diagnosticos_con_comorbilidades', 0)}")
 
-        # Top 10 diagnósticos
-        doc.add_heading('4.1 Top 10 Diagnósticos Más Frecuentes', level=2)
+        # Todos los diagnósticos
+        doc.add_heading('4.1 Todos los Diagnósticos Identificados', level=2)
 
-        top_diag = diag.get("top_10_diagnosticos", [])[:10]
-        datos_top_diag = {d['codigo']: d['cantidad'] for d in top_diag}
+        todos_diag = diag.get("todos_diagnosticos", [])
 
-        grafico_diag = self._generar_grafico('bar', 'Top 10 Diagnósticos', datos_top_diag)
+        # Mostrar gráfico con los top 15 más frecuentes para mejor visualización
+        top_15_diag = todos_diag[:15]
+        datos_top_diag = {d['codigo']: d['cantidad'] for d in top_15_diag}
+
+        grafico_diag = self._generar_grafico('bar', 'Top 15 Diagnósticos Más Frecuentes', datos_top_diag)
         doc.add_picture(grafico_diag, width=Inches(6))
 
-        # Tabla de top diagnósticos
-        tabla_diag = doc.add_table(rows=1, cols=3)
+        # Tabla de TODOS los diagnósticos
+        tabla_diag = doc.add_table(rows=1, cols=4)
         tabla_diag.style = 'Light Grid Accent 1'
         encabezados_diag = tabla_diag.rows[0].cells
         encabezados_diag[0].text = 'Código'
         encabezados_diag[1].text = 'Diagnóstico'
         encabezados_diag[2].text = 'Cantidad'
+        encabezados_diag[3].text = 'Porcentaje'
 
-        for d in top_diag:
+        for d in todos_diag:
             row_cells = tabla_diag.add_row().cells
             row_cells[0].text = d.get('codigo', '')
-            row_cells[1].text = d.get('nombre', '')
+            row_cells[1].text = d.get('nombre', '')[:50]  # Limitar longitud para mejor visualización
             row_cells[2].text = str(d.get('cantidad', 0))
+            row_cells[3].text = f"{d.get('porcentaje', 0):.1f}%"
 
-        # 5. ANÁLISIS DE DIAGNÓSTICOS POR GÉNERO
+        # 4.2 Análisis Detallado de Comorbilidades
+        doc.add_heading('4.2 Análisis Detallado de Comorbilidades', level=2)
+
+        comorbilidad_detalle = diag.get("analisis_comorbilidad_detallado", {})
+
+        doc.add_paragraph(f"Total de pacientes con comorbilidades: {comorbilidad_detalle.get('total_pacientes_con_comorbilidades', 0)}")
+        doc.add_paragraph(f"Total de comorbilidades registradas: {comorbilidad_detalle.get('total_comorbilidades_registradas', 0)}")
+        doc.add_paragraph(f"Promedio de comorbilidades por paciente: {comorbilidad_detalle.get('promedio_comorbilidades_por_paciente', 0)}")
+
+        # Diagnóstico principal con más comorbilidades
+        diag_mas_comorbilidades = comorbilidad_detalle.get("diagnostico_principal_con_mas_comorbilidades")
+        if diag_mas_comorbilidades:
+            p = doc.add_paragraph()
+            p.add_run("Diagnóstico principal con más comorbilidades asociadas: ").bold = True
+            p.add_run(f"[{diag_mas_comorbilidades.get('codigo')}] {diag_mas_comorbilidades.get('nombre')} - ")
+            p.add_run(f"{diag_mas_comorbilidades.get('cantidad_pacientes')} pacientes")
+
+        # Combinaciones más frecuentes
+        combinaciones_frecuentes = comorbilidad_detalle.get("combinaciones_mas_frecuentes", [])
+        if combinaciones_frecuentes:
+            doc.add_paragraph().add_run('Combinaciones de diagnósticos más frecuentes:').bold = True
+            for i, comb in enumerate(combinaciones_frecuentes[:5], 1):
+                doc.add_paragraph(f"  {i}. {comb.get('combinacion')} - {comb.get('frecuencia')} casos", style='List Number')
+
+        # 5. ANÁLISIS DE POBLACIÓN GESTANTE
         doc.add_page_break()
-        doc.add_heading('5. ANÁLISIS POR GÉNERO', level=1)
+        doc.add_heading('5. ANÁLISIS DE POBLACIÓN GESTANTE', level=1)
 
-        # Preparar datos de diagnósticos por género
-        diagnosticos_por_genero = {"F": {}, "M": {}}
-        for consulta in datos_rips.get("consultas", []):
-            sexo = consulta.get("sexo", "")
-            diag_cod = consulta.get("diagnostico_principal", "")
-            if sexo in diagnosticos_por_genero and diag_cod:
-                diagnosticos_por_genero[sexo][diag_cod] = diagnosticos_por_genero[sexo].get(diag_cod, 0) + 1
+        gestantes_data = analisis.get("analisis_poblacion_gestante", {})
+        total_gestantes = gestantes_data.get('total_gestantes', 0)
 
-        # Comparación de diagnósticos más frecuentes por género
-        doc.add_heading('5.1 Diagnósticos Principales por Género', level=2)
+        if total_gestantes > 0:
+            # Resumen
+            doc.add_paragraph(f"Total de gestantes identificadas: {total_gestantes}")
+            doc.add_paragraph(f"Edad promedio: {gestantes_data.get('edad_promedio', 0)} años")
+            doc.add_paragraph(f"Gestantes adolescentes (10-17 años): {gestantes_data.get('gestantes_adolescentes', 0)}")
+            doc.add_paragraph(f"Gestantes de alto riesgo: {gestantes_data.get('gestantes_alto_riesgo', 0)} ({gestantes_data.get('porcentaje_alto_riesgo', 0):.1f}%)")
+            doc.add_paragraph(f"Gestantes con complicaciones: {gestantes_data.get('gestantes_con_complicaciones', 0)} ({gestantes_data.get('porcentaje_complicaciones', 0):.1f}%)")
+            doc.add_paragraph(f"Cobertura de controles prenatales: {gestantes_data.get('cobertura_controles_prenatales', 0):.1f}%")
 
-        # Top 5 femenino vs masculino
-        top_fem = sorted(diagnosticos_por_genero["F"].items(), key=lambda x: x[1], reverse=True)[:5]
-        top_masc = sorted(diagnosticos_por_genero["M"].items(), key=lambda x: x[1], reverse=True)[:5]
+            # Controles Prenatales
+            doc.add_heading('5.1 Controles Prenatales', level=2)
 
-        doc.add_paragraph().add_run('Top 5 Diagnósticos - Femenino:').bold = True
-        for diag_cod, cant in top_fem:
-            doc.add_paragraph(f"  • {diag_cod}: {cant} casos", style='List Bullet')
+            dist_controles = gestantes_data.get("distribucion_controles_prenatales", {})
+            if dist_controles:
+                tabla_controles = doc.add_table(rows=1, cols=3)
+                tabla_controles.style = 'Light Grid Accent 1'
+                enc_controles = tabla_controles.rows[0].cells
+                enc_controles[0].text = 'Número de Controles'
+                enc_controles[1].text = 'Cantidad'
+                enc_controles[2].text = 'Porcentaje'
 
-        doc.add_paragraph().add_run('Top 5 Diagnósticos - Masculino:').bold = True
-        for diag_cod, cant in top_masc:
-            doc.add_paragraph(f"  • {diag_cod}: {cant} casos", style='List Bullet')
+                for num_controles, cantidad in sorted(dist_controles.items()):
+                    porcentaje = (cantidad / total_gestantes * 100) if total_gestantes > 0 else 0
+                    row_cells = tabla_controles.add_row().cells
+                    row_cells[0].text = f"{num_controles} controles"
+                    row_cells[1].text = str(cantidad)
+                    row_cells[2].text = f"{porcentaje:.1f}%"
+
+            # Distribución por edad
+            doc.add_heading('5.2 Distribución por Grupo de Edad', level=2)
+
+            dist_edad = gestantes_data.get("distribucion_edad_gestantes", {})
+            datos_edad_gest = {k: v for k, v in dist_edad.items() if v > 0}
+
+            if datos_edad_gest:
+                grafico_gest = self._generar_grafico('pie', 'Distribución de Gestantes por Grupo de Edad', datos_edad_gest)
+                doc.add_picture(grafico_gest, width=Inches(5.5))
+
+            # Tabla de distribución
+            tabla_gest = doc.add_table(rows=1, cols=3)
+            tabla_gest.style = 'Light Grid Accent 1'
+            enc_gest = tabla_gest.rows[0].cells
+            enc_gest[0].text = 'Grupo de Edad'
+            enc_gest[1].text = 'Cantidad'
+            enc_gest[2].text = 'Porcentaje'
+
+            for grupo, cantidad in dist_edad.items():
+                if cantidad > 0:
+                    porcentaje = (cantidad / total_gestantes * 100) if total_gestantes > 0 else 0
+                    row_cells = tabla_gest.add_row().cells
+                    row_cells[0].text = grupo
+                    row_cells[1].text = str(cantidad)
+                    row_cells[2].text = f"{porcentaje:.1f}%"
+
+            # Top diagnósticos en gestantes
+            doc.add_heading('5.3 Diagnósticos Principales en Población Gestante', level=2)
+
+            top_diag_gest = gestantes_data.get("top_diagnosticos_gestantes", [])
+            if top_diag_gest:
+                for i, diag_info in enumerate(top_diag_gest[:5], 1):
+                    doc.add_paragraph(f"  {i}. [{diag_info.get('codigo')}] {diag_info.get('nombre')} - {diag_info.get('cantidad')} casos", style='List Number')
+        else:
+            doc.add_paragraph("No se identificaron pacientes gestantes en el período analizado.")
 
         # 6. ANÁLISIS DE MOTIVOS DE CONSULTA
         doc.add_page_break()
